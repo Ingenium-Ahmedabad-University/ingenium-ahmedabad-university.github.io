@@ -1,0 +1,57 @@
+#loader-wrapper {
+  height: 100vh;
+  background-color: #090919;
+  color: #a0aec0;
+}
+
+.nav-bar {
+  height: 4px;
+}
+
+.rotateme-45 {
+  animation: rotate-45 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+.rotateme-45-back {
+  animation: rotate-45-back 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+@keyframes rotate-45 {
+  0% {
+    transform: rotate(0) translateY(0);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(-0.25rem);
+  }
+}
+
+@keyframes rotate-45-back {
+  0% {
+    transform: rotate(-45deg) translateY(-0.25rem);
+  }
+  100% {
+    transform: rotate(0) translateY(12px);
+  }
+}
+
+.rotateme45 {
+  animation: 0.5s rotate45 cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+@keyframes rotate45 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.rotateme45-back {
+  animation: 0.5s rotate45back cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+@keyframes rotate45back {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
