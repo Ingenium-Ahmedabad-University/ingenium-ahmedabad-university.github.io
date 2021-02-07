@@ -18,6 +18,8 @@
     "autoprefixer": "^10.2.4",
     "gatsby": "^2.31.1",
     "gatsby-image": "^2.11.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.12.0",
     "gatsby-plugin-postcss": "^3.7.0",
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sharp": "^2.14.1",
