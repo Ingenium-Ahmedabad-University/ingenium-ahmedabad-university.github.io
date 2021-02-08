@@ -93,3 +93,107 @@
     transform: translateY(0) rotateZ(0deg);
   }
 }
+
+/*
+*  For sigup modal
+*/
+#modal {
+  /*border: 1px solid #2d2d2d;*/
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition: opacity 0.3s ease-in-out;
+}
+a.nl-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.nl-link:before,
+.nl-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+.nl-link:after {
+  background: #000;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.8s ease;
+}
+.nl-link:hover:after {
+  transform-origin: left;
+  transform: translate3d(100%, 0, 0);
+}
+.content {
+  position: relative;
+  max-width: calc(100% - 12px);
+  max-height: calc(100% - 12px);
+  border-radius: 3px;
+  width: 580px;
+  height: auto;
+  min-height: 260px;
+  overflow: auto;
+  background: #09111d;
+  transition: all 0.3s ease-in-out;
+  padding: 36px;
+  text-align: center;
+}
+.content .title {
+  display: block;
+  font-size: 24px !important;
+  line-height: 1.25;
+  font-weight: 500 !important;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 32px !important;
+  margin-top: 0px !important;
+}
+.content .field input {
+  display: inline;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #09111d;
+  border-width: 0 0 2px;
+  transition: all 0.3s ease;
+  margin-top: 10%;
+}
+.close-button {
+  background: #09111d;
+  border-width: 0;
+}
+.flex-item {
+  display: flex;
+}
+.field {
+  display: flex;
+  align-items: flex-end;
+}
+.close-button {
+  padding: 1%;
+}
+#back-screen {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}

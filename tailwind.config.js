@@ -18,6 +18,8 @@ module.exports = {
     },
   },
   darkmode: false,
-  variants: {},
+  variants: {
+    textColor:['responsive','group-hover','hover','focus']
+  },
   plugins: [],
 };
