@@ -93,3 +93,10 @@
     transform: translateY(0) rotateZ(0deg);
   }
 }
+
+
+.sponsors-logo {
+  width: auto;
+  max-width: 60%;
+  max-height: 85%;
+}
