@@ -2,6 +2,7 @@ import React from 'react';
 import SEO from './SEO';
 import Footer from './footer';
 import Header from './header';
+import {About} from './about-us'
 const Layout = ({ children }) => {
   return (
     <>
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
           </button>
         </div>
       </div>
+      <About/>
       <Footer />
     </>
   );

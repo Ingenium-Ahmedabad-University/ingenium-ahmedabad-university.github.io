@@ -13,6 +13,7 @@ dependencies:
   react: 16.14.0
   react-dom: 16.14.0_react@16.14.0
   react-helmet: 6.1.0_react@16.14.0
+  react-icons: 4.2.0_react@16.14.0
   tailwindcss: 2.0.2_132a6068366276bc6a71795f98f5a160
 devDependencies:
   prettier: 2.2.1
@@ -11618,6 +11619,14 @@ packages:
         optional: true
     resolution:
       integrity: sha512-JrLlvUPqh6wIkrK2hZDfOyq/Uh/WeVEr8nc7hkn2/3Ul0sx1Kr5y4kOGNacNRoj7RhwLNcQ3Udf1KJXrqc0ZtA==
+  /react-icons/4.2.0_react@16.14.0:
+    dependencies:
+      react: 16.14.0
+    dev: false
+    peerDependencies:
+      react: '*'
+    resolution:
+      integrity: sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
   /react-is/16.13.1:
     dev: false
     resolution:
@@ -14632,4 +14641,5 @@ specifiers:
   react: ^16.13.1
   react-dom: ^16.13.1
   react-helmet: ^6.1.0
+  react-icons: ^4.2.0
   tailwindcss: ^2.0.2
