@@ -11,34 +11,73 @@ const Logo = () => (
 const NavIcon = () => {
   const [nav_open, change_nav] = useState(false);
   return (
-    <div
-      className='fixed top-0 right-0'
-      onClick={() => {
-        console.log('state change');
-        change_nav(!nav_open);
-      }}
-    >
-      <div className='grid grid-row-2 py-8 px-6'>
-        <div
-          className={
-            nav_open
-              ? 'nav-bar w-10 bg-white rotateme45'
-              : 'nav-bar w-10 bg-white rotateme45-back'
-          }
-        ></div>
-        <div
-          className={
-            nav_open
-              ? 'nav-bar w-10 bg-white rotateme-45'
-              : 'nav-bar w-10 bg-white rotateme-45-back'
-          }
-        ></div>
+    <>
+      <div
+        className='fixed top-0 right-0 z-50 h-24 w-24 grid place-items-center'
+        onClick={() => {
+          console.log('state change');
+          change_nav(!nav_open);
+        }}
+      >
+        <div className='grid grid-row-2'>
+          <div
+            className={
+              nav_open
+                ? 'nav-bar w-10 rotateme45'
+                : 'nav-bar w-10  rotateme45-back'
+            }
+          ></div>
+          <div
+            className={
+              nav_open
+                ? 'nav-bar w-10 rotateme-45'
+                : 'nav-bar w-10 rotateme-45-back'
+            }
+          ></div>
+        </div>
       </div>
+      <NavMenu open={nav_open} />
+    </>
+  );
+};
+const NavOption = ({ name }) => {
+  useState();
+  return (
+    <div className='group grid grid-cols-3 cursor-pointer h-16'>
+      <div className='hidden h-px bg-black self-center w-0 ' />
+      <h1 className='text-right col-span-full md:col-span-2 text-3xl transition-colors duration-700 md:text-transparent group-hover:text-black font-title-abril italic text-stroke'>
+        {name}
+      </h1>
     </div>
   );
 };
 
-const NavMenu = () => <div></div>;
+const NavMenu = ({ open }) => {
+  const options = [
+    { name: 'Home' },
+    { name: 'About Us' },
+    { name: 'Events' },
+    { name: 'Competitions' },
+    { name: 'Contact Us' },
+    { name: 'FAQ' },
+  ];
+  return (
+    <div className='fixed'>
+      <div
+        className={
+          'absolute top-0 left-0 h-screen w-screen justify-center bg-orange-100 ' +
+          (open ? ' flex nav-bg-in' : 'hidden')
+        }
+      >
+        <div className='w-10/12 h-auto mt-20'>
+          {options.map((e) => (
+            <NavOption name={e.name} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Header = () => (
   <>

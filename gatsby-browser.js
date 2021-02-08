@@ -1,8 +1,8 @@
-import './src/css/custom.css';
 import './src/css/tailwind.css';
+import './src/css/custom.css';
 
 export const onClientEntry = () => {
-  document.getElementById('loader-wrapper').style.display = 'block';
+  document.getElementById('loader-wrapper').style.display = 'flex';
 };
 export const onInitialClientRender = () => {
   setTimeout(() => {

@@ -1,57 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #loader-wrapper {
   height: 100vh;
+  width: 100vw;
   background-color: #090919;
   color: #a0aec0;
+  z-index: 1000;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-bar {
-  height: 4px;
+  height: 3px;
 }
 
+.text-stroke {
+  -webkit-text-stroke: 2px theme('colors.black');
+  text-stroke: 2px theme('colors.black');
+}
 .rotateme-45 {
-  animation: rotate-45 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  @apply bg-white;
+  animation: rotate-45 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 .rotateme-45-back {
-  animation: rotate-45-back 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: rotate-45-back 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 @keyframes rotate-45 {
   0% {
     transform: rotate(0) translateY(0);
+    @apply bg-white;
   }
   100% {
     transform: rotate(-45deg) translateY(-0.25rem);
+    @apply bg-black;
   }
 }
 
 @keyframes rotate-45-back {
   0% {
     transform: rotate(-45deg) translateY(-0.25rem);
+    @apply bg-black;
   }
   100% {
-    transform: rotate(0) translateY(12px);
+    transform: rotate(0) translateY(3px);
+    @apply bg-white;
   }
 }
 
 .rotateme45 {
-  animation: 0.5s rotate45 cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  @apply bg-white;
+  animation: 1s rotate45 cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.rotateme45-back {
+  animation: 1s rotate45back cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 @keyframes rotate45 {
   0% {
     transform: rotate(0);
+    @apply bg-white;
   }
   100% {
     transform: rotate(45deg);
+    @apply bg-black;
   }
 }
 
-.rotateme45-back {
-  animation: 0.5s rotate45back cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-}
 @keyframes rotate45back {
   0% {
     transform: rotate(45deg);
+    @apply bg-black;
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(0) translateY(-3px);
+    @apply bg-white;
+  }
+}
+
+.nav-bg-in {
+  animation: 1s nav-in cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transform: translateY(-100vh) rotateZ(15deg);
+  transform-style: preserve-3d;
+}
+@keyframes nav-in {
+  0% {
+    transfrom: translateY(-100vh) rotateZ(15deg);
+  }
+  100% {
+    transform: translateY(0) rotateZ(0deg);
   }
 }

@@ -2,11 +2,17 @@ import React from 'react';
 import SEO from './SEO';
 import Footer from './footer';
 import Header from './header';
+const HeroSection = () => (
+  <div className='h-screen bg-base grid place-items-center text-secondary font-title-oswald'>
+    <h1>Hero Section</h1>
+  </div>
+);
 const Layout = ({ children }) => {
   return (
     <>
       <SEO />
       <Header />
+      <HeroSection />
       <div className='flex flex-col h-screen justify-center items-center bg-base w-full'>
         <div className='w-6/12'>
           <h1 className='font-title-oswald text-6xl text-secondary uppercase'>
