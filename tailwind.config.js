@@ -19,7 +19,7 @@ module.exports = {
   },
   darkmode: false,
   variants: {
-    textColor:['responsive','group-hover','hover','focus']
+    textColor: ['responsive', 'group-hover', 'hover', 'focus'],
   },
   plugins: [],
 };

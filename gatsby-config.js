@@ -9,6 +9,7 @@ module.exports = {
     author: 'Ingenium tech team',
     description: 'A Gatsby starter to set you up with Tailwind CSS',
   },
+  pathPrefix: '/website',
   plugins: [
     'gatsby-plugin-react-helmet',
     {

@@ -1,5 +1,5 @@
+import { Link } from 'gatsby';
 import React, { useState } from 'react';
-import {Link} from "gatsby"
 import logo_src from '../images/icon.svg';
 const Logo = () => (
   <div className='fixed top-0 left-0'>
@@ -43,13 +43,13 @@ const NavIcon = () => {
 const NavOption = ({ name }) => {
   useState();
   return (
-    <Link to="">
-    <div className='group grid grid-cols-3 cursor-pointer h-16 lg:h-auto'>
-      <div className='hidden h-px bg-black self-center w-0 lg:block' />
-      <h1 className='text-right lg:text-left col-span-full lg:col-span-2 text-3xl lg:text-6xl transition-colors duration-700 lg:text-transparent font-title-abril italic text-stroke'>
-        {name}
-      </h1>
-    </div>
+    <Link to=''>
+      <div className='group grid grid-cols-3 cursor-pointer h-16 lg:h-auto'>
+        <div className='hidden h-px bg-black self-center w-0 lg:block' />
+        <h1 className='text-right lg:text-left col-span-full lg:col-span-2 text-3xl lg:text-6xl transition-colors duration-700 lg:text-transparent font-title-abril italic text-stroke'>
+          {name}
+        </h1>
+      </div>
     </Link>
   );
 };
