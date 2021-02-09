@@ -14,7 +14,7 @@ const EventsPage = ({date, eventName, description, speakerName, speakerDetails, 
                 </div>
             </div>
             <div className="my-16">
-                <h1 className="text-5xl text-black text-primary">{ eventName }</h1><br/>
+                <h1 className="text-5xl py-5 text-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg">{ eventName }</h1>
                 <p className="text-gray-400 font-semibold">{ description }</p>
             </div>
             <div className="flex align-middle">
@@ -32,4 +32,13 @@ const EventsPage = ({date, eventName, description, speakerName, speakerDetails, 
     </section>
 
 
-export default EventsPage;
+export default () => 
+    <EventsPage 
+        date = "8 December, 22:45 IST"
+        eventName = "Opening keynote"
+        description = "Join Nat Friedman and special guests for an inside look at the latest updates and product announcements from GitHub."
+        speakerName = "Nat Friedman"
+        speakerDetails = "CEO, Github"
+        speakerImg = "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg"
+    />
+  

@@ -59,7 +59,7 @@ const list = [
 
 const Sponsors = () => 
     <section id="sponsors"> 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 bg-base px-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 bg-base px-10">
             {
                 list.map( (item, i) => {
                     return(
