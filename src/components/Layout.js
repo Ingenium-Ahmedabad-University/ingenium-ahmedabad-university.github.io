@@ -4,6 +4,7 @@ import Footer from './footer';
 import Header from './header';
 import AboutUs from './aboutus';
 import Testimonials from './testimonials';
+import EventsPage from './events';
 
 const HeroSection = () => (
   <div className='h-screen bg-base grid place-items-center text-secondary font-title-oswald'>
@@ -41,6 +42,14 @@ const Layout = ({ children }) => {
         </div>
       </div> */}
       </div>
+      <EventsPage 
+        date = "8 December, 22:45 IST"
+        eventName = "Opening keynote"
+        description = "Join Nat Friedman and special guests for an inside look at the latest updates and product announcements from GitHub."
+        speakerName = "Nat Friedman"
+        speakerDetails = "CEO, Github"
+        speakerImg = "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg"
+      />
       <Footer />
     </>
   );
