@@ -9,6 +9,7 @@ module.exports = {
     author: 'Ingenium tech team',
     description: 'A Gatsby starter to set you up with Tailwind CSS',
   },
+  pathPrefix: '/website',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -19,7 +20,7 @@ module.exports = {
         start_url: '/',
         background_color: theme.colors.white,
         theme_color: theme.colors.extended,
-        icon: 'static/icon.svg',
+        icon: 'src/images/icon.svg',
       },
     },
     {
