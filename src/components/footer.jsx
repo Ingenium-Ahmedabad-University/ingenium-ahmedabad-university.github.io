@@ -18,11 +18,7 @@ const contact_details = [
   },
 ];
 const Newletter = () => {
-<<<<<<< HEAD
   const [opened,changestate] = useState(false);
-=======
-  const [opened, changestate] = useState(true);
->>>>>>> ca74bd965bb29d22dee722192080949f4272e89a
   return (
     <>
       <div

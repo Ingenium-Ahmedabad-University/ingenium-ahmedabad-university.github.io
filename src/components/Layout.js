@@ -14,18 +14,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO />
-<<<<<<< HEAD
       <div className="base px-3 md:px-5 lg:px-10 bg-base">
       <HeroSection />
       <AboutUs/>
       <Header />
       {/* <div className='flex flex-col h-screen justify-center items-center bg-base w-full'>
-=======
-      <Header />
-      <div className='base px-3 md:px-5 lg:px-10 bg-base'>
-        <HeroSection />
-        {/* <div className='flex flex-col h-screen justify-center items-center bg-base w-full'>
->>>>>>> ca74bd965bb29d22dee722192080949f4272e89a
         <div className='w-6/12'>
           <h1 className='font-title-oswald text-6xl text-secondary uppercase'>
             Lorem ipsum
