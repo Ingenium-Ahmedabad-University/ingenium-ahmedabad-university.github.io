@@ -17,7 +17,7 @@ const contact_details = [
   },
 ];
 const Newletter = () => {
-  const [opened,changestate] = useState(true);
+  const [opened,changestate] = useState(false);
   return (
     <>
     <div className='inline-block relative cursor-pointer' onClick={() => {changestate(true); console.log("clicked")}}>

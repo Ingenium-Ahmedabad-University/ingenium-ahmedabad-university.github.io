@@ -93,7 +93,24 @@
     transform: translateY(0) rotateZ(0deg);
   }
 }
-
+/*
+About Us
+*/
+.about_us_image {
+  max-height: 35vh;
+}
+.image2 {
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  display: flex;
+  justify-content: end;
+  filter: grayscale(0.8);
+}
+.image2 img {
+  height: 100%;
+}
 /*
 *  For sigup modal
 */

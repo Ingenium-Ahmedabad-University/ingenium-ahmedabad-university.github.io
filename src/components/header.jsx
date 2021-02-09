@@ -64,10 +64,10 @@ const NavMenu = ({ open }) => {
     { name: 'FAQ' },
   ];
   return (
-    <div className='fixed'>
+    <div className='fixed top-0 left-0'>
       <div
         className={
-          'absolute top-0 left-0 h-screen w-screen justify-center bg-orange-100 ' +
+          'absolute top-0 left-0 h-screen w-screen justify-center bg-orange-100 z-50 ' +
           (open ? ' flex nav-bg-in' : 'hidden')
         }
       >
