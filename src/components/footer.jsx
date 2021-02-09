@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
 import logo_src from '../images/icon.svg';
 // import data from '../../content/data.json'
-import insta from '../images/instagram.svg';
 
 const contact_details = [
   {
-    name: 'Instagram',
-    icon: 'icon',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/instagram.svg',
   },
-  {
-    name: 'Discord',
-    icon: 'icon2',
-  },
-  {
-    name: 'mail',
-    icon: 'icon3',
-  },
+  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/discord.svg' },
+  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/gmail.svg' },
 ];
+
 const Newletter = () => {
-  const [opened,changestate] = useState(false);
+  const [opened, changestate] = useState(false);
   return (
     <>
       <div
@@ -75,12 +68,24 @@ const Footer = () => (
       {/* hastag*/}
       <div className='text-gray-300 flex items-center flex-col lg:grid lg:grid-flow-col'>
         <div>
-          Follow the event <span className='text-red-500'>#feelingenium</span>
+          Follow the event{' '}
+          <span className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+            #feelingenium
+          </span>
         </div>
-        <ul>
-          <li>
-            <img src={insta} alt='' />
-          </li>
+        <ul className='grid grid-flow-col gap-6 mx-4 my-4'>
+          {contact_details.map((e, i) => (
+            <a href=''>
+              <li key={i}>
+                <img
+                  height='24'
+                  width='24'
+                  src={e.icon}
+                  className='hover:invert-5 invert-7'
+                />
+              </li>
+            </a>
+          ))}
         </ul>
       </div>
     </div>

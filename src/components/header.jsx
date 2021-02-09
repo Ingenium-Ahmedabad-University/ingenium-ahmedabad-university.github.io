@@ -41,12 +41,13 @@ const NavIcon = () => {
   );
 };
 const NavOption = ({ name }) => {
-  useState();
   return (
     <Link to=''>
-      <div className='group grid grid-cols-3 cursor-pointer h-16 lg:h-auto'>
-        <div className='hidden h-px bg-black self-center w-0 lg:block' />
-        <h1 className='text-right lg:text-left col-span-full lg:col-span-2 text-3xl lg:text-6xl transition-colors duration-700 lg:text-transparent font-title-abril italic text-stroke'>
+      <div className='group grid grid-cols-3 cursor-pointer h-16 lg:h-auto '>
+        <div className='grid col-2 mx-3'>
+          <div className='hidden h-px width-transition bg-black self-center w-0 group-hover:w-full lg:block col-start-2 ' />
+        </div>
+        <h1 className='text-right lg:text-left col-span-full lg:col-span-2 text-3xl lg:text-6xl transition-colors duration-700 lg:text-transparent group-hover:text-current font-title-abril italic text-stroke'>
           {name}
         </h1>
       </div>

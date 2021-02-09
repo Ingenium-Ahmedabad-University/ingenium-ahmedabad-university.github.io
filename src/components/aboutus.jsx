@@ -18,7 +18,7 @@ const AboutUs = () => {
       </div>
       <div className='grid grid-col-1 grid-flow-row gap-12 lg:grid-cols-2'>
         <div className='relative'>
-          <div className='image1 w-4/6 mx-auto rounded-lg about_us_image overflow-hidden'>
+          <div className='image1 w-4/6 mx-auto rounded-lg about_us_image overflow-hidden relative z-0'>
             <img src={img2} classname='rounded-lg ' alt='' />
           </div>
           <div className='image2'>

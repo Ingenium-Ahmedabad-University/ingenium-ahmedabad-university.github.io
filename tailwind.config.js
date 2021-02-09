@@ -20,6 +20,7 @@ module.exports = {
   darkmode: false,
   variants: {
     textColor: ['responsive', 'group-hover', 'hover', 'focus'],
+    width: ['responsive', 'group-hover', 'hover', 'focus'],
   },
   plugins: [],
 };
