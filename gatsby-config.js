@@ -20,7 +20,7 @@ module.exports = {
         start_url: '/',
         background_color: theme.colors.white,
         theme_color: theme.colors.extended,
-        icon: 'static/icon.svg',
+        icon: 'src/images/icon.svg',
       },
     },
     {

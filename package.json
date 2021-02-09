@@ -9,10 +9,10 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "npm run build && yarn gh-pages -d public",
+    "deploy": "npm run build && gh-pages -d public -r https://$GH_TOKEN@github.com/Ingenium-Ahmedabad-University/website.git",
     "format": "prettier --write \"**/*.{html,css,js,jsx,json,yaml}\""
   },
   "dependencies": {
@@ -33,7 +33,6 @@
     "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
     "prettier": "^2.2.1"
   },
   "prettier": {
