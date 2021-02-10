@@ -8,6 +8,7 @@ dependencies:
   gatsby-plugin-react-helmet: 3.10.0_gatsby@2.32.3+react-helmet@6.1.0
   gatsby-plugin-sharp: 2.14.1_gatsby@2.32.3
   gatsby-source-filesystem: 2.11.0_gatsby@2.32.3
+  gatsby-transformer-json: 2.11.0_gatsby@2.32.3
   gatsby-transformer-sharp: 2.12.0_73662875c8762481418ab1ce6913c89d
   postcss: 8.2.5
   react: 16.14.0
@@ -1729,7 +1730,7 @@ packages:
   /@nodelib/fs.scandir/2.1.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
-      run-parallel: 1.1.10
+      run-parallel: 1.2.0
     dev: false
     engines:
       node: '>= 8'
@@ -2769,12 +2770,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-XrvP4VVHdRBCdX1S3WXVD8+RyG9qeb1D5Sn1DeLiG2xfSpzellk5k54xbUERJ3M5DggQxes39UGOTP8CFrEGbg==
-  /axe-core/4.1.1:
+  /axe-core/4.1.2:
     dev: false
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-5Kgy8Cz6LPC9DJcNb3yjAXTu3XihQgEdnIg50c//zOC/MyLP0Clg+Y8Sh9ZjjnvBrDZU4DgXS9C3T9r4/scGZQ==
+      integrity: sha512-V+Nq70NxKhYt89ArVcaNL9FDryB3vQOd+BFXZIfO3RP6rwtj+2yqqqdHEkacutglPaZLkJeuXKCjCJDMGPtPqg==
   /axios/0.21.1_debug@3.2.7:
     dependencies:
       follow-redirects: 1.13.2_debug@3.2.7
@@ -3076,14 +3077,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-pvcNpa0UU69UT341rO6AYy4FVAIkUHuZXRIWbq+zHnsVcRzDDjIAhGuuYoi0d//cwIwtt4pkpKycWEfjdV+vww==
-  /bl/4.0.4:
+  /bl/4.1.0:
     dependencies:
       buffer: 5.7.1
       inherits: 2.0.4
       readable-stream: 3.6.0
     dev: false
     resolution:
-      integrity: sha512-7tdr4EpSd7jJ6tuQ21vu2ke8w7pNEstzj1O8wwq6sNNzO3UDi5MA8Gny/gquCj7r2C6fHudg8tKRGyjRgmvNxQ==
+      integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==
   /blob/0.0.5:
     dev: false
     resolution:
@@ -3261,7 +3262,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001185
       colorette: 1.2.1
-      electron-to-chromium: 1.3.658
+      electron-to-chromium: 1.3.661
       escalade: 3.1.1
       node-releases: 1.1.70
     dev: false
@@ -3352,7 +3353,7 @@ packages:
       chownr: 1.1.4
       figgy-pudding: 3.5.2
       glob: 7.1.6
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       infer-owner: 1.0.4
       lru-cache: 5.1.1
       mississippi: 3.0.0
@@ -3372,7 +3373,7 @@ packages:
       figgy-pudding: 3.5.2
       fs-minipass: 2.1.0
       glob: 7.1.6
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       infer-owner: 1.0.4
       lru-cache: 5.1.1
       minipass: 3.1.3
@@ -3953,7 +3954,7 @@ packages:
   /configstore/5.0.1:
     dependencies:
       dot-prop: 5.3.0
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       make-dir: 3.1.0
       unique-string: 2.0.0
       write-file-atomic: 3.0.3
@@ -4009,7 +4010,7 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
-  /contentful-management/7.7.0_debug@4.3.1:
+  /contentful-management/7.8.0_debug@4.3.1:
     dependencies:
       axios: 0.21.1_debug@4.3.1
       contentful-sdk-core: 6.7.0
@@ -4022,7 +4023,7 @@ packages:
     peerDependencies:
       debug: '*'
     resolution:
-      integrity: sha512-DqDrh7c0/1nZLobv0B1Tnb8+2Ug8C/4V3ZZyoucdJ/SzKXHxDEE94uGt/kgT/LIqa49wOrdaTVAgrAJv+5Wl9Q==
+      integrity: sha512-7m9YmKlAmlo1IbzgAwi/sVtipLFKB8f32kmwGyB2/+E5EbPFcSlsptTcUrVg7y34EinggQiBUYVJO/6qZ6wlYw==
   /contentful-sdk-core/6.7.0:
     dependencies:
       fast-copy: 2.1.1
@@ -4626,7 +4627,7 @@ packages:
       decompress-tarbz2: 4.1.1
       decompress-targz: 4.1.1
       decompress-unzip: 4.0.1
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       make-dir: 1.3.0
       pify: 2.3.0
       strip-dirs: 2.1.0
@@ -4735,7 +4736,7 @@ packages:
   /del/5.1.0:
     dependencies:
       globby: 10.0.2
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       is-glob: 4.0.1
       is-path-cwd: 2.2.0
       is-path-inside: 3.0.2
@@ -5052,10 +5053,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.658:
+  /electron-to-chromium/1.3.661:
     dev: false
     resolution:
-      integrity: sha512-1sRTaBVbn02sqadml7IchB1VxgRBcrJg55rlNa7dNszT0ZDDAM0/8NVHtbe0yCrOafLVB+lBzapWX1HpS+Knhg==
+      integrity: sha512-INNzKoL9ceOpPCpF5J+Fp9AOHY1RegwKViohAyTzV3XbkuRUx04r4v8edsDbevsog8UuL0GvD/Qerr2HwVTlSA==
   /elliptic/6.5.4:
     dependencies:
       bn.js: 4.11.9
@@ -5139,7 +5140,7 @@ packages:
       integrity: sha512-b4Q85dFkGw+TqgytGPrGgACRUhsdKc9S9ErRAXpPGy/CXKs4tYoHDkvIRdsseAF7NjfVwjRFIn6KTnbw7LwJZg==
   /enhanced-resolve/4.5.0:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       memory-fs: 0.5.0
       tapable: 1.1.3
     dev: false
@@ -5411,7 +5412,7 @@ packages:
       aria-query: 4.2.2
       array-includes: 3.1.2
       ast-types-flow: 0.0.7
-      axe-core: 4.1.1
+      axe-core: 4.1.2
       axobject-query: 2.2.0
       damerau-levenshtein: 1.0.6
       emoji-regex: 9.2.1
@@ -6099,6 +6100,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
+  /filter-obj/1.1.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-mzERErxsYSehbgFsbF1/GeCAXFs=
   /finalhandler/1.1.2:
     dependencies:
       debug: 2.6.9
@@ -6311,7 +6318,7 @@ packages:
       integrity: sha1-zyVVTKBQ3EmuZla0HeQiWJidy84=
   /fs-extra/8.1.0:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       jsonfile: 4.0.0
       universalify: 0.1.2
     dev: false
@@ -6322,7 +6329,7 @@ packages:
   /fs-extra/9.1.0:
     dependencies:
       at-least-node: 1.0.0
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       jsonfile: 6.1.0
       universalify: 2.0.0
     dev: false
@@ -6340,7 +6347,7 @@ packages:
       integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==
   /fs-write-stream-atomic/1.0.10:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       iferr: 0.1.5
       imurmurhash: 0.1.4
       readable-stream: 2.3.7
@@ -6651,7 +6658,7 @@ packages:
       '@hapi/joi': 15.1.1
       better-queue: 3.8.10
       chokidar: 3.5.1
-      contentful-management: 7.7.0_debug@4.3.1
+      contentful-management: 7.8.0_debug@4.3.1
       cors: 2.8.5
       debug: 4.3.1
       detect-port: 1.3.0
@@ -6743,6 +6750,18 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-lGUCwAASThIK5KtFwbVnQfthcKJRosxK70BrXy7c7h3FPSdbahy8DZvpuNz6beCAets3ZDGTXVzPGtzPZI1u6Q==
+  /gatsby-transformer-json/2.11.0_gatsby@2.32.3:
+    dependencies:
+      '@babel/runtime': 7.12.13
+      bluebird: 3.7.2
+      gatsby: 2.32.3_react-dom@16.14.0+react@16.14.0
+    dev: false
+    engines:
+      node: '>=10.13.0'
+    peerDependencies:
+      gatsby: ^2.0.15
+    resolution:
+      integrity: sha512-3619clIflEMl4OSo/Y9/6Uz+JrpSKKE9WI6i+ciCC7l7ER0lbsPNUBGxf1lXH1xgs5881+QiL8vNeiiwTYetIw==
   /gatsby-transformer-sharp/2.12.0_73662875c8762481418ab1ce6913c89d:
     dependencies:
       '@babel/runtime': 7.12.13
@@ -6880,7 +6899,7 @@ packages:
       postcss-loader: 3.0.0
       prompts: 2.4.0
       prop-types: 15.7.2
-      query-string: 6.13.8
+      query-string: 6.14.0
       raw-loader: 0.5.1
       react: 16.14.0
       react-dev-utils: 4.2.3
@@ -7254,10 +7273,10 @@ packages:
       node: '>=8.6'
     resolution:
       integrity: sha512-R7eWptXuGYxwijs0eV+v3o6+XH1IqVK8dJOEecQfTmkncw9AV4dcw/Dhxi8MdlqPthxxpZyizMzyg8RTmEsG+Q==
-  /graceful-fs/4.2.5:
+  /graceful-fs/4.2.6:
     dev: false
     resolution:
-      integrity: sha512-kBBSQbz2K0Nyn+31j/w36fUfxkBW9/gfwRWdUY1ULReH3iokVJgddZAFcD1D0xlgTmFxJCbUkUclAlc6/IDJkw==
+      integrity: sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
   /graphql-compose/6.3.8_graphql@14.7.0:
     dependencies:
       graphql: 14.7.0
@@ -7778,7 +7797,7 @@ packages:
     dependencies:
       file-type: 12.4.2
       globby: 10.0.2
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       junk: 3.1.0
       make-dir: 3.1.0
       p-pipe: 3.1.0
@@ -8737,7 +8756,7 @@ packages:
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /jsonfile/6.1.0:
@@ -8745,7 +8764,7 @@ packages:
       universalify: 2.0.0
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
     resolution:
       integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
   /jsonify/0.0.0:
@@ -8882,7 +8901,7 @@ packages:
       integrity: sha512-8UyQoYmdRDy81Brz6aLAUhfZLwr5zV0L3taTQ4hju7m6biuwiWiJXjPhBJxbUQJA8PrkvJ/7Enqmwk2sM14soA==
   /load-json-file/1.1.0:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       parse-json: 2.2.0
       pify: 2.3.0
       pinkie-promise: 2.0.1
@@ -8894,7 +8913,7 @@ packages:
       integrity: sha1-lWkFcI1YtLq0wiYbBPWfMcmTdMA=
   /load-json-file/2.0.0:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       parse-json: 2.2.0
       pify: 2.3.0
       strip-bom: 3.0.0
@@ -10472,7 +10491,7 @@ packages:
       is-ssh: 1.3.2
       protocols: 1.4.8
       qs: 6.9.6
-      query-string: 6.13.8
+      query-string: 6.14.0
     dev: false
     resolution:
       integrity: sha512-9Cepbp2asKnWTJ9x2kpw6Fe8y9JDbqwahGCTvklzd/cEq5C5JC59x2Xb0Kx+x0QZ8bvNquGO8/BWP0cwBHzSAA==
@@ -10591,7 +10610,7 @@ packages:
       integrity: sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
   /path-type/1.1.0:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       pify: 2.3.0
       pinkie-promise: 2.0.1
     dev: false
@@ -11322,7 +11341,7 @@ packages:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
   /proper-lockfile/4.1.2:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       retry: 0.12.0
       signal-exit: 3.0.3
     dev: false
@@ -11456,16 +11475,17 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
-  /query-string/6.13.8:
+  /query-string/6.14.0:
     dependencies:
       decode-uri-component: 0.2.0
+      filter-obj: 1.1.0
       split-on-first: 1.1.0
       strict-uri-encode: 2.0.0
     dev: false
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-jxJzQI2edQPE/NPUOusNjO/ZOGqr1o2OBa/3M00fU76FsLXDVbJDv/p7ng5OdQyorKrkRz1oqfwmbe5MAMePQg==
+      integrity: sha512-In3o+lUxlgejoVJgwEdYtdxrmlL0cQWJXj0+kkI7RWVo7hg5AhFtybeKlC9Dpgbr8eOC4ydpEh8017WwyfzqVQ==
   /querystring-es3/0.2.1:
     dev: false
     engines:
@@ -11482,6 +11502,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
+  /queue-microtask/1.2.2:
+    dev: false
+    resolution:
+      integrity: sha512-dB15eXv3p2jDlbOiNLyMabYg1/sXvppd8DP2J3EOCQ0AkuSXCW2tP7mnVouVLJKgUMY6yP0kcQDVpLCN13h4Xg==
   /randombytes/2.1.0:
     dependencies:
       safe-buffer: 5.2.1
@@ -11738,7 +11762,7 @@ packages:
       integrity: sha512-4zDC6CvjUyusN7V0QLsXVB7pJCD9+vtrM9bYDRv6uBQ+SKfx36rp5AFNPRgh9auKRul/a1iFZJYXcCbwRL+SaA==
   /readdirp/2.2.1:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       micromatch: 3.1.10
       readable-stream: 2.3.7
     dev: false
@@ -12144,10 +12168,12 @@ packages:
       node: '>=0.12.0'
     resolution:
       integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==
-  /run-parallel/1.1.10:
+  /run-parallel/1.2.0:
+    dependencies:
+      queue-microtask: 1.2.2
     dev: false
     resolution:
-      integrity: sha512-zb/1OuZ6flOlH6tQyMPUrE3x3Ulxjlo9WIVXR4yVYi4H9UXQaeIsPbLn2R3O3vQCnDKkAl2qHiuocKKX4Tz/Sw==
+      integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   /run-queue/1.0.3:
     dependencies:
       aproba: 1.2.0
@@ -12805,14 +12831,14 @@ packages:
   /st/2.0.0:
     dependencies:
       async-cache: 1.1.0
-      bl: 4.0.4
+      bl: 4.1.0
       fd: 0.0.3
       mime: 2.5.0
       negotiator: 0.6.2
     dev: false
     hasBin: true
     optionalDependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
     resolution:
       integrity: sha512-drN+aGYnrZPNYIymmNwIY7LXYJ8MqsqXj4fMRue3FOgGMdGjSX10fhJ3qx0sVQPhcWxhEaN4U/eWM4O4dbYNAw==
   /stable/0.1.8:
@@ -13291,7 +13317,7 @@ packages:
       integrity: sha512-rzS0heiNf8Xn7/mpdSVVSMAWAoy9bfb1WOTYC78Z0UQKeKa/CWS8FOq0lKGNa8DWKAn9gxjCvMLYc5PGXYlK2A==
   /tar-stream/2.2.0:
     dependencies:
-      bl: 4.0.4
+      bl: 4.1.0
       end-of-stream: 1.4.4
       fs-constants: 1.0.0
       inherits: 2.0.4
@@ -14097,7 +14123,7 @@ packages:
       integrity: sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww==
   /watchpack/1.7.5:
     dependencies:
-      graceful-fs: 4.2.5
+      graceful-fs: 4.2.6
       neo-async: 2.6.2
     dev: false
     optionalDependencies:
@@ -14626,6 +14652,7 @@ specifiers:
   gatsby-plugin-react-helmet: ^3.10.0
   gatsby-plugin-sharp: ^2.14.1
   gatsby-source-filesystem: ^2.11.0
+  gatsby-transformer-json: ^2.11.0
   gatsby-transformer-sharp: ^2.12.0
   postcss: ^8.2.5
   prettier: ^2.2.1

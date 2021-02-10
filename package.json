@@ -8,11 +8,10 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop --no-colors",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "npm run build && gh-pages -d public -r https://$GH_TOKEN@github.com/Ingenium-Ahmedabad-University/website.git",
     "format": "prettier --write \"**/*.{html,css,js,jsx,json,yaml}\""
   },
   "dependencies": {
@@ -25,6 +24,7 @@
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sharp": "^2.14.1",
     "gatsby-source-filesystem": "^2.11.0",
+    "gatsby-transformer-json": "^2.11.0",
     "gatsby-transformer-sharp": "^2.12.0",
     "postcss": "^8.2.5",
     "react": "^16.14.0",

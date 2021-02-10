@@ -1,0 +1,6 @@
+scalar Date
+
+type Event {
+  name: String!
+  time: Date
+}
