@@ -15,7 +15,7 @@ const Newletter = () => {
   return (
     <>
       <div
-        className='inline-block relative cursor-pointer'
+        className='inline-block relative cursor-pointer nl-link'
         onClick={() => {
           changestate(true);
           console.log('clicked');
