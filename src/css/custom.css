@@ -264,15 +264,44 @@ About Us
 video {
   object-fit: cover;
 }
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .backdrop {
-  content: '';
+  position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
+}
+.image_aboutus {
+  filter: grayscale(0.5);
+  border-top: whitesmoke 20px solid;
+  border-left: whitesmoke 20px solid;
+  border-right: whitesmoke 20px solid;
+  border-bottom: whitesmoke 100px solid;
+  position: absolute;
+  right: 0;
+  opacity: 0.5;
+  width: 66%;
+  transform: rotateZ(-15deg);
+}
+@media screen and (max-width: 450px) {
+  .image_aboutus {
+    filter: grayscale(0.4);
+    bottom: 10%;
+    left: 0;
+    right: auto;
+    opacity: 0.3;
+    width: 100%;
+  }
 }
 .h-50vh {
   height: 50vh;
