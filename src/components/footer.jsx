@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo_src from '../images/icon.svg';
 // import data from '../../content/data.json'
+import send from '../images/send.png';
 
 const contact_details = [
   {
@@ -43,13 +44,12 @@ const Newletter = () => {
                 aria-invalid='true'
                 placeholder='Email Address'
                 required
-              />
-            </div>
+              /><button type="submit"><img  class="h-6 w-13" src={send} alt=''></img></button>
+            </div> 
           </div>
           <div class='close-button'></div>
         </div>
-
-        <a id='back-screen' onClick={() => changestate(false)}></a>
+        <a id='back-screen' className="absolute w-full h-full opacity-70 bg-gray-900" onClick={() => changestate(false)}></a>
       </div>
     </>
   );
