@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Raleway'],
+
     },
      minHeight: {
         '24':"6rem",
@@ -25,6 +26,8 @@ module.exports = {
       fontFamily: {
         'title-abril': 'Abril Fatface',
         'title-oswald': 'Oswald',
+        'montserrat':"montserrat",
+        'shadow-into-light':"Shadows Into Light",
       },
       colors: {
         base: '#090919',
