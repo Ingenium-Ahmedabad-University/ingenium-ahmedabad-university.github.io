@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":[],"mappings":"2FAAA,4CAGe,qBACb,OAAO,kBAAC,IAAD","file":"component---src-pages-index-js-12ab3b7c1700d9c652e4.js","sourcesContent":["import React from 'react';\nimport Layout from '../components/Layout';\n\nexport default () => {\n  return <Layout />;\n};\n"],"sourceRoot":""}
