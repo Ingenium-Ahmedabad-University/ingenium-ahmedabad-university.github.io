@@ -243,15 +243,3 @@ a.nl-link {
 .invert_social {
   filter: invert(0.7);
 }
-.animate-spin{
-animation: spin 1s linear 1;
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-}
