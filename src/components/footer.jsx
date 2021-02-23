@@ -102,5 +102,15 @@ const Footer = () => (
   </div>
 );
 
-export const Code = () => <code>This is a code block</code>;
-export default Footer;
+    <div className="bg-green-500 flex flex-row justify-end w-full space-x-6 text-center font-sans">
+    {
+        contact_details.map(e => (
+            <a>
+                <h1>{e.name}</h1>
+                <code>{e.icon}</code>
+            </a>
+        ))
+    }
+    </div>
+)
+export default Footer

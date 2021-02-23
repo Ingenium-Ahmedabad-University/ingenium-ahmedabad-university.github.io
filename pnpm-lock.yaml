@@ -11630,6 +11630,7 @@ packages:
       react-dom: ^16.8.3 || ^17.0.0
     resolution:
       integrity: sha512-qYW7ndaFZkqgDOMPtCVNnHK6NmKXIEhQqmpeXRKh3cZ1mkhOU6LHF9ivu6K8PoWpfZo8c32m5sJ/9VKDlEmOeA==
+
   /react-is/16.13.1:
     dev: false
     resolution:
