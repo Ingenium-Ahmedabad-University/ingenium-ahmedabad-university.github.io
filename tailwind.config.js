@@ -3,11 +3,31 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Raleway'],
+
     },
+     minHeight: {
+        '24':"6rem",
+       '0': '0',
+       '1/4': '25%',
+       '1/2': '50%',
+       '3/4': '75%',
+       'full': '100%',
+      },
+      maxHeight:{
+        'half-screen':"50vh",
+        '3/4-screen':"75vh",
+        'screen':"100vh",
+        'full':"100%",
+      },
+      // height:{
+      //   '50vh':"50vh"
+      // },
     extend: {
       fontFamily: {
         'title-abril': 'Abril Fatface',
         'title-oswald': 'Oswald',
+        'montserrat':"montserrat",
+        'shadow-into-light':"Shadows Into Light",
       },
       colors: {
         base: '#090919',

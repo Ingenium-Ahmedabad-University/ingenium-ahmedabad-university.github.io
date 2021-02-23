@@ -1,6 +1,6 @@
 import React from 'react';
-import img1 from '../images/jonatan-pie-gB-ERb1yYQI-unsplash.jpg';
-import img2 from '../images/keefikus-fFhFkOj1KQY-unsplash.jpg';
+import img1 from '../images/about_us1.jpg';
+import img2 from '../images/about_us2.jpg';
 
 const aboutus_content = {
   title: 'About Us',
@@ -16,14 +16,14 @@ const AboutUs = () => {
           {aboutus_content.title}
         </h1>
       </div>
-      <div className='grid grid-col-1 grid-flow-row gap-12 lg:grid-cols-2'>
+      <div className='grid grid-col-1 grid-flow-row gap-12 lg:grid-cols-2 mb-64'>
         <div className='relative'>
-          <div className='image1 w-4/6 mx-auto rounded-lg about_us_image overflow-hidden relative z-0'>
+          <div className='image_aboutus'>
             <img src={img2} classname='rounded-lg ' alt='' />
           </div>
-          <div className='image2'>
-            <img src={img1} className='rounded-lg' alt='' />
-          </div>
+          {/* <div className='image2'>
+            <img src={img2} className='rounded-lg' alt='' />
+          </div> */}
         </div>
         <div className='text-gray-300  '>
           <p className='text-justify'>{aboutus_content.content}</p>
