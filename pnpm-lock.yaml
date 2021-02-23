@@ -13,8 +13,8 @@ dependencies:
   react: 16.14.0
   react-dom: 16.14.0_react@16.14.0
   react-helmet: 6.1.0_react@16.14.0
-  react-icons: 4.2.0_react@16.14.0
-  tailwindcss: 2.0.2_132a6068366276bc6a71795f98f5a160
+  react-in-viewport: 1.0.0-alpha.16_react-dom@16.14.0+react@16.14.0
+  tailwindcss: 2.0.3_132a6068366276bc6a71795f98f5a160
 devDependencies:
   prettier: 2.2.1
 lockfileVersion: 5.2
@@ -1816,12 +1816,12 @@ packages:
       react-dom: 15.x || 16.x || 16.4.0-alpha.0911da3
     resolution:
       integrity: sha512-+mtn9wjlB9NN2CNnnC/BRYtwdKBfSyyasPYraNAyvaV1occr/5NnB4CVzjEZipNHwYebQwcndGUmpFzxAUoqSA==
-  /@sideway/address/4.1.0:
+  /@sideway/address/4.1.1:
     dependencies:
       '@hapi/hoek': 9.1.1
     dev: false
     resolution:
-      integrity: sha512-wAH/JYRXeIFQRsxerIuLjgUu2Xszam+O5xKeatJ4oudShOOirfmsQ1D6LL54XOU2tizpCYku+s1wmU0SYdpoSA==
+      integrity: sha512-+I5aaQr3m0OAmMr7RQ3fR9zx55sejEYR2BFJaxL+zT3VM2611X0SHvPWIbAUBZVTn/YzYKbV8gJ2oT/QELknfQ==
   /@sideway/formula/3.0.0:
     dev: false
     resolution:
@@ -3262,7 +3262,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001185
       colorette: 1.2.1
-      electron-to-chromium: 1.3.657
+      electron-to-chromium: 1.3.658
       escalade: 3.1.1
       node-releases: 1.1.70
     dev: false
@@ -5053,10 +5053,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.657:
+  /electron-to-chromium/1.3.658:
     dev: false
     resolution:
-      integrity: sha512-/9ROOyvEflEbaZFUeGofD+Tqs/WynbSTbNgNF+/TJJxH1ePD/e6VjZlDJpW3FFFd3nj5l3Hd8ki2vRwy+gyRFw==
+      integrity: sha512-1sRTaBVbn02sqadml7IchB1VxgRBcrJg55rlNa7dNszT0ZDDAM0/8NVHtbe0yCrOafLVB+lBzapWX1HpS+Knhg==
   /elliptic/6.5.4:
     dependencies:
       bn.js: 4.11.9
@@ -6613,7 +6613,7 @@ packages:
   /gatsby-plugin-utils/0.9.0_gatsby@2.32.3:
     dependencies:
       gatsby: 2.32.3_react-dom@16.14.0+react@16.14.0
-      joi: 17.3.0
+      joi: 17.4.0
     dev: false
     engines:
       node: '>=10.13.0'
@@ -6694,7 +6694,7 @@ packages:
       unist-util-visit: 2.0.3
       uuid: 3.4.0
       ws: 7.4.3
-      xstate: 4.16.1
+      xstate: 4.16.2
       yoga-layout-prebuilt: 1.10.0
     dev: false
     resolution:
@@ -6714,7 +6714,7 @@ packages:
       pretty-bytes: 5.5.0
       progress: 2.0.3
       valid-url: 1.0.9
-      xstate: 4.16.1
+      xstate: 4.16.2
     dev: false
     engines:
       node: '>=10.13.0'
@@ -6854,7 +6854,7 @@ packages:
       is-relative: 1.0.0
       is-relative-url: 3.0.0
       jest-worker: 24.9.0
-      joi: 17.3.0
+      joi: 17.4.0
       json-loader: 0.5.7
       json-stringify-safe: 5.0.1
       latest-version: 5.1.0
@@ -6920,7 +6920,7 @@ packages:
       webpack-merge: 4.2.2
       webpack-stats-plugin: 0.3.2
       webpack-virtual-modules: 0.2.2
-      xstate: 4.16.1
+      xstate: 4.16.2
       yaml-loader: 0.6.0
     dev: false
     engines:
@@ -7513,16 +7513,16 @@ packages:
       integrity: sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
   /hicat/0.8.0:
     dependencies:
-      highlight.js: 10.5.0
+      highlight.js: 10.6.0
       minimist: 1.2.5
     dev: false
     hasBin: true
     resolution:
       integrity: sha512-om8L9O5XwqeSdwl5NtHgrzK3wcF4fT9T4gb/NktoH8EyoZipas/tvUZLV48xT7fQfMYr9qvb0WEutqdf0LWSqA==
-  /highlight.js/10.5.0:
+  /highlight.js/10.6.0:
     dev: false
     resolution:
-      integrity: sha512-xTmvd9HiIHR6L53TMC7TKolEj65zG1XU+Onr8oi86mYa+nLcIbxTTWkpW7CsEwv/vK7u1zb8alZIMLDqqN6KTw==
+      integrity: sha512-8mlRcn5vk/r4+QcqerapwBYTe+iPL5ih6xrNylxrnBdHQiijDETfXX7VIxC3UiCRiINBJfANBAsPzAvRQj8RpQ==
   /hmac-drbg/1.0.1:
     dependencies:
       hash.js: 1.1.7
@@ -8641,16 +8641,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8BXU+J8+SPmwwyq9ELihpSV4dWPTiOKBWCEgtkbnxxAVMjXdf3yGmyaLSshBfXc8sP/JQ9OZj5R8nZzz2wPXgA==
-  /joi/17.3.0:
+  /joi/17.4.0:
     dependencies:
       '@hapi/hoek': 9.1.1
       '@hapi/topo': 5.0.0
-      '@sideway/address': 4.1.0
+      '@sideway/address': 4.1.1
       '@sideway/formula': 3.0.0
       '@sideway/pinpoint': 2.0.0
     dev: false
     resolution:
-      integrity: sha512-Qh5gdU6niuYbUIUV5ejbsMiiFmBdw8Kcp8Buj2JntszCkCfxJ9Cz76OtHxOZMPXrt5810iDIXs+n1nNVoquHgg==
+      integrity: sha512-F4WiW2xaV6wc1jxete70Rw4V/VuMd6IN+a5ilZsxG4uYtUXWu2kq9W5P2dz30e7Gmw8RCbY/u/uk+dMPma9tAg==
   /jpeg-js/0.4.3:
     dev: false
     resolution:
@@ -11619,14 +11619,18 @@ packages:
         optional: true
     resolution:
       integrity: sha512-JrLlvUPqh6wIkrK2hZDfOyq/Uh/WeVEr8nc7hkn2/3Ul0sx1Kr5y4kOGNacNRoj7RhwLNcQ3Udf1KJXrqc0ZtA==
-  /react-icons/4.2.0_react@16.14.0:
+  /react-in-viewport/1.0.0-alpha.16_react-dom@16.14.0+react@16.14.0:
     dependencies:
+      hoist-non-react-statics: 3.3.2
       react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
     dev: false
     peerDependencies:
-      react: '*'
+      react: ^16.8.3 || ^17.0.0
+      react-dom: ^16.8.3 || ^17.0.0
     resolution:
-      integrity: sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
+      integrity: sha512-qYW7ndaFZkqgDOMPtCVNnHK6NmKXIEhQqmpeXRKh3cZ1mkhOU6LHF9ivu6K8PoWpfZo8c32m5sJ/9VKDlEmOeA==
+
   /react-is/16.13.1:
     dev: false
     resolution:
@@ -13236,7 +13240,7 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==
-  /tailwindcss/2.0.2_132a6068366276bc6a71795f98f5a160:
+  /tailwindcss/2.0.3_132a6068366276bc6a71795f98f5a160:
     dependencies:
       '@fullhuman/postcss-purgecss': 3.1.3
       autoprefixer: 10.2.4_postcss@8.2.5
@@ -13268,7 +13272,7 @@ packages:
       autoprefixer: ^10.0.2
       postcss: ^8.0.9
     resolution:
-      integrity: sha512-nO9JRE1pO7SF9RnYAl6g7uzeHdrmKAFqNjT9NtZUfxqimJZAOOLOEyIEUiMq12+xIc7mC2Ey3Vf90XjHpWKfbw==
+      integrity: sha512-s8NEqdLBiVbbdL0a5XwTb8jKmIonOuI4RMENEcKLR61jw6SdKvBss7NWZzwCaD+ZIjlgmesv8tmrjXEp7C0eAQ==
   /tapable/1.1.3:
     dev: false
     engines:
@@ -14472,10 +14476,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-3MgPdaXV8rfQ/pNn16Eio6VXYPTkqwa0vc7GkiymmY/DqR1SE/7VPAAVZz1GJsJFrllMYO3RHfEaiUGjab6TNw==
-  /xstate/4.16.1:
+  /xstate/4.16.2:
     dev: false
     resolution:
-      integrity: sha512-YNMcEmYkhtfl+73NQwYg+fj4qUCDF8K2KCtXJNVdwdMQP6o/ASPkaW6gPkQ/E9PbT0Tuiw+RUJsWxIp/v572Bw==
+      integrity: sha512-EY39NNZnwM4tRYNmQAi1c2qHuZ1lJmuDpEo1jxiRcfS+1jPtKRAjGRLNx3fYKcK0ohW6mL41Wze3mdCF0SqavA==
   /xtend/4.0.2:
     dev: false
     engines:
@@ -14627,7 +14631,7 @@ packages:
       integrity: sha512-PgrBqosQLM3gN2xBFIMDLACRTV9c365VqityKKpSTWpwR+U4LAFR3rSVyEoscWlu3EzX9+Y0I86GXUKxpHFl6w==
 specifiers:
   autoprefixer: ^10.2.4
-  gatsby: ^2.31.1
+  gatsby: ^2.32.3
   gatsby-image: ^2.11.0
   gatsby-plugin-google-fonts: ^1.0.1
   gatsby-plugin-manifest: ^2.12.0
@@ -14638,8 +14642,8 @@ specifiers:
   gatsby-transformer-sharp: ^2.12.0
   postcss: ^8.2.5
   prettier: ^2.2.1
-  react: ^16.13.1
-  react-dom: ^16.13.1
+  react: ^16.14.0
+  react-dom: ^16.14.0
   react-helmet: ^6.1.0
-  react-icons: ^4.2.0
-  tailwindcss: ^2.0.2
+  react-in-viewport: ^1.0.0-alpha.16
+  tailwindcss: ^2.0.3

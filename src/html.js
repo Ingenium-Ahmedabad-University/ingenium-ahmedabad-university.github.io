@@ -14,9 +14,11 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
-        <div id='loader-wrapper'>
-          <div className='loader h-full'>loading</div>
-        </div>
+        {/* <div id="loader-wrapper" className="h-full">
+          <div className="loader ">
+            loading
+          </div>
+        </div> */}
         {props.preBodyComponents}
         <div
           key={`body`}
