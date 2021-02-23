@@ -27,7 +27,7 @@ const contact_details = [
 
 const Footer = () =>(
 
-    <div className="bg-green-500 flex flex-row justify-end relative space-x-6 text-center font-sans">
+    <div className="bg-green-500 flex flex-row justify-end w-full space-x-6 text-center font-sans">
     {
         contact_details.map(e => (
             <a>

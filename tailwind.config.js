@@ -16,8 +16,14 @@ module.exports = {
         secondary: '#f05454',
       },
     },
+    maxWidth: {
+      '4/5': '80%',
+    },
   },
   darkmode: false,
-  variants: {},
+  variants: {
+    textColor: ['responsive', 'group-hover', 'hover', 'focus'],
+    width: ['responsive', 'group-hover', 'hover', 'focus'],
+  },
   plugins: [],
 };

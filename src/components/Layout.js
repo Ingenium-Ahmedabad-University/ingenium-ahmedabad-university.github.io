@@ -2,7 +2,8 @@ import React from 'react';
 import SEO from './SEO';
 import Footer from './footer';
 import Header from './header';
-import {About} from './about-us'
+import {About} from './about-us';
+import {Contact_Us} from '../pages/contact-us';
 const Layout = ({ children }) => {
   return (
     <>
@@ -29,7 +30,8 @@ const Layout = ({ children }) => {
           </button>
         </div>
       </div>
-      <About/>
+      <About />
+      <Contact_Us />
       <Footer />
     </>
   );
