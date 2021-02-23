@@ -42,8 +42,6 @@ const Layout = ({ children }) => {
         </div>
       </div> */}
       </div>
-      <About />
-      <Contact_Us />
       <Footer />
     </>
   );
