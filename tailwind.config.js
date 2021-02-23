@@ -36,6 +36,10 @@ module.exports = {
         secondary: '#f05454',
       },
     },
+    maxWidth: {
+      '4/5': '80%',
+      '7/10': '70%',
+    },
   },
   darkmode: false,
   variants: {

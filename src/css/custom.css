@@ -257,6 +257,10 @@ About Us
   filter: invert(0.7);
 }
 
+.sponsors-logo {
+  width: auto;
+  max-width: 60%;
+  max-height: 85%;
 /*
 * Event Selection Landing Page 
 */
