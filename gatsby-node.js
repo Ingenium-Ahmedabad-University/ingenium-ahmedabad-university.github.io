@@ -10,8 +10,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
         }
       }
     `)
-    console.log("Hello World !")
-    
+
     if (data.errors) {
       console.log("Error retrieving data", data.errors)
       return
