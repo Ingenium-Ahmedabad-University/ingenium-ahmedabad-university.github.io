@@ -9,11 +9,11 @@ dependencies:
   gatsby-plugin-sharp: 2.14.1_gatsby@2.32.3
   gatsby-source-filesystem: 2.11.0_gatsby@2.32.3
   gatsby-transformer-sharp: 2.12.0_73662875c8762481418ab1ce6913c89d
+  gsap: 3.6.0
   postcss: 8.2.5
   react: 16.14.0
   react-dom: 16.14.0_react@16.14.0
   react-helmet: 6.1.0_react@16.14.0
-  react-in-viewport: 1.0.0-alpha.16_react-dom@16.14.0+react@16.14.0
   tailwindcss: 2.0.3_132a6068366276bc6a71795f98f5a160
 devDependencies:
   prettier: 2.2.1
@@ -7366,6 +7366,10 @@ packages:
       node: '>= 6.x'
     resolution:
       integrity: sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA==
+  /gsap/3.6.0:
+    dev: false
+    resolution:
+      integrity: sha512-0P3syv1TmYr+A/VZ8UMFzw+s0XoaKSzzDFs8NqkXiJTXI4E/VTi0zRjPgxaPBpiUPPycgRnFjLDe0Tb4dRRf+w==
   /gud/1.0.0:
     dev: false
     resolution:
@@ -11619,18 +11623,6 @@ packages:
         optional: true
     resolution:
       integrity: sha512-JrLlvUPqh6wIkrK2hZDfOyq/Uh/WeVEr8nc7hkn2/3Ul0sx1Kr5y4kOGNacNRoj7RhwLNcQ3Udf1KJXrqc0ZtA==
-  /react-in-viewport/1.0.0-alpha.16_react-dom@16.14.0+react@16.14.0:
-    dependencies:
-      hoist-non-react-statics: 3.3.2
-      react: 16.14.0
-      react-dom: 16.14.0_react@16.14.0
-    dev: false
-    peerDependencies:
-      react: ^16.8.3 || ^17.0.0
-      react-dom: ^16.8.3 || ^17.0.0
-    resolution:
-      integrity: sha512-qYW7ndaFZkqgDOMPtCVNnHK6NmKXIEhQqmpeXRKh3cZ1mkhOU6LHF9ivu6K8PoWpfZo8c32m5sJ/9VKDlEmOeA==
-
   /react-is/16.13.1:
     dev: false
     resolution:
@@ -14640,10 +14632,10 @@ specifiers:
   gatsby-plugin-sharp: ^2.14.1
   gatsby-source-filesystem: ^2.11.0
   gatsby-transformer-sharp: ^2.12.0
+  gsap: ^3.6.0
   postcss: ^8.2.5
   prettier: ^2.2.1
   react: ^16.14.0
   react-dom: ^16.14.0
   react-helmet: ^6.1.0
-  react-in-viewport: ^1.0.0-alpha.16
   tailwindcss: ^2.0.3
