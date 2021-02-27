@@ -92,21 +92,19 @@ const Suggestions = ({ eventName, speakerName, speakerDetails, speakerImg }) =>
 
 
 const Events = ({ date, eventName, description, speakerName, speakerDetails, speakerImg, posterUrl }) =>
-<section id="events-page" className="bg-base">
-        <div className="container md:max-w-4/5 xl:max-w-7/10 mx-auto bg-base py-28">
-            <a href="#">
-                <div className="flex my-5 text-white">
-                    <Link to="/" className="flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" className="h-6 w-6 mr-2"
-                            >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
-                                />
-                        </svg>Go Back
-                    </Link>
-                </div>
-            </a>
+<section id="events-page">
+        <div className="container md:max-w-4/5 xl:max-w-7/10 mx-auto py-28">
+            <div className="flex my-5 text-white">
+                <Link to="/" className="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" className="h-6 w-6 mr-2"
+                        >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                            d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
+                            />
+                    </svg>Go Back
+                </Link>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 justify-between mb-5 sm:mb-8">
                 <div className="text-xl my-2 text-gray-400">{date}</div>
                 <Icons eventUrl="https://www.google.com/" />

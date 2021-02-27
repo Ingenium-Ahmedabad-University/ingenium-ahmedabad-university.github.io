@@ -160,7 +160,7 @@ const Sponsors = () =>
                                         logoUrl={ sponsor.logoUrl }
                                         name= { sponsor.name }
                                         description = { sponsor.description }
-                                        key = { j }
+                                        key = { `${i}_${j}` }
                                     />
                                 );
                             })}
