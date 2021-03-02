@@ -398,20 +398,3 @@ h1.line-height125 {
 .toggler_active {
   transform: rotateZ(-180deg);
 }
-
-.answers {
-    position: relative;
-    opacity: 0;
-    z-index: -1;
-    height: 0;
-    width: 95%;
-    transition: padding 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.answer_active {
-    opacity: 1;
-    z-index: auto;
-    height: 100%;
-    padding-bottom: 20px;
-    transform: translateX(5%);
-}

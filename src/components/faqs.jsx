@@ -6,7 +6,13 @@ function accordionToggler(id) {
     const answer = document.getElementById(`answer_${id}`);
 
     toggler.classList.toggle('toggler_active');
-    answer.classList.toggle('answer_active');
+    
+    if(answer.style.height === (0 + 'px') || answer.style.height === '') {
+        answer.style.height = answer.scrollHeight + 'px';
+    }
+    else {
+        answer.style.height = 0 + 'px';
+    }
 }
 
 
@@ -147,10 +153,10 @@ const Tabs = ({ currentCategory, onCategoryChange }) =>
     </div>
 
 
-const Question = ({ question, answer, id }) =>
+const Question = ({ question, answer, id }) => 
     <div>
         <div className="flex justify-between mb-8 cursor-pointer quetiton-container" onClick={ ()=> accordionToggler(id)}>
-            <span className="text-white text-xl md:text-2xl mr-2">{ question }</span>
+            <span className="text-white text-lg sm:text-xl md:text-2xl mr-2">{ question }</span>
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24px" width="24px" stroke="currentColor"
                         className="text-white transition-all duration-500 ease-in" id={`toggler_${id}`}
@@ -159,7 +165,7 @@ const Question = ({ question, answer, id }) =>
                 </svg>    
             </div>
         </div>
-        <div className="answers text-gray-400 text-lg md:text-xl mb-3" id={`answer_${id}`}>
+        <div className="h-0 overflow-hidden text-gray-400 transition-all duration-500 text-md sm:text-lg md:text-xl pl-4 md:pl-8 lg:pl-12 mb-8" id={`answer_${id}`}>
             <p>{ answer }</p>
         </div>
     </div>
