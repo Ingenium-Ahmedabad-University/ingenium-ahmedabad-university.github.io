@@ -102,5 +102,4 @@ const Footer = () => (
   </div>
 );
 
-export const Code = () => <code>This is a code block</code>;
 export default Footer;
