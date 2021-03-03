@@ -5,9 +5,14 @@ import logo_src from '../images/icon.svg';
 const contact_details = [
   {
     icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/instagram.svg',
+    url: 'https://www.instagram.com/tech.ingenium/'
   },
-  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/discord.svg' },
-  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/gmail.svg' },
+  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/discord.svg',
+    url: 'https://discord.gg/EAdd5fJU'  
+  },
+  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/gmail.svg',
+    url: 'mailto: ingenium@ahduni.edu.in'
+  },
 ];
 
 const Newletter = () => {
@@ -75,7 +80,7 @@ const Footer = () => (
         </div>
         <ul className='grid grid-flow-col gap-6 mx-4 my-4'>
           {contact_details.map((e, i) => (
-            <a href=''>
+            <a href={e.url} target="_blank">
               <li key={i}>
                 <img
                   height='24'
