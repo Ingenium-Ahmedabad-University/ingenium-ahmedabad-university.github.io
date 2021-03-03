@@ -366,6 +366,122 @@ h1.line-height125 {
   left: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 768px) {
+  .margin_50 {
+    margin-left: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img_greyscale {
+    filter: grayscale(1);
+  }
+
+  .imgtransition {
+    animation: 0.5s img_transform forwards;
+  }
+
+  .text_transition {
+    animation: 0.5s text_transform forwards;
+  }
+}
+
+@keyframes img_transform {
+  0% {
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+
+@keyframes text_transform {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.img_padding {
+  padding-top: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+  .max_img_size {
+    max-width: 300px;
+    padding-top: min(300px, 100%);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .max_img_size {
+    max-width: 350px;
+    padding-top: min(350px, 100%);
+  }
+}
+
+.icons_invert {
+  filter: invert(0.7);
+  @media only screen and (max-width: 720px) {
+    .hero__content h1 {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+}
+@media only screen and (min-width: 1295px) {
+  .icon_size {
+    padding-left: 27%;
+    padding-right: 27%;
+  }
+}
+
+@media only screen and (max-width: 1294px) and (min-width: 1000px) {
+  .icon_size {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+}
+
+/* @media only screen and (max-width: 999px) and (min-width: 868px) {
+    .icon_size {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+@media only screen and (max-width: 867px) and (min-width: 768px) {
+  .icon_size {
+      padding-left: 13%;
+      padding-right: 13%;
+  }
+}
+ */
+
+@media only screen and (max-width: 1023px) and (min-width: 640px) {
+  .icon_padding {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 639px) and (min-width: 450px) {
+  .icon_padding {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .icon_padding {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 /* -------------FAQs------------- */
 
 .tabs__tab:after {
@@ -396,4 +512,5 @@ h1.line-height125 {
 
 .toggler_active {
   transform: rotateZ(-180deg);
+}
 }
