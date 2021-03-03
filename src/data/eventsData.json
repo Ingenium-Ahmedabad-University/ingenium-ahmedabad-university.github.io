@@ -1,22 +1,22 @@
 [
-    {
-        "event": "opening-keynote",
-        "dateAndTime": "24th February, 13:00 IST",
-        "eventName": "Opening keynote",
-        "description": "Join Vinay Kakkad and special guests for an inside look at the latest updates and product announcements from GitHub.",
-        "speakerName": "Vinay Kakkad",
-        "designation": "CSE Undergrad @ Ahmedabad University",
-        "speakerImg" : "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
-        "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg"
-    },
-    {
-        "event": "react-workshop",
-        "dateAndTime": "25th February, 13:00 IST",
-        "eventName": "React Workshop",
-        "description": "Join Arpit Vaghela and special guests for an inside look at the latest updates and product announcements from GitHub.",
-        "speakerName": "Arpit Vaghela",
-        "designation": "ICT Undergrad @ Ahmedabad University",
-        "speakerImg" : "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
-        "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg"
-    }
+  {
+    "event": "opening-keynote",
+    "dateAndTime": "24th February, 13:00 IST",
+    "eventName": "Opening keynote",
+    "description": "Join Vinay Kakkad and special guests for an inside look at the latest updates and product announcements from GitHub.",
+    "speakerName": "Vinay Kakkad",
+    "designation": "CSE Undergrad @ Ahmedabad University",
+    "speakerImg": "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
+    "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg"
+  },
+  {
+    "event": "react-workshop",
+    "dateAndTime": "25th February, 13:00 IST",
+    "eventName": "React Workshop",
+    "description": "Join Arpit Vaghela and special guests for an inside look at the latest updates and product announcements from GitHub.",
+    "speakerName": "Arpit Vaghela",
+    "designation": "ICT Undergrad @ Ahmedabad University",
+    "speakerImg": "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
+    "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg"
+  }
 ]

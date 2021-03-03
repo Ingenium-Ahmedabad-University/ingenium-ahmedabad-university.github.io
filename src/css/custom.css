@@ -366,7 +366,6 @@ h1.line-height125 {
   left: 0;
 }
 
-
 /* -------------FAQs------------- */
 
 .tabs__tab:after {
@@ -378,16 +377,16 @@ h1.line-height125 {
   left: -1;
   width: 100%;
   height: 2px;
-  background: linear-gradient(87.54deg, #9867F0 -6.8%, #ED4E50 84.14%);
+  background: linear-gradient(87.54deg, #9867f0 -6.8%, #ed4e50 84.14%);
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  transform: scaleX(0);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
-.tabs__tab:hover:after  {
-    -webkit-transform: scaleX(0.4);
-          transform: scaleX(0.4);
+.tabs__tab:hover:after {
+  -webkit-transform: scaleX(0.4);
+  transform: scaleX(0.4);
 }
 
 .current__tab:after {

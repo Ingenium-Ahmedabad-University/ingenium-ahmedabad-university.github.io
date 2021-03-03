@@ -4,16 +4,17 @@ import Header from '../components/header';
 import FAQs from '../components/faqs';
 import Footer from '../components/footer';
 
-const FaqPage = () => 
-        <div>
-            <SEO />
-            <div className='base px-3 md:px-5 lg:px-10 bg-base'>
-                <Header />
-                <FAQs />
-                <Footer />
-            </div>
-        </div>
-    
+const FaqPage = () => (
+  <div>
+    <SEO />
+    <div className='base px-3 md:px-5 lg:px-10 bg-base'>
+      <Header />
+      <FAQs />
+      <Footer />
+    </div>
+  </div>
+);
+
 export default () => {
-    return <FaqPage />;
+  return <FaqPage />;
 };
