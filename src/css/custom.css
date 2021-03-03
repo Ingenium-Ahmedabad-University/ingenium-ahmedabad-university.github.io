@@ -243,3 +243,62 @@ a.nl-link {
 .invert_social {
   filter: invert(0.7);
 }
+
+.desc {
+  opacity:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.detail{
+  position: absolute;
+  bottom: 0%;
+}
+
+.date{
+  position: absolute;
+    bottom: 10%;
+    right: -5%;
+    z-index: 2;
+    margin-top: -28px;
+    margin-left: -px;
+    font-family: 'GT Sectra Display','Times New Roman',sans-serif;
+    font-size: 1.5rem;
+    line-height: .25;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+}
+
+.event_title{
+  font-family: 'GT Sectra Display','Times New Roman',sans-serif;
+font-size: 3rem;
+  line-height: .25;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.avatar:hover .desc{
+  opacity: 1;
+  transition: ease-in-out;
+  transition-duration: 1000ms;
+}
+
+.md_640px {
+  display: none;
+}
+
+/* if mobile device max width 480px */
+@media only screen and (max-width: 640px) {
+ .md_640px{
+   display: block;
+  padding:2;
+  width: 100%;
+  color:white;
+  text-align: center;
+ }
+ .desc {display: none;}
+}

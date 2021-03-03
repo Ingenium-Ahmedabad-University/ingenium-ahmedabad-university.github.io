@@ -16,6 +16,7 @@
     "format": "prettier --write \"**/*.{html,css,js,jsx,json,yaml}\""
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "autoprefixer": "^10.2.4",
     "gatsby": "^2.32.3",
     "gatsby-image": "^2.11.0",
