@@ -43,5 +43,15 @@ module.exports = {
         display: 'swap',
       },
     },
+    'gatsby-plugin-catch-links',
+    'gatsby-transformer-remark',
+    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/data`,
+        name: 'data',
+      },
+    },
   ],
 };

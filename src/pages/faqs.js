@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import SEO from '../components/SEO';
 import Header from '../components/header';
-import Sponsors from '../components/sponsors';
+import FAQs from '../components/faqs';
 import Footer from '../components/footer';
 
-const SponsorsPage = () => (
+const FaqPage = () => (
   <div>
     <SEO />
     <div className='base px-3 md:px-5 lg:px-10 bg-base'>
       <Header />
-      <Sponsors />
+      <FAQs />
       <Footer />
     </div>
   </div>
 );
 
 export default () => {
-  return <SponsorsPage />;
+  return <FaqPage />;
 };
