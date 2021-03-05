@@ -70,7 +70,7 @@ const events_data = [
   },
 ];
 
-const Events=()=>{
+const EventLists=()=>{
   const data = events_data;
   useEffect(() => {
     AOS.init({ duration: 1000});
@@ -103,4 +103,4 @@ const Events=()=>{
       </div>       
     );
 }
-export default Events;
+export default EventLists;
