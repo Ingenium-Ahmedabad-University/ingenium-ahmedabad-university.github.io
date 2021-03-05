@@ -4,7 +4,7 @@ import Footer from './footer';
 import Header from './header';
 import AboutUs from './aboutus';
 import Testimonials from './testimonials';
-
+import Events from './e_selection';
 const HeroSection = () => (
   <div className='h-screen bg-base grid place-items-center text-secondary font-title-oswald'>
     <h1>Hero Section</h1>
@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
       <div className='base px-3 md:px-5 lg:px-10 bg-base'>
         <HeroSection />
         <AboutUs />
+        <Events />
         <Testimonials />
         <Header />
         {/* <div className='flex flex-col h-screen justify-center items-center bg-base w-full'>

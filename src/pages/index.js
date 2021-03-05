@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import App from '../components/anim';
 
 export default () => {
-  return <Layout />;
+  return <App />;
 };

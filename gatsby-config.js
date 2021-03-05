@@ -35,10 +35,22 @@ module.exports = {
         fonts: [
           `raleway`,
           `oswald`,
+          `Shadows Into Light`,
+          `montserrat\:300,400,400i,700`,
           `abril fatface`,
           `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
         display: 'swap',
+      },
+    },
+    'gatsby-plugin-catch-links',
+    'gatsby-transformer-remark',
+    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/data`,
+        name: 'data',
       },
     },
   ],

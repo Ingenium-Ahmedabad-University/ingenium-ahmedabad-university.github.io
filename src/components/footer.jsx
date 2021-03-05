@@ -6,9 +6,16 @@ import send from '../images/send.png';
 const contact_details = [
   {
     icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/instagram.svg',
+    url: 'https://www.instagram.com/tech.ingenium/',
   },
-  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/discord.svg' },
-  { icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/gmail.svg' },
+  {
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/discord.svg',
+    url: 'https://discord.gg/EAdd5fJU',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/gmail.svg',
+    url: 'mailto: ingenium@ahduni.edu.in',
+  },
 ];
 
 const Newletter = () => {
@@ -16,7 +23,7 @@ const Newletter = () => {
   return (
     <>
       <div
-        className='inline-block relative cursor-pointer'
+        className='inline-block relative cursor-pointer nl-link'
         onClick={() => {
           changestate(true);
           console.log('clicked');
@@ -75,7 +82,7 @@ const Footer = () => (
         </div>
         <ul className='grid grid-flow-col gap-6 mx-4 my-4'>
           {contact_details.map((e, i) => (
-            <a href=''>
+            <a href={e.url} target='_blank'>
               <li key={i}>
                 <img
                   height='24'
@@ -102,5 +109,4 @@ const Footer = () => (
   </div>
 );
 
-export const Code = () => <code>This is a code block</code>;
 export default Footer;
