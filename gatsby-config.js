@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `raleway`,
+          `raleway\:300,400,400i,700`,
           `oswald`,
           `Shadows Into Light`,
           `montserrat\:300,400,400i,700`,

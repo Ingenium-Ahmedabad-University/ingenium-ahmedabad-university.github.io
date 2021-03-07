@@ -39,6 +39,10 @@
   -webkit-text-stroke: 2px theme('colors.black');
   text-stroke: 2px theme('colors.black');
 }
+.text-stroke-base {
+  -webkit-text-stroke: 2px theme('colors.base');
+  text-stroke: 2px theme('colors.base');
+}
 .text-stroke-secondary {
   -webkit-text-stroke: 2px theme('colors.secondary');
   text-stroke: 2px theme('colors.secondary');
@@ -482,6 +486,7 @@ html {
     padding-left: 15%;
     padding-right: 15%;
   }
+}
 /* -------------FAQs------------- */
 
 .tabs__tab:after {
@@ -513,4 +518,15 @@ html {
 .toggler_active {
   transform: rotateZ(-180deg);
 }
+
+/* Event page tooltip */
+
+.tooltip {
+  display: none;
+  position: absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  display: block;
+  z-index: 10;
 }
