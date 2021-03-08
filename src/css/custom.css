@@ -256,6 +256,7 @@ About Us
 .invert_social {
   filter: invert(0.7);
 }
+
 .desc {
   opacity:0;
   height: 100%;
@@ -264,33 +265,15 @@ About Us
   align-items:center;
   justify-content: center;
 }
-
 .detail{
   position: absolute;
   bottom: 0%;
+  font-size: small;
 }
-
-.date{
-  position: absolute;
-    bottom: 10%;
-    right: -5%;
-    z-index: 2;
-    margin-top: -28px;
-    margin-left: -px;
-    font-family: 'GT Sectra Display','Times New Roman',sans-serif;
-    font-size: 1.5rem;
-    line-height: .25;
-    font-style: italic;
-    font-weight: 700;
-    color: white;
-}
-
 .event_title{
-  font-family: 'GT Sectra Display','Times New Roman',sans-serif;
-font-size: 3rem;
+  font-size: 3rem;
   line-height: .25;
-    font-style: italic;
-    font-weight: 700;
+  font-weight:bolder;
 }
 
 .avatar:hover .desc{
@@ -311,9 +294,10 @@ font-size: 3rem;
   width: 100%;
   color:white;
   text-align: center;
- }
+}
  .desc {display: none;}
-  
+}
+
 .sponsors-logo {
   width: auto;
   max-width: 60%;
