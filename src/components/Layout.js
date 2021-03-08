@@ -19,6 +19,7 @@ const Layout = ({ children }) => {
         <AboutUs />
         <Events />
         <Testimonials />
+        <Footer />
         <Header />
         {/* <div className='flex flex-col h-screen justify-center items-center bg-base w-full'>
         <div className='w-6/12'>
@@ -40,9 +41,8 @@ const Layout = ({ children }) => {
             hey
           </button>
         </div>
-      </div> */}
+        </div> */}
       </div>
-      <Footer />
     </>
   );
 };

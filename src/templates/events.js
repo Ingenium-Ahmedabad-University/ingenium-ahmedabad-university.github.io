@@ -34,7 +34,6 @@ const EventsPage = ({ data }) => {
     <div>
       <SEO />
       <div className='base px-3 md:px-5 lg:px-10 bg-base'>
-        <Header />
         <Events
           dAndT={dAndT}
           eventTitle={eventTitle}
@@ -46,6 +45,7 @@ const EventsPage = ({ data }) => {
         />
         {/* <Events {...event}/> */}
         <Footer />
+        <Header />
       </div>
     </div>
   );

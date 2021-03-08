@@ -68,7 +68,7 @@ const Footer = () => (
     </div>
     <div className='footer grid col-1 lg:row-1 lg:grid-flow-col row-gap-8 lg:gap-0 justify-center lg:justify-between items-center my-16 lg:my-8 mx-3 md:mx-5 lg:mx-10'>
       {/* Signup*/}
-      <div className='font-sans text-gray-300 font-bold text-xl'>
+      <div className='font-sans text-gray-300 font-normal text-xl'>
         <Newletter />
         &nbsp; for latest Ingenium Updates
       </div>
