@@ -7,7 +7,7 @@ import EventLists from '../components/eventList';
 const Eventpage = () => (
 <>
     <SEO />
-    <div className='px-3 md:px-5 lg:px-10 bg-base'>
+    <div className='px-3 md:px-5 lg:px-10 top-0 absolute bg-base'>
       <Header />
       <EventLists />
       <Footer />
