@@ -346,19 +346,42 @@ h1.line-height125 {
 }
 
 .dot-me {
-  height: 5vw;
-  width: 5vw;
+  height: 50px;
+  width: 50px;
   bottom: 40vh;
-  left: 47vw;
+  left: calc(50vw - 25px);
   border-radius: 50%;
   position: fixed;
   @apply bg-secondary;
+  z-index: 1000;
 }
 
+.drop-zone {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  box-sizing: content-box;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: 10px solid theme('colors.secondary');
+  opacity: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .dot-me {
+    height: 4vw;
+    width: 4vw;
+  }
+  .drop-zone {
+    height: 4.2vw;
+    width: 4.2vw;
+  }
+}
 .hand-text {
   @apply text-gray-400;
   position: fixed;
-  @apply text-2xl;
+  @apply text-xs;
   bottom: calc(5vh + 5vw + 2em);
   opacity: 0;
   text-align: center;
