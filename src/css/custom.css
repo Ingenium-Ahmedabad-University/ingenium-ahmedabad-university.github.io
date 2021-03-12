@@ -423,12 +423,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 768px) {
-  .margin_50 {
-    margin-left: 100%;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .img_greyscale {
     filter: grayscale(1);
@@ -488,17 +482,24 @@ html {
     }
   }
 }
-@media only screen and (min-width: 1295px) {
+@media only screen and (min-width: 1281px) {
   .icon_size {
-    padding-left: 27%;
-    padding-right: 27%;
+    padding-left: 23%;
+    padding-right: 23%;
   }
 }
 
-@media only screen and (max-width: 1294px) and (min-width: 1000px) {
+@media only screen and (max-width: 1280px) and (min-width: 1180px) {
   .icon_size {
-    padding-left: 22%;
-    padding-right: 22%;
+    padding-left: 26%;
+    padding-right: 26%;
+  }
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1024px) {
+  .icon_size {
+    padding-left: 23%;
+    padding-right: 23%;
   }
 }
 
@@ -525,17 +526,16 @@ html {
 
 @media only screen and (max-width: 639px) and (min-width: 450px) {
   .icon_padding {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 26%;
+    padding-right: 26%;
   }
 }
 
 @media only screen and (max-width: 449px) {
   .icon_padding {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 17%;
+    padding-right: 17%;
   }
-}
 /* -------------FAQs------------- */
 
 .tabs__tab:after {
@@ -567,15 +567,4 @@ html {
 .toggler_active {
   transform: rotateZ(-180deg);
 }
-
-/* Event page tooltip */
-
-.tooltip {
-  display: none;
-  position: absolute;
-}
-
-.has-tooltip:hover .tooltip {
-  display: block;
-  z-index: 10;
 }

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import SEO from '../components/SEO';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import React from 'react';
 import EventLists from '../components/eventlists';
+import Footer from '../components/footer';
+import Header from '../components/header';
+import SEO from '../components/SEO';
 
 const Eventpage = () => (
   <>

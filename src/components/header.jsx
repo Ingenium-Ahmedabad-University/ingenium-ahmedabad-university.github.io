@@ -10,6 +10,7 @@ const Logo = () => (
     </div>
   </Link>
 );
+
 const NavIcon = () => {
   const [nav_open, change_nav] = useState(false);
   return (
