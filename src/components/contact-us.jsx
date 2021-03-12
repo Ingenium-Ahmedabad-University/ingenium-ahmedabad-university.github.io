@@ -136,6 +136,7 @@ const core_team_details = [
     linkedLn_Url: 'https://www.linkedin.com/in/sanket-shah-978828167/',
   },
 ];
+
 /* 
 const event_team_details = [
   {

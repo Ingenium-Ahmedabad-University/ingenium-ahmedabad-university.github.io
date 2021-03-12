@@ -39,6 +39,10 @@
   -webkit-text-stroke: 2px theme('colors.black');
   text-stroke: 2px theme('colors.black');
 }
+.text-stroke-base {
+  -webkit-text-stroke: 2px theme('colors.base');
+  text-stroke: 2px theme('colors.base');
+}
 .text-stroke-secondary {
   -webkit-text-stroke: 2px theme('colors.secondary');
   text-stroke: 2px theme('colors.secondary');
@@ -255,6 +259,49 @@ About Us
 
 .invert_social {
   filter: invert(0.7);
+}
+
+.desc {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail {
+  position: absolute;
+  bottom: 0%;
+  font-size: small;
+}
+.event_title {
+  font-size: 3rem;
+  line-height: 0.25;
+  font-weight: bolder;
+}
+
+.avatar:hover .desc {
+  opacity: 1;
+  transition: ease-in-out;
+  transition-duration: 1000ms;
+}
+
+.md_640px {
+  display: none;
+}
+
+/* if mobile device max width 480px */
+@media only screen and (max-width: 640px) {
+  .md_640px {
+    display: block;
+    padding: 2;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  .desc {
+    display: none;
+  }
 }
 
 .sponsors-logo {

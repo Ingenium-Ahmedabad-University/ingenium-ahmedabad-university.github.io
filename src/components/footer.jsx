@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo_src from '../images/icon.svg';
 // import data from '../../content/data.json'
+import send from '../images/send.png';
 
 const contact_details = [
   {
@@ -51,12 +52,18 @@ const Newletter = () => {
                 placeholder='Email Address'
                 required
               />
+              <button type='submit'>
+                <img class='h-6 w-13' src={send} alt=''></img>
+              </button>
             </div>
           </div>
           <div class='close-button'></div>
         </div>
-
-        <a id='back-screen' onClick={() => changestate(false)}></a>
+        <a
+          id='back-screen'
+          className='absolute w-full h-full opacity-70 bg-gray-900'
+          onClick={() => changestate(false)}
+        ></a>
       </div>
     </>
   );
@@ -68,7 +75,7 @@ const Footer = () => (
     </div>
     <div className='footer grid col-1 lg:row-1 lg:grid-flow-col row-gap-8 lg:gap-0 justify-center lg:justify-between items-center my-16 lg:my-8 mx-3 md:mx-5 lg:mx-10'>
       {/* Signup*/}
-      <div className='font-sans text-gray-300 font-bold text-xl'>
+      <div className='font-sans text-gray-300 font-normal text-xl'>
         <Newletter />
         &nbsp; for latest Ingenium Updates
       </div>

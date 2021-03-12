@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 function copyToClipboard(eventUrl) {
-  const tooltipText = document.querySelector('#tooltip-text');
+  const tooltipText = document.querySelector('.tooltip-text');
 
   navigator.clipboard.writeText(eventUrl);
   tooltipText.innerHTML = 'Copied';
@@ -13,23 +13,11 @@ function copyToClipboard(eventUrl) {
 }
 
 const Tooltip = ({ children }) => (
-  <div class='flex flex-col justify-center m-0 p-0'>
-    <div class='relative m-0 p-0'>
-      <div class='group flex cursor-pointer relative w-32 text-center m-0 p-0'>
-        {children}
-        <div class='opacity-0 w-32 bg-base-light text-white text-center text-xs rounded-lg absolute z-10 group-hover:opacity-100 bottom-full -left-1/2 ml-14 p-3 pointer-events-none'>
-          <span id='tooltip-text'>Click to Copy</span>
-          <svg
-            class='absolute text-black h-2 w-full left-0 top-full'
-            x='0px'
-            y='0px'
-            viewBox='0 0 255 255'
-          >
-            <polygon class='fill-current' points='0,0 127.5,127.5 255,0' />
-          </svg>
-        </div>
-      </div>
-    </div>
+  <div class='has-tooltip'>
+    <span class='tooltip tooltip-text rounded shadow-lg px-3 py-2 bg-base-light text-white text-sm font-normal -mt-10'>
+      Copy to clipboard
+    </span>
+    {children}
   </div>
 );
 
@@ -51,7 +39,7 @@ const Icons = ({ eventUrl }) => {
             d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
           />
         </svg>
-        <p className='mr-3 font-normal'>Like</p>
+        <p className='mr-3'>Like</p>
       </div>
 
       <Tooltip>
@@ -72,7 +60,7 @@ const Icons = ({ eventUrl }) => {
           </svg>
           <button
             id='share-button'
-            className='font-normal focus:outline-none foucs-within:outline-none'
+            className='font-bold focus:outline-none foucs-within:outline-none'
             onClick={() => {
               copyToClipboard(eventUrl);
             }}
@@ -138,10 +126,10 @@ const Events = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => (
         <Icons eventUrl='https://www.google.com/' />
       </div>
       <div className='mb-6'>
-        <h1 className='text-4xl sm:text-5xl py-3 text-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+        <h1 className='text-4xl sm:text-6xl py-3 font-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
           {eventTitle}
         </h1>
-        <p className='text-gray-400 py-3 font-semibold'>{desc}</p>
+        <p className='text-gray-400 text-lg py-3'>{desc}</p>
       </div>
       <div className='flex align-middle'>
         <div className='rounded-full w-40 mr-5'>
@@ -149,9 +137,9 @@ const Events = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => (
         </div>
         <div className='flex items-center'>
           <div>
-            <span className='text-white font-bold'>{speaker}</span>
+            <span className='text-white text-lg font-bold'>{speaker}</span>
             <br />
-            <span className='text-xl text-white'>{desig}</span>
+            <span className='text-lg text-white'>{desig}</span>
           </div>
         </div>
       </div>

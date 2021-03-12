@@ -170,8 +170,8 @@ const Card = ({ redirectUrl, logoUrl, name, description }) => (
       </div>
       <div className='flex text-primary sponsors-content-box h-32 max-h-32 items-center'>
         <div className='align-middle px-5'>
-          <h3 className='font-sans font-bold my-2'>{name}</h3>
-          <p>{description}</p>
+          <h3 className='font-sans font-bold text-xl my-2'>{name}</h3>
+          <p className='text-lg'>{description}</p>
         </div>
       </div>
     </a>
@@ -184,7 +184,7 @@ const Sponsors = () => (
       {data.map((category, i) => {
         return (
           <div key={i} className='mb-24'>
-            <h1 className='text-primary text-3xl sm:text-4xl'>
+            <h1 className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg text-3xl font-bold sm:text-4xl'>
               {category.name}
             </h1>
 
