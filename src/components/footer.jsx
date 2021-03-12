@@ -51,12 +51,19 @@ const Newletter = () => {
                 aria-invalid='true'
                 placeholder='Email Address'
                 required
-              /><button type="submit"><img  class="h-6 w-13" src={send} alt=''></img></button>
-            </div> 
+              />
+              <button type='submit'>
+                <img class='h-6 w-13' src={send} alt=''></img>
+              </button>
+            </div>
           </div>
           <div class='close-button'></div>
         </div>
-        <a id='back-screen' className="absolute w-full h-full opacity-70 bg-gray-900" onClick={() => changestate(false)}></a>
+        <a
+          id='back-screen'
+          className='absolute w-full h-full opacity-70 bg-gray-900'
+          onClick={() => changestate(false)}
+        ></a>
       </div>
     </>
   );

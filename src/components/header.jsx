@@ -2,11 +2,13 @@ import { Link } from 'gatsby';
 import React, { useState } from 'react';
 import logo_src from '../images/icon.svg';
 const Logo = () => (
-  <div className='fixed top-0 left-0'>
-    <div className='m-4'>
-      <img src={logo_src} alt='' />
+  <Link to='/'>
+    <div className='fixed top-0 left-0'>
+      <div className='m-4'>
+        <img src={logo_src} alt='' />
+      </div>
     </div>
-  </div>
+  </Link>
 );
 const NavIcon = () => {
   const [nav_open, change_nav] = useState(false);
@@ -58,8 +60,8 @@ const NavOption = ({ name, link }) => {
 const NavMenu = ({ open }) => {
   const options = [
     { name: 'Home', link: '' },
-    { name: 'Events', link: '' },
-    { name: 'Competitions', link: '' },
+    { name: 'Events', link: 'eventList' },
+    { name: 'Competitions', link: 'eventList' },
     { name: 'Contact Us', link: 'contact-us' },
     { name: 'Sponsors', link: 'sponsors' },
     { name: 'FAQ', link: 'faqs' },

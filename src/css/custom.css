@@ -12,6 +12,12 @@
     }
   }
 }
+
+ol,
+ul {
+  list-style-type: disc;
+}
+
 .social-bg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -262,25 +268,25 @@ About Us
 }
 
 .desc {
-  opacity:0;
+  opacity: 0;
   height: 100%;
   width: 100%;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
-.detail{
+.detail {
   position: absolute;
   bottom: 0%;
   font-size: small;
 }
-.event_title{
+.event_title {
   font-size: 3rem;
-  line-height: .25;
-  font-weight:bolder;
+  line-height: 0.25;
+  font-weight: bolder;
 }
 
-.avatar:hover .desc{
+.avatar:hover .desc {
   opacity: 1;
   transition: ease-in-out;
   transition-duration: 1000ms;
@@ -292,14 +298,16 @@ About Us
 
 /* if mobile device max width 480px */
 @media only screen and (max-width: 640px) {
- .md_640px{
-   display: block;
-  padding:2;
-  width: 100%;
-  color:white;
-  text-align: center;
-}
- .desc {display: none;}
+  .md_640px {
+    display: block;
+    padding: 2;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  .desc {
+    display: none;
+  }
 }
 
 .sponsors-logo {

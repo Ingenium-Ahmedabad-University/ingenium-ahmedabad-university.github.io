@@ -36,17 +36,21 @@ const Testimonials = () => {
   const [selected, changeselected] = useState(0);
 
   const [opChange, changeOp] = useState(true);
-   let tout;
+  let tout;
   useEffect(() => {
     let next = selected + 1 < data.length ? selected + 1 : 0;
     setTimeout(() => changeOp(true), 5900);
     tout = setTimeout(() => changeselected(next), 6000);
     setTimeout(() => changeOp(false), 6500);
-
   }, [selected]);
   return (
     <section class='text-gray-400 body-font'>
-      <div class={'container px-5 pt-24 pb-8 mx-auto transition-all '  + (opChange ? 'opacity-0' : 'opacity-100')}>
+      <div
+        class={
+          'container px-5 pt-24 pb-8 mx-auto transition-all ' +
+          (opChange ? 'opacity-0' : 'opacity-100')
+        }
+      >
         <div class='xl:w-1/2 lg:w-3/4 w-full mx-auto text-center'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
