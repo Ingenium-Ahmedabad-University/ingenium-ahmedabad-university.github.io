@@ -12,6 +12,9 @@
     }
   }
 }
+.body{
+  overflow-x: hidden;
+}
 .social-bg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
