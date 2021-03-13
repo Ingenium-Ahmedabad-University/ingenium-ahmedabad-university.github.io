@@ -8,12 +8,11 @@ const ContactUS = () =>
         <div>
             <SEO />
             <div className='base px-3 md:px-5 lg:px-10 bg-base'>
-                <Header />
                 <Contact />
                 <Footer />
+                <Header />
             </div>
         </div>
-    
-export default () => {
-    return <ContactUS />;
-};
+);
+
+export default ContactUs;

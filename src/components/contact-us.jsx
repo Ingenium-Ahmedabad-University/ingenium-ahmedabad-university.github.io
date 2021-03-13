@@ -191,6 +191,7 @@ const ImgTemplate = ({
 const Contact_Us = () => {
   return (
     <code class='font-sans'>
+
       <div class='w-full mx-auto'>
         <div class='core_team' id='1'>
           <br />
@@ -213,6 +214,7 @@ const Contact_Us = () => {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </code>
   );
 };
