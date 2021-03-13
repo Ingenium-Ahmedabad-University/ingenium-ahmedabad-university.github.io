@@ -12,6 +12,12 @@
     }
   }
 }
+
+ol,
+ul {
+  list-style-type: disc;
+}
+
 .social-bg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
