@@ -33,6 +33,7 @@
     "gsap": "^3.6.0",
     "postcss": "^8.2.6",
     "react": "^16.14.0",
+    "react-audio-player": "^0.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "tailwindcss": "^2.0.3"

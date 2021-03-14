@@ -16,6 +16,7 @@ dependencies:
   gsap: 3.6.0
   postcss: 8.2.6
   react: 16.14.0
+  react-audio-player: 0.14.0_react-dom@16.14.0+react@16.14.0
   react-dom: 16.14.0_react@16.14.0
   react-helmet: 6.1.0_react@16.14.0
   tailwindcss: 2.0.3_759587f5361760629983e9fe457a3aed
@@ -11956,6 +11957,17 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
+  /react-audio-player/0.14.0_react-dom@16.14.0+react@16.14.0:
+    dependencies:
+      prop-types: 15.7.2
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+    dev: false
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    resolution:
+      integrity: sha512-B0kP3KVjbp+TXG8TUh1kl91xnYwYx8c+YLbx3oZS9drcHvgTPWl4sl8inmwyLWPH0bMW5eqGFL5qT1fuHk8Ysw==
   /react-dev-utils/4.2.3:
     dependencies:
       address: 1.0.3
@@ -15237,6 +15249,7 @@ specifiers:
   postcss: ^8.2.6
   prettier: ^2.2.1
   react: ^16.14.0
+  react-audio-player: ^0.14.0
   react-dom: ^16.14.0
   react-helmet: ^6.1.0
   tailwindcss: ^2.0.3
