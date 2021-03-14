@@ -4,17 +4,15 @@ import Header from '../components/header';
 import Contact from '../components/contact-us';
 import Footer from '../components/footer';
 
-const ContactUS = () => (
-  <div>
-    <SEO />
-    <div className='base px-3 md:px-5 lg:px-10 bg-base'>
-      <Contact />
-      <Footer />
-      <Header />
-    </div>
-  </div>
+const ContactUs = () => (
+        <div>
+            <SEO />
+            <div className='base px-3 md:px-5 lg:px-10 bg-base'>
+                <Contact />
+                <Footer />
+                <Header />
+            </div>
+        </div>
 );
 
-export default () => {
-  return <ContactUS />;
-};
+export default ContactUs;

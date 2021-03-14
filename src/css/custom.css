@@ -13,9 +13,14 @@
   }
 }
 
-.body{
+body{
   overflow-x: hidden;
 }
+ol,
+ul {
+  list-style-type: disc;
+}
+
 .social-bg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -481,39 +486,25 @@ html {
   }
 }
 @media only screen and (min-width: 1281px) {
-  .icon_size {
-    padding-left: 23%;
-    padding-right: 23%;
+  .icon_padding {
+    padding-left: 22%;
+    padding-right: 22%;
   }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1180px) {
-  .icon_size {
-    padding-left: 26%;
-    padding-right: 26%;
+  .icon_padding {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
 @media only screen and (max-width: 1180px) and (min-width: 1024px) {
-  .icon_size {
-    padding-left: 23%;
-    padding-right: 23%;
+  .icon_padding {
+    padding-left: 18%;
+    padding-right: 18%;
   }
 }
-
-/* @media only screen and (max-width: 999px) and (min-width: 868px) {
-    .icon_size {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-}
-@media only screen and (max-width: 867px) and (min-width: 768px) {
-  .icon_size {
-      padding-left: 13%;
-      padding-right: 13%;
-  }
-}
- */
 
 @media only screen and (max-width: 1023px) and (min-width: 640px) {
   .icon_padding {
@@ -531,9 +522,14 @@ html {
 
 @media only screen and (max-width: 449px) {
   .icon_padding {
-    padding-left: 17%;
-    padding-right: 17%;
+    padding-left: 18%;
+    padding-right: 18%;
   }
+}
+
+.maximum_width{
+  max-width: 300px;
+}
 /* -------------FAQs------------- */
 
 .tabs__tab:after {
@@ -565,4 +561,15 @@ html {
 .toggler_active {
   transform: rotateZ(-180deg);
 }
+
+/* Event page tooltip */
+
+.tooltip {
+  display: none;
+  position: absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  display: block;
+  z-index: 10;
 }

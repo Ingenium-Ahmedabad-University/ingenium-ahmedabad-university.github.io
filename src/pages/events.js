@@ -1,5 +1,5 @@
 import React from 'react';
-import EventLists from '../components/eventlists';
+import EventLists from '../components/events';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import SEO from '../components/SEO';
@@ -11,6 +11,7 @@ const Eventpage = () => (
       <Header />
       <EventLists />
       <Footer />
+      <Header />
     </div>
   </>
 );
