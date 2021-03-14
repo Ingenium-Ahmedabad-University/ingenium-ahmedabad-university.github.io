@@ -26,8 +26,7 @@ const events_data = [
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             title: 'Robotics Workshop',
             date: '4th April, TBA',
             image: e1,
@@ -40,7 +39,8 @@ const events_data = [
             image: e1,
           },
         ],
-      }, {
+      },
+      {
         type: 'Computer Science',
         detail: [
           {
@@ -79,14 +79,13 @@ const events_data = [
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'DL with Tensorflow',
             image: e1,
           },
         ],
-      }
+      },
     ],
   },
   {
@@ -96,69 +95,62 @@ const events_data = [
         type: 'Mechanical...',
         detail: [
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Quiz on Automobiles',
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Meme Story',
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'E-Gaming Fests',
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Identify the car',
             image: e1,
           },
-        ]
-      }, {
+        ],
+      },
+      {
         type: 'Computer Science',
         detail: [
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Codefi',
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'E-treasure Hunt',
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Kaggle Competition',
             image: e1,
           },
           {
-            desc:
-              'Upcoming!!',
+            desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Iot Auction',
             image: e1,
           },
-        ]
-      }
-    ]
-  }
+        ],
+      },
+    ],
+  },
 ];
 
 const EventLists = () => {
@@ -167,26 +159,26 @@ const EventLists = () => {
     AOS.init({ duration: 1000 });
   });
   return (
-    <div className='md:mx-24 my-12 mx-20 pb-5'>
+    <div className='sm:mx-12 mx-6 my-12 lg:mx-18 pb-5'>
       {data.map((el, key) => (
         <div>
-          <h1 className='event_title text-center pt-16 pb-5 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+          <h1 id={el.category} className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
             {el.category}
           </h1>
-          <div
-            className='underline mx-auto items-center bg-gradient-to-br from-red-500 to-indigo-400'
-            style={{ width: '250px', height: '2px' }}
-          ></div>
-          
-            {el.event.map((typ, key1) => (
-              <div>
-                <h1 className='text-left font-bold text-3xl pt-12 pb-1 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
-                  {typ.type} </h1>
-                <div
-                  className='underline left-0 bg-gradient-to-br from-red-500 to-indigo-400'
-                  style={{ width: '200px', height: '2px' }}
-                ></div>
-                <div className='grid grid-cols-1 gap-12 lg:grid-cols-3 sm:grid-cols-2 xl:gap-20 md:gap-16 py-10'>
+          <div className='underline mx-auto md:w-64 w-40 h-1 items-center bg-gradient-to-br from-red-500 to-indigo-400'>
+            {' '}
+          </div>
+
+          {el.event.map((typ, key1) => (
+            <div>
+              <h1 className='text-left font-bold text-xl md:text-3xl pt-12 pb-1 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+                {typ.type}{' '}
+              </h1>
+
+              <div className='underline md:w-48 w-36 h-1 left-0 bg-gradient-to-br from-red-500 to-indigo-400'>
+                {' '}
+              </div>
+              <div className='grid grid-cols-1 gap-12 lg:grid-cols-3 sm:grid-cols-2 xl:gap-20 md:gap-16 py-10'>
                 {typ.detail.map((det, key1) => (
                   <div>
                     <div
@@ -215,10 +207,11 @@ const EventLists = () => {
                         {det.desc}
                       </span>
                     </div>
-                  </div>))}
-                </div>
-                </div>  
-            ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       ))}
     </div>
