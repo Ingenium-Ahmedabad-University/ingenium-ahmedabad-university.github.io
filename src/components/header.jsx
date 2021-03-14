@@ -68,7 +68,7 @@ const NavMenu = ({ open }) => {
     { name: 'FAQ', link: 'faqs' },
   ];
   return (
-    <div className='fixed top-0 left-0'>
+    <div className='fixed top-0 left-0 z-40'>
       <div
         className={
           'absolute top-0 left-0 h-screen w-screen justify-center z-50 ' +

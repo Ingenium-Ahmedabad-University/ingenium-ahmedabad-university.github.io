@@ -13,6 +13,9 @@
   }
 }
 
+body{
+  overflow-x: hidden;
+}
 ol,
 ul {
   list-style-type: disc;
@@ -566,4 +569,16 @@ html {
 
 .toggler_active {
   transform: rotateZ(-180deg);
+}
+
+/* Event page tooltip */
+
+.tooltip {
+  display: none;
+  position: absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  display: block;
+  z-index: 10;
 }
