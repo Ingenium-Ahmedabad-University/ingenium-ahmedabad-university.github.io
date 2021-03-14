@@ -40,9 +40,8 @@ const Layout = ({ children }) => {
             hey
           </button>
         </div>
-      </div> */}
+        </div> */}
       </div>
-      <Footer />
     </>
   );
 };

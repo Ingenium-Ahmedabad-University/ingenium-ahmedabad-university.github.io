@@ -1,244 +1,227 @@
 import React, { useEffect } from 'react';
+import e1 from '../images/about_us2.jpg';
+import '../css/custom.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Tooltip = ({ children }) => (
-  <div class='flex flex-col justify-center m-0 p-0'>
-    <div class='relative m-0 p-0'>
-      <div class='group flex cursor-pointer relative inline-block w-32 text-center m-0 p-0'>
-        {children}
-        <div class='opacity-0 w-32 bg-base-light text-white text-center text-xs rounded-lg absolute z-10 group-hover:opacity-100 bottom-full -left-1/2 ml-14 p-3 pointer-events-none'>
-          <span id='tooltip-text'>Click to Copy</span>
-          <svg
-            class='absolute text-black h-2 w-full left-0 top-full'
-            x='0px'
-            y='0px'
-            viewBox='0 0 255 255'
-          >
-            <polygon class='fill-current' points='0,0 127.5,127.5 255,0' />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+const events_data = [
+  {
+    category: 'Workshops',
+    event: [
+      {
+        type: 'Mechanical...',
+        detail: [
+          {
+            desc:
+              'First, introduction of arduino would be given and the basics would be covered. Then tasks would be given based on the learning.',
+            title: 'Arduino Workshop',
+            date: '20th March, TBA',
+            image: e1,
+          },
+          {
+            desc:
+              ' It would be a workshop on where the faults occur in our machines and how we can find them.',
+            date: '2nd/3rd April, TBA',
+            title: 'Faults in the Machines',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            title: 'Robotics Workshop',
+            date: '4th April, TBA',
+            image: e1,
+          },
+          {
+            desc:
+              'CNC Lathe, CNC Milling and Laser Cutting machines would be explained starting from the basics of CNC programming.',
+            title: 'CNC Workshop',
+            date: '20th March, TBA',
+            image: e1,
+          },
+        ],
+      }, {
+        type: 'Computer Science',
+        detail: [
+          {
+            desc:
+              'Enhance your app development skills by designing mobile, web, and desktop applications with a single codebase using Flutter.',
+            title: 'Bootcamp Flutter',
+            date: 'TBA',
+            image: e1,
+          },
+          {
+            desc:
+              'You may not want to miss an opportunity to learn data analysis through two of the widely used data visualization libraries of Python!',
+            date: 'TBA',
+            title: 'Data-visualization',
+            image: e1,
+          },
+          {
+            desc:
+              'Enhance your UI/UX of web applications with Progressive Web App',
+            title: 'PWA',
+            date: 'TBA',
+            image: e1,
+          },
+          {
+            desc:
+              'If the idea of building something like Pokemon Go or HTC Vive has ever crossed your mind, then this the place for you.',
+            title: 'AR/VR',
+            date: 'TBA',
+            image: e1,
+          },
+          {
+            desc:
+              'GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub.',
+            title: 'Github Actions',
+            date: 'TBA',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'DL with Tensorflow',
+            image: e1,
+          },
+        ],
+      }
+    ],
+  },
+  {
+    category: 'Contests',
+    event: [
+      {
+        type: 'Mechanical...',
+        detail: [
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'Quiz on Automobiles',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'Meme Story',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'E-Gaming Fests',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'Identify the car',
+            image: e1,
+          },
+        ]
+      }, {
+        type: 'Computer Science',
+        detail: [
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'Codefi',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'E-treasure Hunt',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'Kaggle Competition',
+            image: e1,
+          },
+          {
+            desc:
+              'Upcoming!!',
+            date: 'TBA',
+            title: 'Iot Auction',
+            image: e1,
+          },
+        ]
+      }
+    ]
+  }
+];
 
-const Icons = ({ eventUrl }) => {
+const EventLists = () => {
+  const data = events_data;
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
   return (
-    <div className='flex font-bold text-white'>
-      <div className='flex items-center'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke='currentColor'
-          className='h-5 w-5 mr-2'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth={2}
-            d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
-          />
-        </svg>
-        <p className='mr-3 font-normal'>Like</p>
-      </div>
-
-      <Tooltip>
-        <div className='flex'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-            className='h-5 w-5 mr-2'
-          >
-            <path
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-              d='M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12'
-            />
-          </svg>
-          <button
-            id='share-button'
-            className='font-normal'
-            onClick={() => {
-              navigator.clipboard.writeText(eventUrl);
-              document.querySelector('#tooltip-text').innerHTML = 'Copied';
-            }}
-          >
-            Share
-          </button>
-        </div>
-      </Tooltip>
-    </div>
-  );
-};
-
-const Suggestions = ({
-  eventName,
-  speakerName,
-  speakerDetails,
-  speakerImg,
-}) => (
-  <div className='border-2 border-secondary p-5'>
-    <div className='flex justify-between mb-5'>
-      <div className='text-2xl font-bold text-white'>{eventName}</div>
-      <Icons eventUrl='https://www.google.com/' />
-    </div>
-    <div className='flex align-middle'>
-      <div className='rounded-full w-16 mr-5'>
-        <img src={speakerImg} alt='' className='rounded-full' />
-      </div>
-      <div className='flex items-center text-white text-l font-bold'>
+    <div className='md:mx-24 my-12 mx-20 pb-5'>
+      {data.map((el, key) => (
         <div>
-          <span>{speakerName}</span>
-          <br />
-          <span>{speakerDetails}</span>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-/*
-const Events = ({ date, eventName, description, speakerName, speakerDetails, speakerImg, posterUrl }) =>
-<section id="events-page" className="bg-base">
-        <div className="container md:max-w-4/5 xl:max-w-7/10 mx-auto bg-base py-28">
-            <a href="#">
-                <div className="flex my-5 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" className="h-6 w-6 mr-2"
-                        >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                            d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
-                            />
-                    </svg>Go Back
-                </div>
-            </a>
-            <div className="flex justify-between my-5">
-                <div className="text-xl text-gray-400">{date}</div>
-                <Icons eventUrl="https://www.google.com/" />
-            </div>
-            <div className="my-12">
-                <h1 className="text-5xl py-5 text-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg">{eventName}</h1>
-                <p className="text-gray-400 font-semibold">{description}</p>
-            </div>
-            <div className="flex align-middle">
-                <div className="rounded-full w-40 mr-5">
-                    <img src={speakerImg} alt="" className="rounded-full" />
-                </div>
-                <div className="flex items-center">
-                    <div>
-                        <span className="text-white font-bold">{speakerName}</span><br />
-                        <span className="text-xl text-white">{speakerDetails}</span>
-                    </div>
-                </div>
-            </div>
-            <div className="my-10">
-                <hr className="border-t border-base-light" />
-                <img src={posterUrl} alt="" className="w-full my-5" />
-                <hr className="border-t border-base-light" />
-            </div>
-            <Suggestions
-                eventName="Paying down technical debt at GitHub"
-                speakerName="Keith Ballinger"
-                speakerDetails="SVP, Engineering, GitHub"
-                speakerImg="https://githubuniverse.com/assets/img/speakers/Keith_Ballinger_Headshot.jpg"
-            />
-        </div>
-    </section>
-
-*/
-
-const Events = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => {
-  // console.log(dAndT, eventTitle, desc, speaker, desig, sImg, pUrl)
-  return (
-    <section id='events-page' className='bg-base'>
-      <div className='container md:max-w-4/5 xl:max-w-7/10 mx-auto bg-base py-28'>
-        <a href='#'>
-          <div className='flex my-5 text-white'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-              className='h-6 w-6 mr-2'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z'
-              />
-            </svg>
-            Go Back
-          </div>
-        </a>
-        <div className='flex justify-between my-5'>
-          <div className='text-xl text-gray-400'>{dAndT}</div>
-          <Icons eventUrl='https://www.google.com/' />
-        </div>
-        <div className='my-12'>
-          <h1 className='text-5xl py-5 text-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
-            {eventTitle}
+          <h1 className='event_title text-center pt-16 pb-5 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+            {el.category}
           </h1>
-          <p className='text-gray-400 font-semibold'>{desc}</p>
+          <div
+            className='underline mx-auto items-center bg-gradient-to-br from-red-500 to-indigo-400'
+            style={{ width: '250px', height: '2px' }}
+          ></div>
+          
+            {el.event.map((typ, key1) => (
+              <div>
+                <h1 className='text-left font-bold text-3xl pt-12 pb-1 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+                  {typ.type} </h1>
+                <div
+                  className='underline left-0 bg-gradient-to-br from-red-500 to-indigo-400'
+                  style={{ width: '200px', height: '2px' }}
+                ></div>
+                <div className='grid grid-cols-1 gap-12 lg:grid-cols-3 sm:grid-cols-2 xl:gap-20 md:gap-16 py-10'>
+                {typ.detail.map((det, key1) => (
+                  <div>
+                    <div
+                      className='avatar relative h-64 w-full flex justify-center items-center text-center bg-cover bg-center'
+                      data-aos='fade-up'
+                      style={{ backgroundImage: `url(${det.image})` }}
+                    >
+                      <div className='absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900'></div>
+
+                      <div className='desc z-10 tracking-tight bg-gray-800 bg-opacity-60 text-white'>
+                        <span className=' font-bold md:text-2xl lg:text-3xl'>
+                          {det.title}
+                        </span>
+                        <span className='detail px-2 pb-2'>
+                          <span className='text-lg'>{det.date}</span>
+                          <br /> {det.desc}
+                        </span>
+                      </div>
+                    </div>
+                    <div className='md_640px bg-black bg-opacity-50 rounded-b-xl p-2'>
+                      <span className='font-bold text-lg'>{det.title}</span>
+                      <br />
+                      <span className=' text-sm py-2'>
+                        {det.date}
+                        <br />
+                        {det.desc}
+                      </span>
+                    </div>
+                  </div>))}
+                </div>
+                </div>  
+            ))}
         </div>
-        <div className='flex align-middle'>
-          <div className='rounded-full w-40 mr-5'>
-            <img src={sImg} alt='' className='rounded-full' />
-          </div>
-          <div className='flex items-center'>
-            <div>
-              <span className='text-white font-bold'>{speaker}</span>
-              <br />
-              <span className='text-xl text-white'>{desig}</span>
-            </div>
-          </div>
-        </div>
-        <div className='my-10'>
-          <hr className='border-t border-base-light' />
-          <img src={pUrl} alt='' className='w-full my-5' />
-          <hr className='border-t border-base-light' />
-        </div>
-        {/*                 
-                <Suggestions
-                    eventName="Paying down technical debt at GitHub"
-                    speakerName="Keith Ballinger"
-                    speakerDetails="SVP, Engineering, GitHub"
-                    speakerImg="https://githubuniverse.com/assets/img/speakers/Keith_Ballinger_Headshot.jpg"
-                /> */}
-      </div>
-    </section>
+      ))}
+    </div>
   );
 };
-/*
-export default () =>
-    <Events
-        date="8 December, 22:45 IST"
-        eventName="Opening keynote"
-        description="Join Nat Friedman and special guests for an inside look at the latest updates and product announcements from GitHub."
-        speakerName="Nat Friedman"
-        speakerDetails="CEO, Github"
-        speakerImg="https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg"
-        posterUrl="https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg"
-    />
-*/
-
-export default Events;
-/*
-export const eventsDataQuery = graphql`
-query EventsDataByPath($event: String!) {
-    eventsDataJson(event: { eq: $event }) {
-        
-        dateAndTime
-        eventName
-        description
-        speakerName
-        designation
-        speakerImg
-        posterUrl
-    }
-}
-`
-*/
+export default EventLists;
