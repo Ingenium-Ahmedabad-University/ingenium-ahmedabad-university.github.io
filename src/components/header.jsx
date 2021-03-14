@@ -48,9 +48,9 @@ const NavOption = ({ name, link }) => {
     <Link to={`/${link}`}>
       <div className='group grid grid-cols-3 cursor-pointer h-16 lg:h-auto my-5'>
         <div className='grid col-2 mx-3'>
-          <div className='hidden h-px width-transition bg-base self-center w-0 group-hover:w-full lg:block col-start-2 ' />
+          <div className='hidden h-px width-transition bg-white self-center w-0 group-hover:w-full lg:block col-start-2 ' />
         </div>
-        <h1 className='text-right lg:text-left col-span-full lg:col-span-2 text-3xl lg:text-6xl transition-colors duration-700 text-base lg:text-transparent group-hover:text-base font-title-abril italic text-stroke-base'>
+        <h1 className='text-right lg:text-left col-span-full lg:col-span-2 text-3xl lg:text-6xl transition-colors duration-700 text-white lg:text-transparent group-hover:text-white text-stroke-white nav-font'>
           {name}
         </h1>
       </div>
