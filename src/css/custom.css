@@ -324,7 +324,7 @@ h1.line-height125 {
   line-height: 1.25em;
 }
 .strike {
-  top: calc(50% - 5px);
+  top: calc(47%);
   transform: translateX(-100vw);
 }
 .hide-dates {
@@ -334,10 +334,6 @@ h1.line-height125 {
   height: 2em;
 }
 
-.dots-wrapper {
-  /* top: 0; */
-  /* left: -50vw; */
-}
 .dot {
   @apply bg-base-light;
   height: 4vw;
@@ -358,8 +354,8 @@ h1.line-height125 {
 
 .drop-zone {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   box-sizing: content-box;
   height: 65px;
   width: 65px;
@@ -367,7 +363,10 @@ h1.line-height125 {
   border: 10px solid theme('colors.secondary');
   opacity: 0;
 }
-
+.drag-me-text {
+  left: calc(-100% - 1em);
+  top: calc(50% - 0.5em);
+}
 @media screen and (min-width: 1000px) {
   .dot-me {
     height: 4vw;
