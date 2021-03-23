@@ -11,6 +11,7 @@ import e9 from '../images/auction.jpeg';
 import e10 from '../images/dev-con.png';
 import e11 from '../images/web-dev.png';
 import e12 from '../images/docker.png';
+import e13 from '../images/arduino.png';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,7 +26,7 @@ const events_data = [
         detail: [
           {
             desc:
-              'Enhance your app development skills by designing mobile, web, and desktop applications with a single codebase using Flutter.',
+              'Explore varios career options available in CSE along with explaining which skills are needed for a specific career.',
             title: 'Careers in CSE',
             date: '27th March, 12 pm',
             image: e7,
@@ -33,7 +34,7 @@ const events_data = [
           },
           {
             desc:
-              'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik',
+              'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik.',
             date: '21st March, 4 pm',
             title: 'Kickstart IOT',
             image: e2,
@@ -49,19 +50,19 @@ const events_data = [
           },
           {
             desc:
-              'Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.',
+              'The Developer Console is an integrated development environment with a collection of tools you can use to create, debug, and test applications.',
             date: '13th March, 4 pm',
             title: 'Developer Console',
             image: e10,
-            url: 'docker',
+            url: 'dev-con',
           },
           {
             desc:
-              'Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.',
+              'Web Development is not just about designing or programming, it is about creating an interface for information and interaction!',
             date: '10th March, 5:30 pm',
             title: 'Web Development',
             image: e11,
-            url: 'docker',
+            url: 'web-dev',
           },
         ],
       },
@@ -70,18 +71,26 @@ const events_data = [
         detail: [
           {
             desc:
+              'Workshop would consist of introduction, basics of Arduino and end with interesting task based learning.',
+            date: '24th March, 6-9pm',
+            title: 'Arduino Workshop',
+            image: e13,
+            url: 'arduino',
+          },
+          {
+            desc:
               'In the talk Dr. Srinivas, ISRO HQ, Bangalore, would be explaining what is FEA and how it is used to design space components.',
             date: '3rd April, 2-3:30pm',
             title: 'FEA in Space Talk',
             image: e1,
-            url:'space-talk'
+            url: 'space-talk',
           },
           {
             desc: 'Workshop by Harshal Sir',
             title: 'Robotics Workshop',
             date: '4th April, 11-12:30 pm',
             image: e1,
-            url:'robotics'
+            url: 'robotics',
           },
           {
             desc:
@@ -89,7 +98,15 @@ const events_data = [
             title: 'Machine Fault Diagnosis',
             date: '3rd April, 2-3:30pm',
             image: e1,
-            url:'fault-daignosis'
+            url: 'fault-daignosis',
+          },
+          {
+            desc:
+              'Workshop by Sanket Sir: CNC Lathe, CNC Milling and Laser Cutting machines would be explained from the basics of CNC programming.',
+            date: 'TBA',
+            title: 'CNC Workshop',
+            image: e1,
+            url: 'cnc',
           },
         ],
       },
@@ -97,7 +114,7 @@ const events_data = [
         type: 'Chemical',
         detail: [
           {
-            desc: 'Enhance your knowledge!',
+            desc: 'Enhance your knowledge by an Industrial Talk!',
             title: 'Talk on Project Management ',
             date: '27th March, 12 pm',
             image: e8,
@@ -114,28 +131,32 @@ const events_data = [
         type: 'Computer Science',
         detail: [
           {
-            desc: 'In this event, a team of 3 members would be given a set of problems that they are supposed to solve under the given time constraint.',
+            desc:
+              'In this event, a team of 3 members would be given a set of problems that they are supposed to solve under the given time constraint.',
             date: '3rd April, 2-5 pm',
             title: 'Codefi',
             image: e5,
             url: 'codefi',
           },
           {
-            desc: 'Treasure Hunt is not just about the hunt, it requires much more than that! Ingenium brings you one of its most exciting events.',
+            desc:
+              'Treasure Hunt is not just about the hunt, it requires much more than that! Ingenium brings you one of its most exciting events.',
             date: '3rd April, 5-7 pm',
             title: 'E-treasure Hunt',
             image: e3,
             url: 'e-treasure-hunt',
           },
           {
-            desc: 'If you are a Data Science and Machine Learning enthusiast, get ready for an amazing competition we have for you.',
+            desc:
+              'If you are a Data Science and Machine Learning enthusiast, get ready for an amazing competition we have for you.',
             date: '2nd April, 8am',
             title: 'Kaggle Competition',
             image: e4,
             url: 'kaggle-competition',
           },
           {
-            desc: 'If you wish to flex or learn these skills, we bring you the perfect opportunity. One of the most anticipated events of the Ingenium is here!',
+            desc:
+              'If you wish to flex or learn these skills, we bring you the perfect opportunity. One of the most anticipated events of the Ingenium is here!',
             date: '4th April, 10-6 pm',
             title: 'Iot Auction',
             image: e9,
@@ -226,10 +247,7 @@ const EventLists = () => {
     <div className='sm:mx-12 mx-6 my-12 lg:mx-18 pb-5'>
       {data.map((el, key) => (
         <div>
-          <h1
-            id={el.category}
-            className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'
-          >
+          <h1 className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
             {el.category}
           </h1>
           <div className='underline mx-auto md:w-64 w-40 h-1 items-center bg-gradient-to-br from-red-500 to-indigo-400'>
@@ -247,14 +265,14 @@ const EventLists = () => {
               </div>
               <div className='grid grid-cols-1 gap-12 lg:grid-cols-3 sm:grid-cols-2 xl:gap-20 md:gap-16 py-10'>
                 {typ.detail.map((det, key1) => (
-                  <div> <Link to={`${det.url}`}>
-                    <div
-                      className='avatar relative h-64 w-full flex justify-center items-center text-center bg-cover bg-center'
-                      data-aos='fade-up'
-                      style={{ backgroundImage: `url(${det.image})` }}
-                    >
-                      
-                                    
+                  <div>
+                    {' '}
+                    <Link to={`${det.url}`}>
+                      <div
+                        className='avatar relative h-64 w-full flex justify-center items-center text-center bg-cover bg-center'
+                        data-aos='fade-up'
+                        style={{ backgroundImage: `url(${det.image})` }}
+                      >
                         <div className='desc z-10 tracking-tight bg-gray-800 bg-opacity-60 text-white'>
                           <span className=' font-bold md:text-2xl lg:text-3xl'>
                             {det.title}
@@ -264,7 +282,8 @@ const EventLists = () => {
                             <br /> {det.desc}
                           </span>
                         </div>
-                    </div> </Link>
+                      </div>{' '}
+                    </Link>
                     <div className='md_640px bg-black bg-opacity-50 rounded-b-xl p-2'>
                       <span className='font-bold text-lg'>{det.title}</span>
                       <br />
