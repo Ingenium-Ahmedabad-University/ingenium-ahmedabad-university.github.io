@@ -17,8 +17,8 @@ const events_data = [
   {
     category: 'Workshops',
     event: [
-      /*{
-        type: 'Mechanical...',
+      {
+        type: 'Mechanical',
         detail: [
           {
             desc:
@@ -26,12 +26,14 @@ const events_data = [
             date: '3rd April, 2-3:30pm',
             title: 'FEA in Space Talk',
             image: e1,
+            url:'space-talk'
           },
           {
             desc: 'Workshop by Harshal Sir',
             title: 'Robotics Workshop',
             date: '4th April, 11-12:30 pm',
             image: e1,
+            url:'robotics'
           },
           {
             desc:
@@ -39,9 +41,10 @@ const events_data = [
             title: 'Machine Fault Diagnosis',
             date: '3rd April, 2-3:30pm',
             image: e1,
+            url:'fault-daignosis'
           },
         ],
-      },*/
+      },
       {
         type: 'Computer Science',
         detail: [
@@ -51,7 +54,7 @@ const events_data = [
             title: 'Careers in CSE',
             date: '27th March, 12 pm',
             image: e7,
-            url: '',
+            url: 'careers-in-cse',
           },
           {
             desc:
@@ -71,7 +74,7 @@ const events_data = [
             title: 'Talk on Project Management ',
             date: '27th March, 12 pm',
             image: e8,
-            url: '',
+            url: 'industry-talk',
           },
         ],
       },
@@ -88,7 +91,7 @@ const events_data = [
             date: '3rd April, 2-5 pm',
             title: 'Codefi',
             image: e5,
-            url: '',
+            url: 'codefi',
           },
           {
             desc: 'Upcoming!!',
@@ -122,7 +125,7 @@ const events_data = [
             date: '2nd-3rd April, 1pm onwards',
             title: 'Need for solution',
             image: e1,
-            url: '',
+            url: 'need-for-solution',
           },
           {
             desc:
@@ -130,7 +133,7 @@ const events_data = [
             date: '3rd April, 10-12am',
             title: 'Chemical Hunt ',
             image: e1,
-            url: '',
+            url: 'chemical-hunt',
           },
           {
             desc:
@@ -138,7 +141,7 @@ const events_data = [
             date: '4th April, 10-12 pm',
             title: 'Road to treasure',
             image: e1,
-            url: '',
+            url: 'road-to-treasure',
           },
         ],
       },
@@ -151,7 +154,7 @@ const events_data = [
             title: 'Mechathon V2.0',
             date: ' 27-28 March, 9am-5pm',
             image: e6,
-            url: '',
+            url: 'mechathon',
           },
           {
             desc: 'Upcoming!!',
