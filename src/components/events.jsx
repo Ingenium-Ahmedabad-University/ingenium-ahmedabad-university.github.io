@@ -162,7 +162,10 @@ const EventLists = () => {
     <div className='sm:mx-12 mx-6 my-12 lg:mx-18 pb-5'>
       {data.map((el, key) => (
         <div>
-          <h1 id={el.category} className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+          <h1
+            id={el.category}
+            className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'
+          >
             {el.category}
           </h1>
           <div className='underline mx-auto md:w-64 w-40 h-1 items-center bg-gradient-to-br from-red-500 to-indigo-400'>
