@@ -15,11 +15,10 @@ const Layout = ({ children }) => {
     <>
       <SEO />
       <div className='base px-3 md:px-5 lg:px-10 bg-base'>
-        <HeroSection />
+        {/* <HeroSection />
         <AboutUs />
         <Events />
-        <Testimonials />
-        <Footer />
+        <Testimonials /> */}
         <Header />
         {/* <div className='flex flex-col h-screen justify-center items-center bg-base w-full'>
         <div className='w-6/12'>

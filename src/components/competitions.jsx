@@ -43,9 +43,20 @@ const Competition = ({
           {eventTitle}
         </h1>
         <p className='text-gray-400 text-lg py-3'>{desc}</p>
-        <p className='text-white font-bold text-lg sm:text-xl lg:text-2xl mb-5 py-3'>
-          Prize: {prizes}
-        </p>
+        <div className='grid grid-cols-1 sm:grid-cols-2'>
+          <div className='flex items-center'>
+            <p className='text-white font-bold text-lg sm:text-xl lg:text-2xl py-3'>
+              Prize: {prizes}
+            </p>
+          </div>
+          <div className='flex sm:justify-end items-center'>
+            <Link to='#'>
+              <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
+                REGISTER
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
       <div className='my-10'>
         <hr className='border-t border-base-light' />
@@ -57,7 +68,7 @@ const Competition = ({
         Rules:{' '}
       </p>
       <div
-        className='text-white mb-8'
+        className='text-white mb-8 event-rules'
         dangerouslySetInnerHTML={{ __html: rules }}
       />
       <p className='text-primary font-bold text-lg sm:text-xl lg:text-2xl py-3'>
