@@ -51,7 +51,7 @@ const Competition = ({
           </div>
           <div className='flex sm:justify-end items-center'>
             <Link to='#'>
-              <button className='register-button px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
+              <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
                 REGISTER
               </button>
             </Link>
