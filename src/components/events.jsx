@@ -114,28 +114,28 @@ const events_data = [
         type: 'Computer Science',
         detail: [
           {
-            desc: 'Upcoming!!',
+            desc: 'In this event, a team of 3 members would be given a set of problems that they are supposed to solve under the given time constraint.',
             date: '3rd April, 2-5 pm',
             title: 'Codefi',
             image: e5,
             url: 'codefi',
           },
           {
-            desc: 'Upcoming!!',
+            desc: 'Treasure Hunt is not just about the hunt, it requires much more than that! Ingenium brings you one of its most exciting events.',
             date: '3rd April, 5-7 pm',
             title: 'E-treasure Hunt',
             image: e3,
             url: 'e-treasure-hunt',
           },
           {
-            desc: 'Upcoming!!',
+            desc: 'If you are a Data Science and Machine Learning enthusiast, get ready for an amazing competition we have for you.',
             date: '2nd April, 8am',
             title: 'Kaggle Competition',
             image: e4,
             url: 'kaggle-competition',
           },
           {
-            desc: 'Upcoming!!',
+            desc: 'If you wish to flex or learn these skills, we bring you the perfect opportunity. One of the most anticipated events of the Ingenium is here!',
             date: '4th April, 10-6 pm',
             title: 'Iot Auction',
             image: e9,
