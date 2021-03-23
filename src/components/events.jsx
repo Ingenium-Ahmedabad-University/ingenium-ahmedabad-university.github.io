@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react';
-import e1 from '../images/about_us2.jpg';
+import e2 from '../images/IOT.png';
+import e1 from '../images/IOT.png';
+import e4 from '../images/kaggle.jpeg';
+import e3 from '../images/E-treasure.jpeg';
+import e5 from '../images/codefi.jpeg';
+import e6 from '../images/mechathon.jpeg';
+import e7 from '../images/CSE.png';
+import e8 from '../images/industrytalk.png';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,7 +15,7 @@ const events_data = [
   {
     category: 'Workshops',
     event: [
-      {
+      /*{
         type: 'Mechanical...',
         detail: [
           {
@@ -32,7 +39,7 @@ const events_data = [
             image: e1,
           },
         ],
-      },
+      },*/
       {
         type: 'Computer Science',
         detail: [
@@ -41,41 +48,14 @@ const events_data = [
               'Enhance your app development skills by designing mobile, web, and desktop applications with a single codebase using Flutter.',
             title: 'Careers in CSE',
             date: '27th March, 12 pm',
-            image: e1,
+            image: e7,
           },
           {
             desc:
               'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik',
             date: '21st March, 4 pm',
             title: 'Kickstart IOT',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'DL with Tensorflow',
-            image: e1,
-          },
-          {
-            desc:
-              'Enhance your UI/UX of web applications with Progressive Web App',
-            title: 'PWA',
-            date: 'TBA',
-            image: e1,
-          },
-          {
-            desc:
-              'If the idea of building something like Pokemon Go or HTC Vive has ever crossed your mind, then this the place for you.',
-            title: 'AR/VR',
-            date: 'TBA',
-            image: e1,
-          },
-          {
-            desc:
-              'GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub.',
-            title: 'Github Actions',
-            date: 'TBA',
-            image: e1,
+            image: e2,
           },
         ],
       },
@@ -87,7 +67,7 @@ const events_data = [
               'Enhance your knowledge!',
             title: 'Talk on Project Management ',
             date: '27th March, 12 pm',
-            image: e1,
+            image: e8,
           },
         ]
       }
@@ -97,61 +77,25 @@ const events_data = [
     category: 'Contests',
     event: [
       {
-        type: 'Mechanical...',
-        detail: [
-          {
-            desc:
-              'It is a competition in which max 4 membered team would solve an industrial problem statement in a time of 32 hours.',
-            title: 'Ingenious Mechathon V2.0',
-            date: ' 27-28 March, 9am-5pm',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Quiz on Automobiles',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Meme Story',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'E-Gaming Fests',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Identify the car',
-            image: e1,
-          },
-        ],
-      },
-      {
         type: 'Computer Science',
         detail: [
           {
             desc: 'Upcoming!!',
             date: '3rd April, 2-5 pm',
             title: 'Codefi',
-            image: e1,
+            image: e5,
           },
           {
             desc: 'Upcoming!!',
             date: '3rd April, 5-7 pm',
             title: 'E-treasure Hunt',
-            image: e1,
+            image: e3,
           },
           {
             desc: 'Upcoming!!',
             date: '2nd April, 8am',
             title: 'Kaggle Competition',
-            image: e1,
+            image: e4,
           },
           {
             desc: 'Upcoming!!',
@@ -183,6 +127,42 @@ const events_data = [
             image: e1,
           },
         ]
+      },
+      {
+        type: 'Mechanical...',
+        detail: [
+          {
+            desc:
+              'It is a competition in which max 4 membered team would solve an industrial problem statement in a time of 32 hours.',
+            title: 'Mechathon V2.0',
+            date: ' 27-28 March, 9am-5pm',
+            image: e6,
+          },
+          {
+            desc: 'Upcoming!!',
+            date: 'TBA',
+            title: 'Quiz on Automobiles',
+            image: e1,
+          },
+          {
+            desc: 'Upcoming!!',
+            date: 'TBA',
+            title: 'Meme Story',
+            image: e1,
+          },
+          {
+            desc: 'Upcoming!!',
+            date: 'TBA',
+            title: 'E-Gaming Fests',
+            image: e1,
+          },
+          {
+            desc: 'Upcoming!!',
+            date: 'TBA',
+            title: 'Identify the car',
+            image: e1,
+          },
+        ],
       }
     ],
   },
