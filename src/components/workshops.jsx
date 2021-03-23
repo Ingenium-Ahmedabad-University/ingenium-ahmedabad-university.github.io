@@ -60,11 +60,7 @@ const Workshop = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => (
       {/* Poster and Suggestions */}
       <div className='my-10'>
         <hr className='border-t border-base-light' />
-        <img
-          src={`images/workshops/${pUrl}.png`}
-          alt=''
-          className='w-full max-w-2xl my-5 mx-auto'
-        />
+        <img src={pUrl} alt='' className='w-full max-w-2xl my-5 mx-auto' />
         <hr className='border-t border-base-light' />
       </div>
       {/* 
