@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react';
-import e1 from '../images/about_us2.jpg';
+import e2 from '../images/IOT.png';
+import e1 from '../images/IOT.png';
+import e4 from '../images/kaggle.jpeg';
+import e3 from '../images/E-treasure.jpeg';
+import e5 from '../images/codefi.jpeg';
+import e6 from '../images/mechathon.jpeg';
+import e7 from '../images/CSE.png';
+import e8 from '../images/industrytalk.png';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,92 +15,129 @@ const events_data = [
   {
     category: 'Workshops',
     event: [
-      {
+      /*{
         type: 'Mechanical...',
         detail: [
           {
             desc:
-              'First, introduction of arduino would be given and the basics would be covered. Then tasks would be given based on the learning.',
-            title: 'Arduino Workshop',
-            date: '20th March, TBA',
+              'In the talk Dr. Srinivas, ISRO HQ, Bangalore, would be explaining what is FEA and how it is used to design space components.',
+            date: '3rd April, 2-3:30pm',
+            title: 'FEA in Space Talk',
             image: e1,
           },
           {
-            desc:
-              ' It would be a workshop on where the faults occur in our machines and how we can find them.',
-            date: '2nd/3rd April, TBA',
-            title: 'Faults in the Machines',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
+            desc: 'Workshop by Harshal Sir',
             title: 'Robotics Workshop',
-            date: '4th April, TBA',
+            date: '4th April, 11-12:30 pm',
             image: e1,
           },
           {
             desc:
-              'CNC Lathe, CNC Milling and Laser Cutting machines would be explained starting from the basics of CNC programming.',
-            title: 'CNC Workshop',
-            date: '20th March, TBA',
+              'Workshop on Condition monitoring: a lifeline for preventing failures of rotating machines by Akhand Sir',
+            title: 'Machine Fault Diagnosis',
+            date: '3rd April, 2-3:30pm',
             image: e1,
           },
         ],
-      },
+      },*/
       {
         type: 'Computer Science',
         detail: [
           {
             desc:
               'Enhance your app development skills by designing mobile, web, and desktop applications with a single codebase using Flutter.',
-            title: 'Bootcamp Flutter',
-            date: 'TBA',
-            image: e1,
+            title: 'Careers in CSE',
+            date: '27th March, 12 pm',
+            image: e7,
           },
           {
             desc:
-              'You may not want to miss an opportunity to learn data analysis through two of the widely used data visualization libraries of Python!',
-            date: 'TBA',
-            title: 'Data-visualization',
-            image: e1,
-          },
-          {
-            desc:
-              'Enhance your UI/UX of web applications with Progressive Web App',
-            title: 'PWA',
-            date: 'TBA',
-            image: e1,
-          },
-          {
-            desc:
-              'If the idea of building something like Pokemon Go or HTC Vive has ever crossed your mind, then this the place for you.',
-            title: 'AR/VR',
-            date: 'TBA',
-            image: e1,
-          },
-          {
-            desc:
-              'GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub.',
-            title: 'Github Actions',
-            date: 'TBA',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'DL with Tensorflow',
-            image: e1,
+              'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik',
+            date: '21st March, 4 pm',
+            title: 'Kickstart IOT',
+            image: e2,
           },
         ],
       },
+      {
+        type: 'Chemical',
+        detail: [
+          {
+            desc:
+              'Enhance your knowledge!',
+            title: 'Talk on Project Management ',
+            date: '27th March, 12 pm',
+            image: e8,
+          },
+        ]
+      }
     ],
   },
   {
     category: 'Contests',
     event: [
       {
+        type: 'Computer Science',
+        detail: [
+          {
+            desc: 'Upcoming!!',
+            date: '3rd April, 2-5 pm',
+            title: 'Codefi',
+            image: e5,
+          },
+          {
+            desc: 'Upcoming!!',
+            date: '3rd April, 5-7 pm',
+            title: 'E-treasure Hunt',
+            image: e3,
+          },
+          {
+            desc: 'Upcoming!!',
+            date: '2nd April, 8am',
+            title: 'Kaggle Competition',
+            image: e4,
+          },
+          {
+            desc: 'Upcoming!!',
+            date: '4th April, 10-6 pm',
+            title: 'Iot Auction',
+            image: e1,
+          },
+        ],
+      },
+      {
+        type: 'Chemical',
+        detail: [
+          {
+            desc: 'Test your problem-solving and tactical skills to overcome hinderance of the production of the end product',
+            date: '2nd-3rd April, 1pm onwards',
+            title: 'Need for solution',
+            image: e1,
+          },
+          {
+            desc: 'A quiz-based event that contains the structure of testing wits, strategies, and knowledge of a true Chemist/Chemical Engineer!',
+            date: '3rd April, 10-12am',
+            title: 'Chemical Hunt ',
+            image: e1,
+          },
+          {
+            desc: 'An ultimate competition where teams compete with each other to reach the treasure!',
+            date: '4th April, 10-12 pm',
+            title: 'Road to treasure',
+            image: e1,
+          },
+        ]
+      },
+      {
         type: 'Mechanical...',
         detail: [
+          {
+            desc:
+              'It is a competition in which max 4 membered team would solve an industrial problem statement in a time of 32 hours.',
+            title: 'Mechathon V2.0',
+            date: ' 27-28 March, 9am-5pm',
+            image: e6,
+          },
           {
             desc: 'Upcoming!!',
             date: 'TBA',
@@ -119,36 +163,7 @@ const events_data = [
             image: e1,
           },
         ],
-      },
-      {
-        type: 'Computer Science',
-        detail: [
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Codefi',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'E-treasure Hunt',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Kaggle Competition',
-            image: e1,
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Iot Auction',
-            image: e1,
-          },
-        ],
-      },
+      }
     ],
   },
 ];
