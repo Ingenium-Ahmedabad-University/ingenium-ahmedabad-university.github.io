@@ -1,24 +1,46 @@
 [
   {
-    "event": "opening-keynote",
-    "dateAndTime": "24th February, 13:00 IST",
-    "eventName": "Opening keynote",
-    "description": "Join Vinay Kakkad and special guests for an inside look at the latest updates and product announcements from GitHub.",
-    "speakerName": "Vinay Kakkad",
-    "designation": "CSE Undergrad @ Ahmedabad University",
+    "event": "kickstart-docker",
+    "dateAndTime": "14th March, 15:00 IST",
+    "eventName": "Kickstart Docker",
+    "description": "Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production. In this session we would learn about Docker and applications.",
+    "speakerName": "Jimesh Bhai",
+    "designation": "Developer",
     "speakerImg": "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
-    "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg",
+    "posterUrl": "https://i.imgur.com/0Y3MrdY.png",
     "type": "workshop"
   },
   {
-    "event": "react-workshop",
-    "dateAndTime": "25th February, 13:00 IST",
-    "eventName": "React Workshop",
-    "description": "Join Arpit Vaghela and special guests for an inside look at the latest updates and product announcements from GitHub.",
-    "speakerName": "Arpit Vaghela",
-    "designation": "ICT Undergrad @ Ahmedabad University",
+    "event": "developer-console",
+    "dateAndTime": "13th March, 16:00 IST",
+    "eventName": "Hands on Developer Console",
+    "description": "Code is prone to errors. You are absolutely  going to make errors, at least if you’re a human and not a robot. Users don’t see errors by default in the browser. So, if something goes wrong in the script, we won’t see what’s broken and can’t fix it. To figure out what the errors are and get a lot of other useful information about scripts, “Developer tools” have been embedded in browsers. The Developer Console is an integrated development environment with a collection of tools you can use to create, debug, and test applications. Ingenium presents to you a workshop on Developer Console.",
+    "speakerName": "Harsh Shah",
+    "designation": "Developer",
     "speakerImg": "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
-    "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg",
+    "posterUrl": "https://i.imgur.com/B5d9eX5.png",
+    "type": "workshop"
+  },
+  {
+    "event": "ui-ux",
+    "dateAndTime": "13th Feb, 21:00 IST",
+    "eventName": "A voyage into the UI/UX world",
+    "description": "UI design and UX design are two of the most often confused and conflated terms in web and app design. The user interface(UI) is the graphical layout of an application. It consists of the buttons users click on, the text they read, the images, sliders, text entry fields and all the rest of the items the user interacts with. User experience(UX) of the application is determined by how users interact with it. UI designers are tasked with deciding how the UI will look, IX designers are in charge of determining how the UI operates. The session will include the basics of UI/UX and how are these related.",
+    "speakerName": "Anmol Anubhai",
+    "designation": "Developer",
+    "speakerImg": "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
+    "posterUrl": "https://i.imgur.com/C40T31T.png",
+    "type": "workshop"
+  },
+  {
+    "event": "kickstart-iot",
+    "dateAndTime": "21st March, 16:00 IST",
+    "eventName": "Kickstart IOT",
+    "description": "If you wish to learn from the best and create something uber cool this season, Ingenium brings you the perfect opportunity! The Kickstart IoT workshop will introduce you to the world of Arduino microcontroller and will provide an opportunity to create an IoT device or system. The participants would be taught about Arduino and be given a hands-on implementation with various modules that work with it. Furthermore, the workshop will cover the connection with IBM Cloud by industry experts. No chance like now to learn this!",
+    "speakerName": "Kevin Naik",
+    "designation": "Developer",
+    "speakerImg": "https://githubuniverse.com/assets/img/speakers/Nat_Friedman_Headshot.jpg",
+    "posterUrl": "https://i.imgur.com/ZbXGjJT.png",
     "type": "workshop"
   },
   {
@@ -29,7 +51,7 @@
     "rules": "1. Every participant must have a ​Kaggle​ account.<br> 2. Maximum allowed team size is ​3<br> 3. The competition will last for 2 weeks.<br>4. Each team will be able to make 10 submissions per day.<br>5. There will be a public leaderboard that will be available during thecompetition and a private leaderboard that will be the finalstandings. During the competition, each team will be put onto thepublic leaderboard and the private leaderboard will be madeavailable only at the end of the competition.<br>4. ​Each team will have to select one solution that they considerfinal which will be evaluated for the final standings.<br>5. ​Use of any publicly available library / package isallowed. Use of pretrained models is not permitted.",
     "certificatePolicy": "1. Every participant must have a ​Kaggle​ account.<br> 2. Maximum allowed team size is ​3<br> 3. The competition will last for 2 weeks",
     "prizes": "10K",
-    "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg",
+    "posterUrl": "https://i.imgur.com/LLs8Hm2.png",
     "type": "competition"
   },
   {
@@ -40,7 +62,7 @@
     "rules": "<ol><li>It&rsquo;s a group event with a team size of 1-2 members</li><li>The team will have to solve the problem using given clues which require knowledge of data processing, database, programming, and web</li><li>Internet will be</li><li>You can attend the event from a laptop or mobile phone, but laptop is</li><li>You can use the tools you</li><li>Team members should be present 15 minutes before the event, late entries in the event will not be</li><li>The competition will be hosted online, mostly on Zoom(for queries) and Actionbound (for clues).</li></ol><p>NOTE:- There may be some change in the hosting platform of the event. So Stay tuned for further details</p>",
     "certificatePolicy": "<ol><li>Certificate of excellence will be awarded to the top 2</li><li>Certificate of participation will be given to all the teams qualified for the final except the top 2</li><li>Disqualified teams will not be considered for any</li></ol><p>NOTE:- Rules announced by the coordinators during the competition will be considered equally important as those announced earlier.</p>",
     "prizes": "10K",
-    "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg",
+    "posterUrl": "https://i.imgur.com/61cppdr.png",
     "type": "competition"
   },
   {
@@ -51,7 +73,7 @@
     "rules": "<ol><li>No outside component is allowed. The participants strictly have to bid for each and every component they want to include in their project.</li><li>In the auction round, the decisions taken by the auctioneer will be the final No one can argue or overrule that.</li><li>No two teams are allowed to e change anything between</li><li>All the participants of the particular team have to be present during the whole Absence of any participant in any of the two rounds will not be acceptable.</li><li>No team can buy any component in the second round though it has remained unsold after the two rounds of the auction.</li><li>Participants have to make their prototype on Tinkercad No other software is allowed to be used.</li><li>Team members may communicate with each other while making the prototype using any platform they find However, the main auction, and presentation of the prototype will be done virtually using Zoom meetings.</li><li>For any queries or guidance for the prototype stage, team members can contact the volunteers via messaging them in the Discord room that will be allotted to each</li></ol><p><strong><u>Team Specifications:</u></strong></p><ol><li>Each team should consist of minimum 3, maximum 4 members.</li></ol>",
     "certificatePolicy": "<ol><li>Certificate of excellence along with appropriate prizes will be awarded to the top 3</li><li>Certificate of participation will be given to all the teams qualified for the final except the top 3</li><li>Disqualified teams will not be considered for any certificates</li></ol>",
     "prizes": "10K",
-    "posterUrl": "https://images.template.net/4999/Free-Concert-Event-Poster-Template.jpeg",
+    "posterUrl": "https://i.imgur.com/sfEAKI4.png",
     "type": "competition"
   },
   {

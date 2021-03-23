@@ -36,16 +36,25 @@ const Workshop = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => (
         </h1>
         <p className='text-gray-400 text-lg py-3'>{desc}</p>
       </div>
-      <div className='flex align-middle'>
-        <div className='rounded-full w-40 mr-5'>
-          <img src={sImg} alt='' className='rounded-full' />
-        </div>
-        <div className='flex items-center'>
-          <div>
-            <span className='text-white text-lg font-bold'>{speaker}</span>
-            <br />
-            <span className='text-lg text-white'>{desig}</span>
+      <div className='grid grid-cols-1 sm:grid-cols-2 items-center justify-center'>
+        <div className='flex'>
+          <div className='rounded-full w-40 mr-5'>
+            <img src={sImg} alt='' className='rounded-full' />
           </div>
+          <div className='flex items-center'>
+            <div>
+              <span className='text-white text-lg font-bold'>{speaker}</span>
+              <br />
+              <span className='text-lg text-white'>{desig}</span>
+            </div>
+          </div>
+        </div>
+        <div className='flex sm:justify-end'>
+          <Link to='#'>
+            <button className='register-button px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
+              REGISTER
+            </button>
+          </Link>
         </div>
       </div>
       {/* Poster and Suggestions */}
