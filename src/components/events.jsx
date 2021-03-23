@@ -8,6 +8,9 @@ import e6 from '../images/mechathon.jpeg';
 import e7 from '../images/CSE.png';
 import e8 from '../images/industrytalk.png';
 import e9 from '../images/auction.jpeg';
+import e10 from '../images/dev-con.png';
+import e11 from '../images/web-dev.png';
+import e12 from '../images/docker.png';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,6 +20,51 @@ const events_data = [
   {
     category: 'Workshops',
     event: [
+      {
+        type: 'Computer Science',
+        detail: [
+          {
+            desc:
+              'Enhance your app development skills by designing mobile, web, and desktop applications with a single codebase using Flutter.',
+            title: 'Careers in CSE',
+            date: '27th March, 12 pm',
+            image: e7,
+            url: 'careers-in-cse',
+          },
+          {
+            desc:
+              'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik',
+            date: '21st March, 4 pm',
+            title: 'Kickstart IOT',
+            image: e2,
+            url: 'kickstart-iot',
+          },
+          {
+            desc:
+              'Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.',
+            date: '14th March, 3 pm',
+            title: 'Docker',
+            image: e12,
+            url: 'docker',
+          },
+          {
+            desc:
+              'Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.',
+            date: '13th March, 4 pm',
+            title: 'Developer Console',
+            image: e10,
+            url: 'docker',
+          },
+          {
+            desc:
+              'Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.',
+            date: '10th March, 5:30 pm',
+            title: 'Web Development',
+            image: e11,
+            url: 'docker',
+          },
+        ],
+      },
       {
         type: 'Mechanical',
         detail: [
@@ -42,27 +90,6 @@ const events_data = [
             date: '3rd April, 2-3:30pm',
             image: e1,
             url:'fault-daignosis'
-          },
-        ],
-      },
-      {
-        type: 'Computer Science',
-        detail: [
-          {
-            desc:
-              'Enhance your app development skills by designing mobile, web, and desktop applications with a single codebase using Flutter.',
-            title: 'Careers in CSE',
-            date: '27th March, 12 pm',
-            image: e7,
-            url: 'careers-in-cse',
-          },
-          {
-            desc:
-              'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik',
-            date: '21st March, 4 pm',
-            title: 'Kickstart IOT',
-            image: e2,
-            url: 'kickstart-iot',
           },
         ],
       },
@@ -215,7 +242,7 @@ const EventLists = () => {
                 {typ.type}{' '}
               </h1>
 
-              <div className='underline md:w-48 w-36 h-1 left-0 bg-gradient-to-br from-red-500 to-indigo-400'>
+              <div className='underline md:w-40 w-28 h-1 left-0 bg-gradient-to-br from-red-500 to-indigo-400'>
                 {' '}
               </div>
               <div className='grid grid-cols-1 gap-12 lg:grid-cols-3 sm:grid-cols-2 xl:gap-20 md:gap-16 py-10'>
@@ -227,8 +254,7 @@ const EventLists = () => {
                       style={{ backgroundImage: `url(${det.image})` }}
                     >
                       
-                        <div className='absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900'></div>
-
+                                    
                         <div className='desc z-10 tracking-tight bg-gray-800 bg-opacity-60 text-white'>
                           <span className=' font-bold md:text-2xl lg:text-3xl'>
                             {det.title}
