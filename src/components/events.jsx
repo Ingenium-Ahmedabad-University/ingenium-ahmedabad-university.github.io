@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import e2 from '../images/IOT.png';
-import e1 from '../images/IOT.png';
+import e1 from '../images/cnc.png';
 import e4 from '../images/kaggle.jpeg';
 import e3 from '../images/E-treasure.jpeg';
 import e5 from '../images/codefi.jpeg';
 import e6 from '../images/mechathon.jpeg';
 import e7 from '../images/CSE.png';
 import e8 from '../images/industrytalk.png';
+import e9 from '../images/auction.jpeg';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -101,7 +102,7 @@ const events_data = [
             desc: 'Upcoming!!',
             date: '4th April, 10-6 pm',
             title: 'Iot Auction',
-            image: e1,
+            image: e9,
           },
         ],
       },
@@ -129,7 +130,7 @@ const events_data = [
         ]
       },
       {
-        type: 'Mechanical...',
+        type: 'Mechanical',
         detail: [
           {
             desc:
