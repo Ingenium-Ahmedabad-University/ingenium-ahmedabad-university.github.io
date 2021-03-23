@@ -51,7 +51,8 @@ const Workshop = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => (
         </div>
         <div className='flex sm:justify-end'>
           <Link to='#'>
-            <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
+            {/* <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'> */}
+            <button className='register-button px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
               REGISTER
             </button>
           </Link>

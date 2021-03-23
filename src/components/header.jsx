@@ -60,7 +60,7 @@ const NavOption = ({ name, link }) => {
 
 const NavMenu = ({ open }) => {
   const options = [
-    { name: 'Home', link: '' },
+    { name: 'Home', link: 'about-us' },
     { name: 'Events', link: 'events' },
     { name: 'Contests', link: 'events#Contests' },
     { name: 'Contact Us', link: 'contact-us' },

@@ -63,14 +63,13 @@ const events_data = [
         type: 'Chemical',
         detail: [
           {
-            desc:
-              'Enhance your knowledge!',
+            desc: 'Enhance your knowledge!',
             title: 'Talk on Project Management ',
             date: '27th March, 12 pm',
             image: e8,
           },
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -109,24 +108,27 @@ const events_data = [
         type: 'Chemical',
         detail: [
           {
-            desc: 'Test your problem-solving and tactical skills to overcome hinderance of the production of the end product',
+            desc:
+              'Test your problem-solving and tactical skills to overcome hinderance of the production of the end product',
             date: '2nd-3rd April, 1pm onwards',
             title: 'Need for solution',
             image: e1,
           },
           {
-            desc: 'A quiz-based event that contains the structure of testing wits, strategies, and knowledge of a true Chemist/Chemical Engineer!',
+            desc:
+              'A quiz-based event that contains the structure of testing wits, strategies, and knowledge of a true Chemist/Chemical Engineer!',
             date: '3rd April, 10-12am',
             title: 'Chemical Hunt ',
             image: e1,
           },
           {
-            desc: 'An ultimate competition where teams compete with each other to reach the treasure!',
+            desc:
+              'An ultimate competition where teams compete with each other to reach the treasure!',
             date: '4th April, 10-12 pm',
             title: 'Road to treasure',
             image: e1,
           },
-        ]
+        ],
       },
       {
         type: 'Mechanical...',
@@ -163,7 +165,7 @@ const events_data = [
             image: e1,
           },
         ],
-      }
+      },
     ],
   },
 ];
