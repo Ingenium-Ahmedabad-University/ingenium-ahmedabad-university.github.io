@@ -630,7 +630,7 @@ html {
 .about-us-header {
   height: 50vw;
   width: 100vw;
-  background-image: linear-gradient(black, black), url('../images/banner.jpg');
+  background-image: linear-gradient(black, black), url('../images/backdrop.png');
   background-size: cover;
   background-blend-mode: saturation;
 }
@@ -651,10 +651,14 @@ html {
   content: '';
   height: 24px;
   width: 16px;
-  background-color: #ed4e50;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(239, 68, 68),
+    rgb(129, 140, 248)
+  );
   position: absolute;
   left: -25px;
-  top: 5px;
+  top: 8px;
   animation: scale-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 

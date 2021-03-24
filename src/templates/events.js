@@ -10,6 +10,7 @@ export const eventsDataQuery = graphql`
   query EventsDataByPath($event: String!) {
     eventsDataJson(event: { eq: $event }) {
       dateAndTime
+      jsDate
       eventName
       rules
       certificatePolicy
@@ -36,10 +37,12 @@ const EventsPage = ({ data }) => {
         desig={event.designation}
         sImg={event.speakerImg}
         pUrl={event.posterUrl}
+        jsDate={event.jsDate}
       />
     ) : (
       <Competition
         dAndT={event.dateAndTime}
+        jsDate={event.jsDate}
         eventTitle={event.eventName}
         desc={event.description}
         rules={event.rules}

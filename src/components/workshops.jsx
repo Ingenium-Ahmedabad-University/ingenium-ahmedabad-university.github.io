@@ -1,8 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Icons, Suggestions } from './eventsPageUtils';
+import { Icons, Suggestions, RegisterButton } from './eventsPageUtils';
 
-const Workshop = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => (
+const Workshop = ({
+  dAndT,
+  jsDate,
+  eventTitle,
+  desc,
+  speaker,
+  desig,
+  sImg,
+  pUrl,
+}) => (
   <section id='events-page'>
     <div className='container md:max-w-4/5 xl:max-w-7/10 mx-auto py-28'>
       {/* Links and Icons */}
@@ -50,12 +59,7 @@ const Workshop = ({ dAndT, eventTitle, desc, speaker, desig, sImg, pUrl }) => (
           </div>
         </div>
         <div className='flex sm:justify-end'>
-          <Link to='#'>
-            {/* <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'> */}
-            <button className='register-button px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
-              REGISTER
-            </button>
-          </Link>
+          <RegisterButton jsDate={jsDate} />
         </div>
       </div>
       {/* Poster and Suggestions */}
