@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
-import { Icons, Suggestions } from './eventsPageUtils';
+import { Icons, Suggestions, RegisterButton } from './eventsPageUtils';
 
 const Competition = ({
   dAndT,
+  jsDate,
   eventTitle,
   desc,
   rules,
@@ -50,11 +51,7 @@ const Competition = ({
             </p>
           </div>
           <div className='flex sm:justify-end items-center'>
-            <Link to='#'>
-              <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
-                REGISTER
-              </button>
-            </Link>
+            <RegisterButton jsDate={jsDate} />
           </div>
         </div>
       </div>
@@ -75,7 +72,7 @@ const Competition = ({
         Certificate Policy:{' '}
       </p>
       <div
-        className='text-white'
+        className='text-white event-rules'
         dangerouslySetInnerHTML={{ __html: certificatePolicy }}
       />
       {/* 

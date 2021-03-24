@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 function copyToClipboard(eventUrl) {
   const tooltipText = document.querySelector('.tooltip-text');
@@ -98,4 +99,22 @@ const Suggestions = ({
   </div>
 );
 
-export { Icons, Suggestions };
+const RegisterButton = ({ jsDate }) => {
+  const eventDate = new Date(jsDate);
+  const today = new Date();
+
+  if (eventDate > today) {
+    return (
+      <Link to='#'>
+        {/* <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'> */}
+        <button className='register-button px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
+          REGISTER
+        </button>
+      </Link>
+    );
+  } else {
+    return <div></div>;
+  }
+};
+
+export { Icons, Suggestions, RegisterButton };
