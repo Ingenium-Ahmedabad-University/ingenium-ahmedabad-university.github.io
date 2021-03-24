@@ -12,6 +12,9 @@ import e10 from '../images/dev-con.png';
 import e11 from '../images/web-dev.png';
 import e12 from '../images/docker.png';
 import e13 from '../images/arduino.png';
+import e14 from '../images/NFS.png';
+import e15 from '../images/chemical-hunt.png';
+import e16 from '../images/road-to-treasure.png';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,7 +29,7 @@ const events_data = [
         detail: [
           {
             desc:
-              'Explore varios career options available in CSE along with explaining which skills are needed for a specific career.',
+              'Explore various career options available in CSE along with explaining which skills are needed for a specific career.',
             title: 'Careers in CSE',
             date: '27th March, 12 pm',
             image: e7,
@@ -86,15 +89,15 @@ const events_data = [
             url: 'space-talk',
           },
           {
-            desc: 'Workshop by Harshal Sir',
-            title: 'Robotics Workshop',
+            desc: 'Workshop by Prof. Harshal Oza. This webinar will introduce the participants to the latest advances in industrial robotics.',
+            title: 'Advances in Industrial Robotics',
             date: '4th April, 11-12:30 pm',
             image: e1,
             url: 'robotics',
           },
           {
             desc:
-              'Workshop on Condition monitoring: a lifeline for preventing failures of rotating machines by Akhand Sir',
+              'Workshop on Condition monitoring: a lifeline for preventing failures of rotating machines by Prof. Akhand.',
             title: 'Machine Fault Diagnosis',
             date: '3rd April, 2-3:30pm',
             image: e1,
@@ -102,7 +105,7 @@ const events_data = [
           },
           {
             desc:
-              'Workshop by Sanket Sir: CNC Lathe, CNC Milling and Laser Cutting machines would be explained from the basics of CNC programming.',
+              'Workshop by Prof. Sanket: CNC Lathe, CNC Milling and Laser Cutting machines would be explained from the basics of CNC programming.',
             date: 'TBA',
             title: 'CNC Workshop',
             image: e1,
@@ -149,7 +152,7 @@ const events_data = [
           {
             desc:
               'If you are a Data Science and Machine Learning enthusiast, get ready for an amazing competition we have for you.',
-            date: '2nd April, 8am',
+            date: '2nd April, 8 am',
             title: 'Kaggle Competition',
             image: e4,
             url: 'kaggle-competition',
@@ -170,17 +173,17 @@ const events_data = [
           {
             desc:
               'Test your problem-solving and tactical skills to overcome hinderance of the production of the end product',
-            date: '2nd-3rd April, 1pm onwards',
+            date: '2nd-3rd April, 1 pm',
             title: 'Need for solution',
-            image: e1,
+            image: e14,
             url: 'need-for-solution',
           },
           {
             desc:
-              'A quiz-based event that contains the structure of testing wits, strategies, and knowledge of a true Chemist/Chemical Engineer!',
+              'A quiz-based event that contains the structure of testing wits, strategies, and knowledge of a true Chemical Engineer!',
             date: '3rd April, 10-12am',
             title: 'Chemical Hunt ',
-            image: e1,
+            image: e15,
             url: 'chemical-hunt',
           },
           {
@@ -188,7 +191,7 @@ const events_data = [
               'An ultimate competition where teams compete with each other to reach the treasure!',
             date: '4th April, 10-12 pm',
             title: 'Road to treasure',
-            image: e1,
+            image: e16,
             url: 'road-to-treasure',
           },
         ],
@@ -205,6 +208,13 @@ const events_data = [
             url: 'mechathon',
           },
           {
+            desc: 'There would be three different tournaments for the following games: CounterStrike: Global Offensive, Valorant and Rocket League.',
+            date: 'TBA',
+            title: 'E-Gaming Fests',
+            image: e1,
+            url: '',
+          },
+          {
             desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Quiz on Automobiles',
@@ -215,13 +225,6 @@ const events_data = [
             desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Meme Story',
-            image: e1,
-            url: '',
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'E-Gaming Fests',
             image: e1,
             url: '',
           },
