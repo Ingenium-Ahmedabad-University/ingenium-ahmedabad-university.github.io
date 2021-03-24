@@ -29,7 +29,7 @@ const Hero = () => {
       gsap.to(refDropZone.current, { scale: 1, opacity: 0.7 });
     }
   };
-  const redirectto = () => navigate('/events/');
+  const redirectto = () => navigate('/about-us/');
 
   const hitTestEnd = (e) => {
     if (Draggable.hitTest(e, refDropZone.current)) {
