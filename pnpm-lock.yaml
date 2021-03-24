@@ -16,6 +16,7 @@ dependencies:
   gsap: 3.6.0
   postcss: 8.2.6
   react: 16.14.0
+  react-audio-player: 0.14.0_react-dom@16.14.0+react@16.14.0
   react-dom: 16.14.0_react@16.14.0
   react-helmet: 6.1.0_react@16.14.0
   tailwindcss: 2.0.3_759587f5361760629983e9fe457a3aed
@@ -352,8 +353,8 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-w4zOPKUFPX1mgvTmL/fcEqy34hrQ1CRcGxdphBc6snDnnqJ47EZDIyop6IwXzAC8G916hsIuXB2ZMBCExC5k7Q==
-  /@babel/plugin-proposal-logical-assignment-operators/7.13.8_@babel+core@7.13.8:
-    dependencies:
+  ? /@babel/plugin-proposal-logical-assignment-operators/7.13.8_@babel+core@7.13.8
+  : dependencies:
       '@babel/core': 7.13.8
       '@babel/helper-plugin-utils': 7.13.0
       '@babel/plugin-syntax-logical-assignment-operators': 7.10.4_@babel+core@7.13.8
@@ -721,8 +722,8 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-FW+WPjSR7hiUxMcKqyNjP05tQ2kmBCdpEpZHY1ARm96tGQCCBvXKnpjILtDplUnJ/eHZ0lALLM+d2lMFSpYJrQ==
-  /@babel/plugin-transform-member-expression-literals/7.12.13_@babel+core@7.13.8:
-    dependencies:
+  ? /@babel/plugin-transform-member-expression-literals/7.12.13_@babel+core@7.13.8
+  : dependencies:
       '@babel/core': 7.13.8
       '@babel/helper-plugin-utils': 7.13.0
     dev: false
@@ -776,8 +777,8 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-D/ILzAh6uyvkWjKKyFE/W0FzWwasv6vPTSqPcjxFqn6QpX3u8DjRVliq4F2BamO2Wee/om06Vyy+vPkNrd4wxw==
-  /@babel/plugin-transform-named-capturing-groups-regex/7.12.13_@babel+core@7.13.8:
-    dependencies:
+  ? /@babel/plugin-transform-named-capturing-groups-regex/7.12.13_@babel+core@7.13.8
+  : dependencies:
       '@babel/core': 7.13.8
       '@babel/helper-create-regexp-features-plugin': 7.12.17_@babel+core@7.13.8
     dev: false
@@ -11956,6 +11957,17 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
+  /react-audio-player/0.14.0_react-dom@16.14.0+react@16.14.0:
+    dependencies:
+      prop-types: 15.7.2
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+    dev: false
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    resolution:
+      integrity: sha512-B0kP3KVjbp+TXG8TUh1kl91xnYwYx8c+YLbx3oZS9drcHvgTPWl4sl8inmwyLWPH0bMW5eqGFL5qT1fuHk8Ysw==
   /react-dev-utils/4.2.3:
     dependencies:
       address: 1.0.3
@@ -15237,6 +15249,7 @@ specifiers:
   postcss: ^8.2.6
   prettier: ^2.2.1
   react: ^16.14.0
+  react-audio-player: ^0.14.0
   react-dom: ^16.14.0
   react-helmet: ^6.1.0
   tailwindcss: ^2.0.3

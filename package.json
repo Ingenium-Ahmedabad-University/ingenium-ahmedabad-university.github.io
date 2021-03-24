@@ -9,7 +9,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "npm run build && gh-pages -d public -r https://$GH_TOKEN@github.com/Ingenium-Ahmedabad-University/website.git",
@@ -31,8 +31,10 @@
     "gatsby-transformer-remark": "^2.16.1",
     "gatsby-transformer-sharp": "^2.12.0",
     "gsap": "^3.6.0",
+    "package.json": "^2.0.1",
     "postcss": "^8.2.6",
     "react": "^16.14.0",
+    "react-audio-player": "^0.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "tailwindcss": "^2.0.3"

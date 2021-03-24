@@ -104,7 +104,7 @@ const data = [
           'https://githubuniverse.com/assets/img/sponsors/Datree_Logo_1_color%20(1).png',
         name: 'Google',
         description: 'Search Engine',
-      }, 
+      },
     ],
   },
   {
