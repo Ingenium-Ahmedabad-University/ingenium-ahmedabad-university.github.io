@@ -22,112 +22,6 @@ import { Link } from 'gatsby';
 
 const events_data = [
   {
-    category: 'Workshops',
-    event: [
-      {
-        type: 'Computer Science',
-        detail: [
-          {
-            desc:
-              'Explore various career options available in CSE along with explaining which skills are needed for a specific career.',
-            title: 'Careers in CSE',
-            date: '27th March, 12 pm',
-            image: e7,
-            url: 'careers-in-cse',
-          },
-          {
-            desc:
-              'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik.',
-            date: '21st March, 4 pm',
-            title: 'Kickstart IOT',
-            image: e2,
-            url: 'kickstart-iot',
-          },
-          {
-            desc:
-              'Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.',
-            date: '14th March, 3 pm',
-            title: 'Docker',
-            image: e12,
-            url: 'docker',
-          },
-          {
-            desc:
-              'The Developer Console is an integrated development environment with a collection of tools you can use to create, debug, and test applications.',
-            date: '13th March, 4 pm',
-            title: 'Developer Console',
-            image: e10,
-            url: 'dev-con',
-          },
-          {
-            desc:
-              'Web Development is not just about designing or programming, it is about creating an interface for information and interaction!',
-            date: '10th March, 5:30 pm',
-            title: 'Web Development',
-            image: e11,
-            url: 'web-dev',
-          },
-        ],
-      },
-      {
-        type: 'Mechanical',
-        detail: [
-          {
-            desc:
-              'Workshop would consist of introduction, basics of Arduino and end with interesting task based learning.',
-            date: '24th March, 6-9pm',
-            title: 'Arduino Workshop',
-            image: e13,
-            url: 'arduino',
-          },
-          {
-            desc:
-              'In the talk Dr. Srinivas, ISRO HQ, Bangalore, would be explaining what is FEA and how it is used to design space components.',
-            date: '3rd April, 2-3:30pm',
-            title: 'FEA in Space Talk',
-            image: e1,
-            url: 'space-talk',
-          },
-          {
-            desc: 'Workshop by Prof. Harshal Oza. This webinar will introduce the participants to the latest advances in industrial robotics.',
-            title: 'Advances in Industrial Robotics',
-            date: '4th April, 11-12:30 pm',
-            image: e1,
-            url: 'robotics',
-          },
-          {
-            desc:
-              'Workshop on Condition monitoring: a lifeline for preventing failures of rotating machines by Prof. Akhand.',
-            title: 'Machine Fault Diagnosis',
-            date: '3rd April, 2-3:30pm',
-            image: e1,
-            url: 'fault-daignosis',
-          },
-          {
-            desc:
-              'Workshop by Prof. Sanket: CNC Lathe, CNC Milling and Laser Cutting machines would be explained from the basics of CNC programming.',
-            date: 'TBA',
-            title: 'CNC Workshop',
-            image: e1,
-            url: 'cnc',
-          },
-        ],
-      },
-      {
-        type: 'Chemical',
-        detail: [
-          {
-            desc: 'Enhance your knowledge by an Industrial Talk!',
-            title: 'Talk on Project Management ',
-            date: '27th March, 12 pm',
-            image: e8,
-            url: 'industry-talk',
-          },
-        ],
-      },
-    ],
-  },
-  {
     category: 'Contests',
     event: [
       {
@@ -208,7 +102,8 @@ const events_data = [
             url: 'mechathon',
           },
           {
-            desc: 'There would be three different tournaments for the following games: CounterStrike: Global Offensive, Valorant and Rocket League.',
+            desc:
+              'There would be three different tournaments for the following games: CounterStrike: Global Offensive, Valorant and Rocket League.',
             date: 'TBA',
             title: 'E-Gaming Fests',
             image: e1,
@@ -234,6 +129,113 @@ const events_data = [
             title: 'Identify the car',
             image: e1,
             url: '',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Workshops',
+    event: [
+      {
+        type: 'Computer Science',
+        detail: [
+          {
+            desc:
+              'Explore various career options available in CSE along with explaining which skills are needed for a specific career.',
+            title: 'Careers in CSE',
+            date: '27th March, 12 pm',
+            image: e7,
+            url: 'careers-in-cse',
+          },
+          {
+            desc:
+              'If you wish to learn from the best and create something uber cool this season, here is the perfect opportunity! Talk by Kevin Naik.',
+            date: '21st March, 4 pm',
+            title: 'Kickstart IOT',
+            image: e2,
+            url: 'kickstart-iot',
+          },
+          {
+            desc:
+              'Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.',
+            date: '14th March, 3 pm',
+            title: 'Docker',
+            image: e12,
+            url: 'docker',
+          },
+          {
+            desc:
+              'The Developer Console is an integrated development environment with a collection of tools you can use to create, debug, and test applications.',
+            date: '13th March, 4 pm',
+            title: 'Developer Console',
+            image: e10,
+            url: 'dev-con',
+          },
+          {
+            desc:
+              'Web Development is not just about designing or programming, it is about creating an interface for information and interaction!',
+            date: '10th March, 5:30 pm',
+            title: 'Web Development',
+            image: e11,
+            url: 'web-dev',
+          },
+        ],
+      },
+      {
+        type: 'Mechanical',
+        detail: [
+          {
+            desc:
+              'Workshop would consist of introduction, basics of Arduino and end with interesting task based learning.',
+            date: '24th March, 6-9pm',
+            title: 'Arduino Workshop',
+            image: e13,
+            url: 'arduino',
+          },
+          {
+            desc:
+              'In the talk Dr. Srinivas, ISRO HQ, Bangalore, would be explaining what is FEA and how it is used to design space components.',
+            date: '3rd April, 2-3:30pm',
+            title: 'FEA in Space Talk',
+            image: e1,
+            url: 'space-talk',
+          },
+          {
+            desc:
+              'Workshop by Prof. Harshal Oza. This webinar will introduce the participants to the latest advances in industrial robotics.',
+            title: 'Advances in Industrial Robotics',
+            date: '4th April, 11-12:30 pm',
+            image: e1,
+            url: 'robotics',
+          },
+          {
+            desc:
+              'Workshop on Condition monitoring: a lifeline for preventing failures of rotating machines by Prof. Akhand.',
+            title: 'Machine Fault Diagnosis',
+            date: '3rd April, 2-3:30pm',
+            image: e1,
+            url: 'fault-daignosis',
+          },
+          {
+            desc:
+              'Workshop by Prof. Sanket: CNC Lathe, CNC Milling and Laser Cutting machines would be explained from the basics of CNC programming.',
+            date: 'TBA',
+            title: 'CNC Workshop',
+            image: e1,
+            url: 'cnc',
+          },
+        ],
+      },
+      {
+        type: 'Chemical',
+        detail: [
+          {
+            desc: 'Enhance your knowledge by an Industrial Talk!',
+            title: 'Talk on Project Management ',
+            date: '27th March, 12 pm',
+            image: e8,
+            url: 'industry-talk',
           },
         ],
       },
