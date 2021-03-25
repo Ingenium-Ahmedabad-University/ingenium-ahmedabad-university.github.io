@@ -16,7 +16,7 @@ const Workshop = ({
     <div className='container md:max-w-4/5 xl:max-w-7/10 mx-auto py-28'>
       {/* Links and Icons */}
       <div className='flex my-5 text-white'>
-        <Link to='/' className='flex'>
+        <Link to='/events' className='flex'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
