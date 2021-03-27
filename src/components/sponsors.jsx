@@ -1,24 +1,23 @@
 import React from 'react';
 
+import inkedstories from '../images/sponsor_logos/inked-stories.png';
+import trendinginahmedabad from '../images/sponsor_logos/trendinginahmedabad.png';
+
 const data = [
   {
-    name: 'Techincal Partners',
+    name: 'Official Partners',
     list: [
       {
-        redirectUrl:
-          'https://www.google.com/search?client=firefox-b-d&q=google',
-        logoUrl:
-          'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-        name: 'Google',
-        description: 'Search Engine',
+        redirectUrl: 'https://inkedstories.in/',
+        logoUrl: inkedstories,
+        name: 'Inked Stories',
+        description: '',
       },
       {
-        redirectUrl:
-          'https://www.google.com/search?client=firefox-b-d&q=google',
-        logoUrl:
-          'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-        name: 'Google',
-        description: 'Search Engine',
+        redirectUrl: 'https://www.instagram.com/trendinginahmedabad/?hl=en',
+        logoUrl: trendinginahmedabad,
+        name: 'Trending in Ahmedabad',
+        description: '',
       },
       {
         redirectUrl:
@@ -168,10 +167,10 @@ const Card = ({ redirectUrl, logoUrl, name, description }) => (
       <div className='flex justify-center items-center bg-base-light w-full h-32 max-h-32'>
         <img className='sponsors-logo' src={logoUrl} alt={name} />
       </div>
-      <div className='flex text-primary sponsors-content-box h-32 max-h-32 items-center'>
-        <div className='align-middle px-5'>
+      <div className='flex text-primary sponsors-content-box h-32 max-h-32 justify-center items-center'>
+        <div className='align-middle text-center px-5'>
           <h3 className='font-sans font-bold text-xl my-2'>{name}</h3>
-          <p className='text-lg'>{description}</p>
+          {/* <p className='text-lg'>{description}</p> */}
         </div>
       </div>
     </a>

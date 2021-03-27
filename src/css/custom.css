@@ -637,12 +637,16 @@ html {
 @media screen and (max-width: 800px) {
   .about-us-header {
     height: 60vw;
+    background-image: linear-gradient(black, black),
+      url('../images/backdrop_3x5.png');
   }
 }
 
 @media screen and (max-width: 700px) {
   .about-us-header {
     height: 75vw;
+    background-image: linear-gradient(black, black),
+      url('../images/backdrop_3x4.png');
   }
 }
 

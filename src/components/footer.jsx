@@ -73,21 +73,44 @@ const Footer = () => (
     <div className='flex justify-center pt-6'>
       <div className='w-full h-px bg-gray-900'></div>
     </div>
-    <div className='footer grid col-1 lg:row-1 lg:grid-flow-col row-gap-8 lg:gap-0 justify-center lg:justify-between items-center my-16 lg:my-8 mx-3 md:mx-5 lg:mx-10'>
-      {/* Signup*/}
+    {/* <div className='footer grid col-1 lg:row-1 lg:grid-flow-col row-gap-8 lg:gap-0 justify-center\items-center my-16 lg:my-8 mx-3 md:mx-5 lg:mx-10'>
+      Signup
       <div className='font-sans text-gray-300 font-normal text-xl'>
         <Newletter />
         &nbsp; for latest Ingenium Updates
       </div>
-      {/* hastag*/}
       <div className='text-gray-300 flex items-center flex-col lg:grid lg:grid-flow-col'>
-        <div>
+        <div classNmae='text-right'>
           Follow the event{' '}
           <span className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
             #feelingenium
           </span>
         </div>
-        <ul className='grid grid-flow-col gap-6 mx-4 my-4'>
+        <ul className='grid grid-flow-col justify-start gap-6 mx-4 my-4'>
+          {contact_details.map((e, i) => (
+            <a href={e.url} target='_blank'>
+              <li key={i}>
+                <img
+                  height='24'
+                  width='24'
+                  src={e.icon}
+                  className='hover:invert-5 invert-7'
+                />
+              </li>
+            </a>
+          ))}
+        </ul>
+      </div>
+    </div> */}
+    <div className='grid grid-cols-1 sm:grid-cols-2 py-5 justify-center text-gray-300 items-center'>
+      <div className='flex justify-center sm:justify-end sm:-mr-3'>
+        Follow the event{' '}
+        <span className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+          #feelingenium
+        </span>
+      </div>
+      <div className='flex justify-center sm:justify-start sm:ml-3'>
+        <ul className='grid grid-flow-col justify-start gap-6 mx-4 my-4'>
           {contact_details.map((e, i) => (
             <a href={e.url} target='_blank'>
               <li key={i}>
