@@ -684,6 +684,12 @@ html {
   animation-delay: 0.3s;
 }
 
+@media screen and (min-width: 640px) {
+  .center-text {
+    text-align: center;
+  }
+}
+
 @keyframes scale-top {
   0% {
     transform: scaleY(0%);

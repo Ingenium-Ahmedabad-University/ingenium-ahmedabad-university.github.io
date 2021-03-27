@@ -22,7 +22,7 @@ const AboutUs = () => (
         <p className='center-heading text-2xl sm:text-3xl lg-text-4xl social-bg bg-gradient-to-br from-red-500 to-indigo-400 font-bold mb-5'>
           Tech-Fest @ Ahmedabad University
         </p>
-        <p className='center-text text-white text-center'>
+        <p className='center-text text-white'>
           Ingenium is the official tech-fest of Ahmedabad University hosted at
           the School of Engineering and Applied Science each year since 2016. It
           is a platform to test the caliber of the participants while
