@@ -18,19 +18,19 @@ const AboutUs = () => (
     </div>
     {/* <div className='flex items-center justify-center py-16 px-6 bg-base-light'> */}
     <div className='flex items-center justify-center py-16 px-6'>
-      <div className='max-w-lg'>
-        <p className='center-heading text-2xl sm:text-3xl lg-text-4xl social-bg bg-gradient-to-br from-red-500 to-indigo-400 font-bold mb-5'>
+      <div className='max-w-2xl'>
+        <p className='center-heading center-text text-3xl sm:text-4xl lg-text-5xl social-bg bg-gradient-to-br from-red-500 to-indigo-400 font-bold mb-5'>
           Tech-Fest @ Ahmedabad University
         </p>
-        <p className='center-text text-white'>
-          Ingenium is the official tech-fest of Ahmedabad University hosted at
-          the School of Engineering and Applied Science each year since 2016. It
-          is a platform to test the caliber of the participants while
-          maintaining a healthy and competitive spirit. We invite and host
-          participants from across the state and are eager to expand the
-          outreach to a national level. This year we are taking the techfest to
-          the online virtual platform. In the previous years, we have managed to
-          garner participation from nearly 60 institutes across India.
+        <p className='center-text text-white text-xl'>
+          Ingenium is the official technology festival of Ahmedabad University
+          hosted at the School of Engineering and Applied Science each year
+          since 2016. It is a platform to provide opportunities to young and
+          aspiring students to compete in various innovate events. We invite and
+          host participants from all national level universities and institutes
+          as well as institutes from other countries as well. This year Ingenium
+          is online. We are successfully getting participation from nearly 60
+          institutes across India.
           <Link
             to='/events'
             className='flex mt-12 justify-center hover:text-gray-300'

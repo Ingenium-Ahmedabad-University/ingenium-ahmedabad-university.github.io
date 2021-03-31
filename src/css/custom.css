@@ -619,9 +619,11 @@ html {
   );
 }
 
-.event-rules ol,
-.event-rules ul {
+.event-rules ol {
   list-style-type: decimal;
+}
+.event-rules ul {
+  list-style-type: disc;
 }
 
 /* AboutUs */

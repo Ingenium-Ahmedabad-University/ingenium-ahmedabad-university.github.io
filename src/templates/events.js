@@ -20,6 +20,7 @@ export const eventsDataQuery = graphql`
       speakerName
       designation
       speakerImg
+      formLink
       type
     }
   }
@@ -38,6 +39,7 @@ const EventsPage = ({ data }) => {
         sImg={event.speakerImg}
         pUrl={event.posterUrl}
         jsDate={event.jsDate}
+        formLink={event.formLink}
       />
     ) : (
       <Competition
@@ -49,6 +51,7 @@ const EventsPage = ({ data }) => {
         certificatePolicy={event.certificatePolicy}
         prizes={event.prizes}
         pUrl={event.posterUrl}
+        formLink={event.formLink}
       />
     );
 

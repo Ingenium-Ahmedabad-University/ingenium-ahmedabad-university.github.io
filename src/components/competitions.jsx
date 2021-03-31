@@ -11,6 +11,7 @@ const Competition = ({
   certificatePolicy,
   prizes,
   pUrl,
+  formLink,
 }) => (
   <section id='events-page'>
     <div className='container md:max-w-4/5 xl:max-w-7/10 mx-auto py-28'>
@@ -51,7 +52,7 @@ const Competition = ({
             </p>
           </div>
           <div className='flex sm:justify-end items-center'>
-            <RegisterButton jsDate={jsDate} />
+            <RegisterButton jsDate={jsDate} formLink={formLink} />
           </div>
         </div>
       </div>

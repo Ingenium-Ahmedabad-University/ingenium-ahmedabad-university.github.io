@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React, { useState } from 'react';
 import logo_src from '../images/icon.svg';
 const Logo = () => (
-  <Link to='/'>
+  <Link to='/about-us'>
     <div className='fixed top-0 left-0'>
       <div className='m-4'>
         <img src={logo_src} alt='' />

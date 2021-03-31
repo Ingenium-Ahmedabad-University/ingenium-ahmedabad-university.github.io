@@ -10,6 +10,7 @@ const Workshop = ({
   speaker,
   desig,
   sImg,
+  formLink,
   pUrl,
 }) => (
   <section id='events-page'>
@@ -59,7 +60,7 @@ const Workshop = ({
           </div>
         </div>
         <div className='flex sm:justify-end'>
-          <RegisterButton jsDate={jsDate} />
+          <RegisterButton jsDate={jsDate} formLink={formLink} />
         </div>
       </div>
       {/* Poster and Suggestions */}
