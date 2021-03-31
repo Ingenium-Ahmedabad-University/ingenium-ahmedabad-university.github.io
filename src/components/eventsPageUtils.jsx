@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'gatsby';
+import React from 'react';
 
 function copyToClipboard(eventUrl) {
   const tooltipText = document.querySelector('.tooltip-text');
@@ -108,7 +108,9 @@ const RegisterButton = ({ jsDate }) => {
       <Link to='#'>
         {/* <button className='border-2 border-secondary hover:bg-secondary px-5 py-2 mt-8 sm:mt-0 font-bold text-white'> */}
         <button className='register-button px-5 py-2 mt-8 sm:mt-0 font-bold text-white'>
-          REGISTER
+          <a href="https://forms.gle/hrkA49YagapLUaXWA" onClick={
+            window.open("https://forms.gle/hrkA49YagapLUaXWA")
+          } target="_blank">REGISTER</a>
         </button>
       </Link>
     );

@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
-import { Icons, Suggestions, RegisterButton } from './eventsPageUtils';
+import React from 'react';
+import { Icons, RegisterButton } from './eventsPageUtils';
 
 const Competition = ({
   dAndT,
@@ -75,13 +75,13 @@ const Competition = ({
         className='text-white event-rules'
         dangerouslySetInnerHTML={{ __html: certificatePolicy }}
       />
-      {/* 
+      {/*
       <Suggestions
         eventName="Paying down technical debt at GitHub"
         speakerName="Keith Ballinger"
         speakerDetails="SVP, Engineering, GitHub"
         speakerImg="https://githubuniverse.com/assets/img/speakers/Keith_Ballinger_Headshot.jpg"
-      /> 
+      />
       */}
     </div>
   </section>
