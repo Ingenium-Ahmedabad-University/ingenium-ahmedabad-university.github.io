@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import e2 from '../images/IOT.png';
 import e1 from '../images/cnc.png';
 import e0 from '../images/ingenium.jpg';
-import e4 from '../images/kaggle.jpeg';
+import e4 from '../images/kaggle.png';
 import e3 from '../images/E-treasure.jpeg';
 import e5 from '../images/codefi.jpeg';
 import e6 from '../images/mechathon.jpeg';
