@@ -17,9 +17,11 @@ export const eventsDataQuery = graphql`
       prizes
       posterUrl
       description
-      speakerName
-      designation
-      speakerImg
+      speakers {
+        speakerName
+        designation
+        speakerImg
+      }
       formLink
       type
     }
@@ -28,15 +30,14 @@ export const eventsDataQuery = graphql`
 
 const EventsPage = ({ data }) => {
   const event = data.eventsDataJson;
+  
   const PageComponent =
     event.type === 'workshop' ? (
       <Workshop
         dAndT={event.dateAndTime}
         eventTitle={event.eventName}
         desc={event.description}
-        speaker={event.speakerName}
-        desig={event.designation}
-        sImg={event.speakerImg}
+        speakers={event.speakers}
         pUrl={event.posterUrl}
         jsDate={event.jsDate}
         formLink={event.formLink}

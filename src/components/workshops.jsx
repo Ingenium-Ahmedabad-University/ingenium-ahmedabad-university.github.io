@@ -7,9 +7,7 @@ const Workshop = ({
   jsDate,
   eventTitle,
   desc,
-  speaker,
-  desig,
-  sImg,
+  speakers,
   formLink,
   pUrl,
 }) => (
@@ -47,17 +45,29 @@ const Workshop = ({
         <p className='text-gray-400 text-lg py-3'>{desc}</p>
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 items-center justify-center'>
-        <div className='flex'>
-          <div className='rounded-full w-40 mr-5'>
-            <img src={sImg} alt='' className='rounded-full' />
-          </div>
-          <div className='flex items-center'>
-            <div>
-              <span className='text-white text-lg font-bold'>{speaker}</span>
-              <br />
-              <span className='text-lg text-white'>{desig}</span>
+        <div>
+          {speakers.map((speaker, i) => (
+            <div className='flex mb-10' key={i}>
+              <div className='rounded-full w-40 mr-5'>
+                <img
+                  src={speaker.speakerImg}
+                  alt='Speaker'
+                  className='rounded-full'
+                />
+              </div>
+              <div className='flex items-center'>
+                <div>
+                  <span className='text-white text-lg font-bold'>
+                    {speaker.speakerName}
+                  </span>
+                  <br />
+                  <span className='text-lg text-white'>
+                    {speaker.designation}
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
         <div className='flex sm:justify-end'>
           <RegisterButton jsDate={jsDate} formLink={formLink} />

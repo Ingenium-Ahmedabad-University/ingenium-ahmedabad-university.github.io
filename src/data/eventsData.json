@@ -4,10 +4,14 @@
     "dateAndTime": "14th March, 15:00 IST",
     "jsDate": "March 14 2021, 15:00:00",
     "eventName": "Kickstart Docker",
+    "speakers": [
+      {
+        "speakerName": "Jimish Parekh",
+        "designation": "Developer",
+        "speakerImg": "https://avatars.githubusercontent.com/u/5813993?v=4"
+      }
+    ],
     "description": "Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production. In this session we would learn about Docker and applications.",
-    "speakerName": "Jimesh Parekh",
-    "designation": "Developer",
-    "speakerImg": "https://media-exp1.licdn.com/dms/image/C4E03AQGl0n78RvChVg/profile-displayphoto-shrink_800_800/0/1593157633960?e=1622073600&v=beta&t=c37OnMEruCR8Jiy9z82clwIlpQrSBmnZ9IbwNQiP9oY",
     "posterUrl": "https://i.imgur.com/0Y3MrdY.png",
     "formLink": "#",
     "type": "workshop"
@@ -19,9 +23,13 @@
     "jsDate": "March 13 2021, 16:00:00",
     "eventName": "Hands on Developer Console",
     "description": "Code is prone to errors. You are absolutely  going to make errors, at least if you’re a human and not a robot. Users don’t see errors by default in the browser. So, if something goes wrong in the script, we won’t see what’s broken and can’t fix it. To figure out what the errors are and get a lot of other useful information about scripts, “Developer tools” have been embedded in browsers. The Developer Console is an integrated development environment with a collection of tools you can use to create, debug, and test applications. Ingenium presents to you a workshop on Developer Console.",
-    "speakerName": "Harsh Shah",
-    "designation": "Developer",
-    "speakerImg": "https://media-exp1.licdn.com/dms/image/C5103AQH6X3msFxkIPA/profile-displayphoto-shrink_800_800/0/1571044344621?e=1622073600&v=beta&t=GwtfAk2zg-5su2W3S9uQ8-TpC8wFAyfhEB81lfQi6n4",
+    "speakers": [
+      {
+        "speakerName": "Harsh Shah",
+        "designation": "Developer",
+        "speakerImg": "https://avatars.githubusercontent.com/u/5102374?v=4"
+      }
+    ],
     "posterUrl": "https://i.imgur.com/B5d9eX5.png",
     "type": "workshop"
   },
@@ -32,9 +40,13 @@
     "jsDate": "Feb 13 2021, 21:00:00",
     "eventName": "A voyage into the UI/UX world",
     "description": "UI design and UX design are two of the most often confused and conflated terms in web and app design. The user interface(UI) is the graphical layout of an application. It consists of the buttons users click on, the text they read, the images, sliders, text entry fields and all the rest of the items the user interacts with. User experience(UX) of the application is determined by how users interact with it. UI designers are tasked with deciding how the UI will look, IX designers are in charge of determining how the UI operates. The session will include the basics of UI/UX and how are these related.",
-    "speakerName": "Anmol Anubhai",
-    "designation": "Developer",
-    "speakerImg": "https://media-exp1.licdn.com/dms/image/C5603AQHoEgQgG0z8PQ/profile-displayphoto-shrink_800_800/0/1564106318622?e=1622073600&v=beta&t=66daZWxHmsgda7PlateHAU-FA88BCWaYYekqb3o9-aA",
+    "speakers": [
+      {
+        "speakerName": "Anmol Anubhai",
+        "designation": "Developer",
+        "speakerImg": "https://imgur.com/Edtc1W5.png"
+      }
+    ],
     "posterUrl": "https://i.imgur.com/C40T31T.png",
     "type": "workshop"
   },
@@ -45,9 +57,13 @@
     "jsDate": "March 21 2021, 16:00:00",
     "eventName": "Kickstart IOT",
     "description": "If you wish to learn from the best and create something uber cool this season, Ingenium brings you the perfect opportunity! The Kickstart IoT workshop will introduce you to the world of Arduino microcontroller and will provide an opportunity to create an IoT device or system. The participants would be taught about Arduino and be given a hands-on implementation with various modules that work with it. Furthermore, the workshop will cover the connection with IBM Cloud by industry experts. No chance like now to learn this!",
-    "speakerName": "Kevin Naik",
-    "designation": "Developer",
-    "speakerImg": "https://media-exp1.licdn.com/dms/image/C4E03AQESyx8qnnjtJA/profile-displayphoto-shrink_800_800/0/1596495044162?e=1622073600&v=beta&t=zdnVnKwT4jRd5NA19MWD4zPsfSIdwdADEPBi2d3u764",
+    "speakers": [
+      {
+        "speakerName": "Kevin Naik",
+        "designation": "Developer",
+        "speakerImg": "https://imgur.com/IYFMPkV.png"
+      }
+    ],
     "posterUrl": "https://i.imgur.com/ZbXGjJT.png",
     "type": "workshop"
   },
