@@ -2,35 +2,39 @@ import React from 'react';
 
 import inkedstories from '../images/sponsor_logos/inked-stories.png';
 import trendinginahmedabad from '../images/sponsor_logos/trendinginahmedabad.png';
+import youthera from '../images/sponsor_logos/youth_era.png';
 
 const data = [
-    {
-      name: 'Gold Sponsors',
-      list: [
-        {
-          redirectUrl:
-            'https://www.meditab.com/',
-          logoUrl:
-            'https://lirp.cdn-website.com/b9c8e2cb/dms3rep/multi/opt/Transparent_Meditab%2BLogo%2B%2B%2BIMS%2BLogo%2B%281%29-720w-720w.png',
-          name: 'Meditab',
-          description: 'Search Engine',
-        },
-        {
-          redirectUrl:
-            'https://www.silvertouch.com/',
-          logoUrl:
-            'https://www.silvertouch.com/wp-content/themes/silvertouch/assets/images-new/logo-white.png',
-          name: 'Silver Touch',
-          description: 'Search Engine',
-        },
-        {
-          redirectUrl:
-            'https://therenaissance.co.in/',
-          logoUrl:
-            'https://therenaissance.co.in/wp-content/uploads/2018/06/Renaissance-logo.png',
-          name: 'Renaissance',
-          description: 'Renaissance',
-        },
+  {
+    name: 'Gold Sponsors',
+    list: [
+      {
+        redirectUrl: 'https://www.meditab.com/',
+        logoUrl:
+          'https://lirp.cdn-website.com/b9c8e2cb/dms3rep/multi/opt/Transparent_Meditab%2BLogo%2B%2B%2BIMS%2BLogo%2B%281%29-720w-720w.png',
+        name: 'Meditab',
+        description: 'Search Engine',
+      },
+      {
+        redirectUrl: 'https://www.silvertouch.com/',
+        logoUrl:
+          'https://www.silvertouch.com/wp-content/themes/silvertouch/assets/images-new/logo-white.png',
+        name: 'Silver Touch',
+        description: 'Search Engine',
+      },
+      {
+        redirectUrl: 'https://therenaissance.co.in/',
+        logoUrl:
+          'https://therenaissance.co.in/wp-content/uploads/2018/06/Renaissance-logo.png',
+        name: 'Renaissance',
+        description: 'Renaissance',
+      },
+      {
+        redirectUrl: 'https://www.instagram.com/youthera.clothing/',
+        logoUrl: youthera,
+        name: 'Youth Era',
+        description: 'Renaissance',
+      },
       //   {
       //     redirectUrl:
       //       'https://www.google.com/search?client=firefox-b-d&q=google',
@@ -55,9 +59,9 @@ const data = [
       //     name: 'Google',
       //     description: 'Search Engine',
       //   },
-      ],
-    },
-    {
+    ],
+  },
+  {
     name: 'Media Partners',
     list: [
       {
@@ -72,93 +76,93 @@ const data = [
         name: 'Trending in Ahmedabad',
         description: '',
       },
-    //   {
-    //     redirectUrl:
-    //       'https://www.google.com/search?client=firefox-b-d&q=google',
-    //     logoUrl:
-    //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-    //     name: 'Google',
-    //     description: 'Search Engine',
-    //   },
-    //   {
-    //     redirectUrl:
-    //       'https://www.google.com/search?client=firefox-b-d&q=google',
-    //     logoUrl:
-    //       'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-    //     name: 'Google',
-    //     description: 'Search Engine',
-    //   },
-    //   {
-    //     redirectUrl:
-    //       'https://www.google.com/search?client=firefox-b-d&q=google',
-    //     logoUrl:
-    //       'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-    //     name: 'Google',
-    //     description: 'Search Engine',
-    //   },
-    //   {
-    //     redirectUrl:
-    //       'https://www.google.com/search?client=firefox-b-d&q=google',
-    //     logoUrl:
-    //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-    //     name: 'Google',
-    //     description: 'Search Engine',
-    //   },
+      //   {
+      //     redirectUrl:
+      //       'https://www.google.com/search?client=firefox-b-d&q=google',
+      //     logoUrl:
+      //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
+      //     name: 'Google',
+      //     description: 'Search Engine',
+      //   },
+      //   {
+      //     redirectUrl:
+      //       'https://www.google.com/search?client=firefox-b-d&q=google',
+      //     logoUrl:
+      //       'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
+      //     name: 'Google',
+      //     description: 'Search Engine',
+      //   },
+      //   {
+      //     redirectUrl:
+      //       'https://www.google.com/search?client=firefox-b-d&q=google',
+      //     logoUrl:
+      //       'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
+      //     name: 'Google',
+      //     description: 'Search Engine',
+      //   },
+      //   {
+      //     redirectUrl:
+      //       'https://www.google.com/search?client=firefox-b-d&q=google',
+      //     logoUrl:
+      //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
+      //     name: 'Google',
+      //     description: 'Search Engine',
+      //   },
     ],
   },
-//   {
-//     name: 'Media Partners',
-//     list: [
-//       {
-//         redirectUrl:
-//           'https://www.google.com/search?client=firefox-b-d&q=google',
-//         logoUrl:
-//           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-//         name: 'Google',
-//         description: 'Search Engine',
-//       },
-//       {
-//         redirectUrl:
-//           'https://www.google.com/search?client=firefox-b-d&q=google',
-//         logoUrl:
-//           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-//         name: 'Google',
-//         description: 'Search Engine',
-//       },
-//       {
-//         redirectUrl:
-//           'https://www.google.com/search?client=firefox-b-d&q=google',
-//         logoUrl:
-//           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-//         name: 'Google',
-//         description: 'Search Engine',
-//       },
-//       {
-//         redirectUrl:
-//           'https://www.google.com/search?client=firefox-b-d&q=google',
-//         logoUrl:
-//           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-//         name: 'Google',
-//         description: 'Search Engine',
-//       },
-//       {
-//         redirectUrl:
-//           'https://www.google.com/search?client=firefox-b-d&q=google',
-//         logoUrl:
-//           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-//         name: 'Google',
-//         description: 'Search Engine',
-//       },
-//       {
-//         redirectUrl:
-//           'https://www.google.com/search?client=firefox-b-d&q=google',
-//         logoUrl:
-//           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-//         name: 'Google',
-//         description: 'Search Engine',
-//       },
-//     ],
-//   },
+  //   {
+  //     name: 'Media Partners',
+  //     list: [
+  //       {
+  //         redirectUrl:
+  //           'https://www.google.com/search?client=firefox-b-d&q=google',
+  //         logoUrl:
+  //           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
+  //         name: 'Google',
+  //         description: 'Search Engine',
+  //       },
+  //       {
+  //         redirectUrl:
+  //           'https://www.google.com/search?client=firefox-b-d&q=google',
+  //         logoUrl:
+  //           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
+  //         name: 'Google',
+  //         description: 'Search Engine',
+  //       },
+  //       {
+  //         redirectUrl:
+  //           'https://www.google.com/search?client=firefox-b-d&q=google',
+  //         logoUrl:
+  //           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
+  //         name: 'Google',
+  //         description: 'Search Engine',
+  //       },
+  //       {
+  //         redirectUrl:
+  //           'https://www.google.com/search?client=firefox-b-d&q=google',
+  //         logoUrl:
+  //           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
+  //         name: 'Google',
+  //         description: 'Search Engine',
+  //       },
+  //       {
+  //         redirectUrl:
+  //           'https://www.google.com/search?client=firefox-b-d&q=google',
+  //         logoUrl:
+  //           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
+  //         name: 'Google',
+  //         description: 'Search Engine',
+  //       },
+  //       {
+  //         redirectUrl:
+  //           'https://www.google.com/search?client=firefox-b-d&q=google',
+  //         logoUrl:
+  //           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
+  //         name: 'Google',
+  //         description: 'Search Engine',
+  //       },
+  //     ],
+  //   },
 ];
 
 const Card = ({ redirectUrl, logoUrl, name, description }) => (
