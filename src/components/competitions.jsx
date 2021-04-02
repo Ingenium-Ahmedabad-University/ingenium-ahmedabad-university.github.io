@@ -38,7 +38,7 @@ const Competition = ({
       {/* Competition Details and Poster */}
       <div className='grid grid-cols-1 sm:grid-cols-2 justify-between mb-5 sm:mb-8'>
         <div className='text-xl my-2 text-gray-400'>{dAndT}</div>
-        <Icons eventUrl='https://www.google.com/' />
+        <Icons />
       </div>
       <div className='mb-6'>
         <h1 className='text-4xl sm:text-6xl py-3 font-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>

@@ -122,7 +122,7 @@ const events_data = [
             title: 'Quiz on Automobiles',
             image: e0,
             url: '',
-          }
+          },
         ],
       },
     ],
@@ -185,7 +185,8 @@ const events_data = [
             title: 'Arduino Workshop',
             image: e13,
             url: 'arduino',
-          },{
+          },
+          {
             desc:
               'Ever wondered whats and hows of the technology & designing behind the booming Electric Vehicles?! ',
             date: '3rd April, 11 am',
@@ -244,8 +245,10 @@ const events_data = [
             date: '27th March, 12 pm',
             image: e8,
             url: 'industry-talk',
-          },{
-            desc: 'Its an virtual industrial visit to an Agrochemical Sector, in one of the biggest R&D centers of Gujarat followed by a Talk.',
+          },
+          {
+            desc:
+              'Its an virtual industrial visit to an Agrochemical Sector, in one of the biggest R&D centers of Gujarat followed by a Talk.',
             title: 'R&D Agrochemical',
             date: '3rd April, 5-7pm',
             image: e20,

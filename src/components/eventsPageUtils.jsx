@@ -21,7 +21,7 @@ const Tooltip = ({ children }) => (
   </div>
 );
 
-const Icons = ({ eventUrl }) => {
+const Icons = () => {
   return (
     <div className='flex my-3 justify-start sm:justify-end font-bold text-white'>
       {/* <div className='flex items-center hover:text-gray-400'>
@@ -62,7 +62,9 @@ const Icons = ({ eventUrl }) => {
             id='share-button'
             className='font-bold focus:outline-none foucs-within:outline-none'
             onClick={() => {
-              copyToClipboard(eventUrl);
+              copyToClipboard(
+                typeof window !== 'undefined' ? window.location.href : ''
+              );
             }}
           >
             Share

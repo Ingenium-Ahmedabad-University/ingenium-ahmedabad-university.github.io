@@ -30,7 +30,7 @@ export const eventsDataQuery = graphql`
 
 const EventsPage = ({ data }) => {
   const event = data.eventsDataJson;
-  
+
   const PageComponent =
     event.type === 'workshop' ? (
       <Workshop
