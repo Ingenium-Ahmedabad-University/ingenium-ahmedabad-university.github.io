@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import e2 from '../images/IOT.png';
 import e1 from '../images/cnc.png';
-import e4 from '../images/kaggle.jpeg';
+import e0 from '../images/ingenium.jpg';
+import e4 from '../images/kaggle.png';
 import e3 from '../images/E-treasure.jpeg';
 import e5 from '../images/codefi.jpeg';
 import e6 from '../images/mechathon.jpeg';
@@ -15,6 +16,11 @@ import e13 from '../images/arduino.png';
 import e14 from '../images/NFS.png';
 import e15 from '../images/chemical-hunt.png';
 import e16 from '../images/road-to-treasure.png';
+import e17 from '../images/spacetalk.png';
+import e18 from '../images/robotics.png';
+import e19 from '../images/machine-fault.png';
+import e20 from '../images/R&D.png';
+import e21 from '../images/ev-talk.jpeg';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -106,30 +112,16 @@ const events_data = [
               'There would be three different tournaments for the following games: CounterStrike: Global Offensive, Valorant and Rocket League.',
             date: 'TBA',
             title: 'E-Gaming Fests',
-            image: e1,
+            image: e0,
             url: '',
           },
           {
             desc: 'Upcoming!!',
             date: 'TBA',
             title: 'Quiz on Automobiles',
-            image: e1,
+            image: e0,
             url: '',
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Meme Story',
-            image: e1,
-            url: '',
-          },
-          {
-            desc: 'Upcoming!!',
-            date: 'TBA',
-            title: 'Identify the car',
-            image: e1,
-            url: '',
-          },
+          }
         ],
       },
     ],
@@ -192,29 +184,36 @@ const events_data = [
             title: 'Arduino Workshop',
             image: e13,
             url: 'arduino',
+          },{
+            desc:
+              'Ever wondered whats and hows of the technology & designing behind the booming Electric Vehicles?! ',
+            date: '3rd April, 11 am',
+            title: 'Talk on-EV Charging',
+            image: e21,
+            url: 'ev-talk',
           },
           {
             desc:
               'In the talk Dr. Srinivas, ISRO HQ, Bangalore, would be explaining what is FEA and how it is used to design space components.',
-            date: '3rd April, 2-3:30pm',
+            date: '3rd April, 2-4pm',
             title: 'FEA in Space Talk',
-            image: e1,
+            image: e17,
             url: 'space-talk',
           },
           {
             desc:
               'Workshop by Prof. Harshal Oza. This webinar will introduce the participants to the latest advances in industrial robotics.',
             title: 'Advances in Industrial Robotics',
-            date: '4th April, 11-12:30 pm',
-            image: e1,
+            date: '4th April, 11-12 pm',
+            image: e18,
             url: 'robotics',
           },
           {
             desc:
               'Workshop on Condition monitoring: a lifeline for preventing failures of rotating machines by Prof. Akhand.',
             title: 'Machine Fault Diagnosis',
-            date: '3rd April, 2-3:30pm',
-            image: e1,
+            date: '2nd April, 3-5pm',
+            image: e19,
             url: 'fault-daignosis',
           },
           {
@@ -232,10 +231,16 @@ const events_data = [
         detail: [
           {
             desc: 'Enhance your knowledge by an Industrial Talk!',
-            title: 'Talk on Project Management ',
+            title: 'Talk on Project Management',
             date: '27th March, 12 pm',
             image: e8,
             url: 'industry-talk',
+          },{
+            desc: 'Its an virtual industrial visit to an Agrochemical Sector, in one of the biggest R&D centers of Gujarat followed by a Talk.',
+            title: 'R&D Agrochemical',
+            date: '3rd April, 5-7pm',
+            image: e20,
+            url: 'rnd-agro',
           },
         ],
       },
