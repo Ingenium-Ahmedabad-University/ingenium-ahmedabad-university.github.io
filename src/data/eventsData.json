@@ -149,13 +149,146 @@
     "event": "road-to-treasure",
     "formLink": "https://forms.gle/ZdYKB6kp8FB7Nm2t6",
     "description": "Road to treasure is an ultimate competition where teams compete with each other to reach the treasure. If you are person who loves to solve pictorial question/riddles/quizzes then you should surely register here.",
-    "dateAndTime": "20th March, 13:00 IST",
-    "jsDate": "March 20 2021, 13:00:00",
+    "dateAndTime": "4th April, 10:00 IST",
+    "jsDate": "April 4 2021, 10:00:00",
     "eventName": "Road to Treasure",
     "rules": "<ol><li>There can be a maximum of 3 members and a minimum of 2 members per team.</li><li>Single registration is also allowed, if it will be possible we would form a team for them.</li><li>Only team registrations are allowed to participate.</li><li>Any act of cheating or influencing the decisions of other teams will result in disqualification from the competition with immediate effect.</li><li>Teams can have students from same/different year.</li><li>The decision of the jury will be final and binding to all.</li><li>No arguments or challenges will be entertained.&nbsp;</li><li>The organizers have every right to remove, disqualify or in any way prevent a presentation from the demonstration.&nbsp;</li><li>The organizers can cancel or postpone the event as they see fit, and the information will be communicated to the participants.&nbsp;</li><li>Any team not adhering to the rules that are specified here, or communicated to the teams will be given a stern warning, and after misbehaviour will be disqualified.</li></ol>",
     "certificatePolicy": "<ol><li>All the team participating will receive certificate of participation.</li><li>Disqualified team will not receive any kind of certificate nor will they get refund.</li></ol>",
     "prizes": "Worth 6K",
     "posterUrl": "https://imgur.com/b9Zlkax.png",
     "type": "competition"
-  }
+  },
+
+  {
+    "event": "ev-talk",
+    "formLink":"https://forms.gle/dPLJ3sQXCrDqxJEY9",
+    "dateAndTime": "3rd April, 11:00 IST",
+    "jsDate": "April 3 2021, 11:00:00",
+    "eventName": "EV Charging Infrastructure",
+    "description": "Ever wondered whats and hows of the technology and the designing behind the booming Electric Vehicles?! Well, if you wish to learn from the expert about it, Ingenium x ASME- Ahmedabad University Student Chapter brings you the perfect opportunity a talk on - EV Charging Infrastructure",    
+    "speakers": [
+        {
+            "speakerName":"Mr. Vaibhav Sharma",
+            "designation":"Lead Associate EV Charging, Tata Power Company Limited",
+            "speakerImg":"https://imgur.com/BAuw2lF.png"
+        }
+    ],
+    "posterUrl": "https://imgur.com/4Ef3XO9.png",
+    "type": "workshop"
+},
+
+{
+    "event": "fault-daignosis",
+    "formLink":"https://forms.gle/EnosGx9qQPjUhtnE6",
+    "dateAndTime": "2nd April, 16:00 IST",
+    "jsDate": "April 2 2021, 16:00:00",
+    "eventName": "Machine Fault Diagnosis",
+    "description": "The rotating machinery finds extensive application in a variety of industries such as aerospace industry, electric power industry, textile industry, automotive industry, mining industry and energy industry, etc.It’s just a matter of the past few decades, that the industries have realized the importance of maintenance of these rotating machines that are actually installed in huge numbers in industrial settings. A failure of a single rotating machinery leads to huge economic losses because of higher production downtimes and increased maintenance activities. In addition, the chances of human casualties are tremendously increased. The present seminar focuses on discussing efficacious condition-monitoring tools and solutions with an aim to eradicate the catastrophic failures in roto-mechanical equipment before it occurs and thus prevent the related damaging consequences.",    
+    "speakers":[
+        {
+            "speakerName":"Prof. Akhand Rai",
+            "designation":"Assistant Professor @ Ahmedabad University",
+            "speakerImg":"https://ahduni.edu.in/site/assets/files/6906/untitled_design_4.240x309.png"
+        }
+    ],
+    "posterUrl": "https://imgur.com/ykCGUFZ.png",
+    "type": "workshop"
+},
+
+{
+    "event": "robotics",
+    "formLink":"https://forms.gle/gT7mXxABKbGe2Chm8",
+    "dateAndTime": "4th April, 11:00 IST",
+    "jsDate": "April 4 2021, 11:00:00",
+    "eventName": "Talk on Robotics",
+    "description": "Tinker with robots in one of the most exciting workshops of Ingenium 2021! The Talk on Robotics will cover the basics and also the nitty-gritty of creating a task-oriented robot from scratch. The participants would be informed about the vast field of robotics along with brief knowledge about building their robot.",    
+    "speakers":[
+        {
+            "speakerName":"Prof. Harshal Oza",
+            "designation":"Associate Professor @ PDPU",
+            "speakerImg":"https://media-exp1.licdn.com/dms/image/C4D03AQFIsg2kB43UEQ/profile-displayphoto-shrink_800_800/0/1595932646212?e=1622678400&v=beta&t=46gg5AtN7cUJpxdmpVo3hpM6SMkS31qu8pVCzeVjcI4"
+        }
+    ],
+    "posterUrl": "https://imgur.com/YHA1OV8.png",
+    "type": "workshop"
+},
+
+{
+    "event": "industry-talk",
+    "formLink":"https://forms.gle/j2aYaRChBw32ChCX6",
+    "dateAndTime": "2nd April, 15:00 IST",
+    "jsDate": "April 2 2021, 15:00:00",
+    "eventName": "Project management- a smart career choice",
+    "description": "Event will cover the points regarding the jobs Chemical engineer will have to do in industry, the challenge he/she has to go through and also as sanjay sir is one of the most senior person of industry we will hear his experience and from falak sor we will learn about project management.",   
+    "speakers":[
+        {
+            "speakerName":"Falak Barot Sir",
+            "designation":"Sr. Manager Projects of GSPC",
+            "speakerImg":"https://media-exp1.licdn.com/dms/image/C5603AQFjgsEde1JfCA/profile-displayphoto-shrink_400_400/0/1517790231476?e=1622678400&v=beta&t=17-UoeAylnlQZo4_OVohmkskB7_xFVaUVRbqCp8G13c"
+        },
+        {
+            "speakerName":"Shri Sanjay Sengupta Sir",
+            "designation":"Senior Vice President-Operation",
+            "speakerImg":"https://media-exp1.licdn.com/dms/image/C4E03AQEqWJnxbYx3cQ/profile-displayphoto-shrink_400_400/0/1516467957846?e=1622678400&v=beta&t=Kj83jWV1Th3HN8mKGBrEOakVrah6XULdHmW1GEwul-c"
+        }
+    ],
+    "posterUrl": "https://imgur.com/RnGCNQb.png",
+    "type": "workshop"
+},
+
+{
+    "event": "rnd-agro",
+    "formLink":"https://forms.gle/H4EuwWhLsKn3vAJa6",
+    "dateAndTime": "3rd April, 17:00 IST",
+    "jsDate": "April 3 2021, 17:00:00",
+    "eventName": "Research and development in Agrochemical sector.",
+    "description": "It's an virtual industrial visit, in one of the biggest R&D centers of Gujarat named Meghmani organics limited. Dr Bhavesh Vyas will address the talk and will make you go through it's Agrochemical sector. Main agenda to be talked on are discovery, development, evolution & trails, scale up, regulatory and manufacturing.",
+    "speakers":[
+        {
+            "speakerName":"Dr. Bhavesh Vyas",
+            "designation":"Meghmani Organics Limited",
+            "speakerImg":"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
+        }
+    ],
+    "posterUrl": "https://imgur.com/X3Zd8Zg.png",
+    "type": "workshop"
+},
+
+{
+    "event": "space-talk",
+    "formLink":"https://forms.gle/MXFNLFJ7hNmjEJsG6",
+    "dateAndTime": "3rd April, 14:00 IST",
+    "jsDate": "April 3 2021, 14:00:00",
+    "eventName": "Application of FEA in Space",
+    "description": "Associate director Dr. Srinivas of ISRO along with Prof. Iyyer would be addressing the participants and enlightening them about Finite Element Analysis (FEA) and its applications. FEA uses mathematical models to understand and quantify the effects of real-world conditions on a part or assembly. These simulations, which are conducted via specialised software, allow engineers to locate potential problems in a design, including areas of tension and weak spots.",
+    "speakers":[
+        {
+            "speakerName":"Dr. Srinivas Sir",
+            "designation":",Associate Director, Space infrastructure, ISRO HQ, Bangalore.",
+            "speakerImg":"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
+        }
+    ],
+    "posterUrl": "https://imgur.com/fZBO9vM.png",
+    "type": "workshop"
+
+},
+
+{
+    "event": "space-engineering",
+    "formLink":"https://forms.gle/gMZ6SgGsf7Pf84pFA",
+    "dateAndTime": "4th April, 14:00 IST",
+    "jsDate": "April 4 2021, 14:00:00",
+    "eventName": "Space Engineering- Today and Tomorrow",
+    "description": "Tech Ingenium 2021 collaborating with ASME-Ahmedabad University Student Section brings you another exciting talk to add to the list. The Talk on Space Engineering- Today and Tomorrow. The talk will introduce you to one of the flourishing field of science-Space Engineering. The event will revolve around the aspects discussing the technologies being used, future opportunities and how the field has grown over the time",
+    "speakers": [
+        {
+            "speakerName":"Mr. Anurag Verma",
+            "designation":"Space Application Centre, ISRO",
+            "speakerImg":"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
+        }
+    ],
+    "posterUrl": "https://imgur.com/kAhgoHW.png",
+    "type": "workshop"
+}
+
 ]

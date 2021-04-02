@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: 'Ingenium',
     author: 'Ingenium tech team',
-    description: 'A Gatsby starter to set you up with Tailwind CSS',
+    description: ' Official Tech-Fest @ Ahmedabad University',
   },
   pathPrefix: '/website',
   plugins: [

@@ -21,6 +21,7 @@ import e18 from '../images/robotics.png';
 import e19 from '../images/machine-fault.png';
 import e20 from '../images/R&D.png';
 import e21 from '../images/ev-talk.jpeg';
+import e22 from '../images/SpaceEngineering.png';
 import '../css/custom.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -223,6 +224,14 @@ const events_data = [
             title: 'CNC Workshop',
             image: e1,
             url: 'cnc',
+          },
+          {
+            desc:
+              'The event will revolve around the aspects discussing the technologies being used, future opportunities and how the field has grown over the time.',
+            date: '4th April, 2-3pm',
+            title: 'Space Engineering',
+            image: e22,
+            url: 'space-engineering',
           },
         ],
       },

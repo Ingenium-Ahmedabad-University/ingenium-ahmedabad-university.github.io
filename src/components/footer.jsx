@@ -10,7 +10,7 @@ const contact_details = [
   },
   {
     icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/discord.svg',
-    url: 'https://discord.gg/EAdd5fJU',
+    url: 'https://discord.gg/cRjurW4u',
   },
   {
     icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/gmail.svg',
