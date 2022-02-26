@@ -1,17 +1,22 @@
 import React from 'react';
-import picture1 from '../images/Shivang_gohel.jpeg';
+import picture1 from '../images/Nisarg_Thoriya.jpg';
 import picture2 from '../images/Kaushal_Patil.jpg';
-import picture3 from '../images/Nisarg_Thoriya.jpg';
-import picture4 from '../images/Jeet_Shah.jpg';
-import picture5 from '../images/Prachee_Javiya.jpg';
-import picture6 from '../images/Arpitsinh_Vaghela.jpeg';
-import picture7 from '../images/Divye_Kanawala.jpg';
-import picture8 from '../images/Viraj_Boghani.jpg';
-import picture9 from '../images/Ankit_Devani.jpg';
-import picture10 from '../images/Panth_Patel.jpg';
-import picture11 from '../images/Sanket_J_Shah.jpg';
-import picture12 from '../images/Samkit_Kundalia.jpg';
-import picture13 from '../images/Sanket_B_Shah.jpg';
+import picture3 from '../images/Ankit_Devani.jpg';
+import picture4 from '../images/Viraj_Boghani.jpg';
+import picture5 from '../images/Kashish_Jivani.jpg';
+import picture6 from '../images/Harsh_Patel.jpg';
+import picture7 from '../images/Krunal_Savaj.jpeg';
+import picture8 from '../images/Neel_Popat.jpg';
+import picture9 from '../images/Jay_Mehta.jpg';
+import picture10 from '../images/Jainil_Siddhapura.jpg';
+import picture11 from '../images/Saurav_Pajvani.jpg';
+import picture12 from '../images/Aditi_Vasa.jpg';
+import picture13 from '../images/Kenil_Gondaliya.jpg';
+import picture14 from '../images/Anshi_Shah.jpg';
+import picture15 from '../images/Yash_Longani.jpg';
+import picture16 from '../images/Krina_Khakhariya.jpeg';
+import picture17 from '../images/Vinay_Kakkad.jpg';
+
 
 const icon1 =
   'https://cdn.jsdelivr.net/npm/simple-icons@4.12.0/icons/whatsapp.svg';
@@ -38,7 +43,6 @@ const team_details = [
     gmail_Url_Url: 'mailto:kaushal.p@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/kaushal1011/',
   },
-
   {
     id: 3,
     name: 'Ankit Devani',
@@ -48,7 +52,6 @@ const team_details = [
     gmail_Url_Url: 'mailto:nisarg.t@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/nisarg-thoriya/',
   },
-
   {
     id: 4,
     name: 'Viraj Boghani',
@@ -94,8 +97,8 @@ const team_details = [
     name: 'Neel Popat',
     role :'Sponsorship & Logistic head',
     image: picture8,
-    whatsapp_Url: 'https://api.whatsapp.com/send?phone=+919727474707',
-    gmail_Url_Url: 'mailto:viraj.b2@ahduni.edu.in',
+    whatsapp_Url: 'https://api.whatsapp.com/send?phone=+918320949532',
+    gmail_Url_Url: 'mailto:neel.p@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/viraj-boghani-a270671b1',
   },
 
@@ -153,7 +156,7 @@ const team_details = [
     id: 14,
     name: 'Anshi Shah',
     role :'Social Media Head',
-    image: picture13,
+    image: picture14,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/sanket-shah-978828167/',
@@ -163,7 +166,26 @@ const team_details = [
     id: 15,
     name: 'Yash Longani',
     role :'Hackathon Lead',
-    image: picture13,
+    image: picture15,
+    whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
+    gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
+    linkedLn_Url: 'https://www.linkedin.com/in/sanket-shah-978828167/',
+  },
+  {
+    id: 16,
+    name: 'Krina Khakhariya',
+    role :'Decoration Head',
+    image: picture16,
+    whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
+    gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
+    linkedLn_Url: 'https://www.linkedin.com/in/sanket-shah-978828167/',
+  },
+
+  {
+    id: 17,
+    name: 'Vinay Kakkad',
+    role :'Tech Lead',
+    image: picture17,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/sanket-shah-978828167/',
