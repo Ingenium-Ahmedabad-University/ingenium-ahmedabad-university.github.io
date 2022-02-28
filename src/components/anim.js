@@ -94,12 +94,12 @@ const Hero = () => {
          md:text-8xl lg:text-9xl bg-clip-text relative text-stroke-transparent'
             ref={refText}
           >
-            Ingenium'21
+            Ingenium'22
           </h1>
         </div>
         <div className='overflow-hidden hide-dates-wrapper text-xl md:text-2xl lg:text-3xl'>
           <div className='text-gray-300 text-right hide-dates' ref={refDates}>
-            1-4 April,2021
+            8-10 April,2022
           </div>
         </div>
       </div>
