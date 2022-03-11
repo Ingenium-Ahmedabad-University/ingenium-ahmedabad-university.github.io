@@ -266,7 +266,7 @@ const EventLists = () => {
     AOS.init({ duration: 1000 });
   });
   return (
-    <div className='sm:mx-12 mx-6 my-12 lg:mx-18 pb-5'>
+    <div className='mt-12 w-4/5 m-auto'>
       {data.map((el, key) => (
         <div>
           <h1 className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
@@ -295,7 +295,8 @@ const EventLists = () => {
                         data-aos='fade-up'
                         style={{ backgroundImage: `url(${det.image})` }}
                       >
-                        <div className='desc z-10 tracking-tight bg-gray-800 bg-opacity-60 text-white'>
+                        <div className='desc tracking-tight bg-gray-800 bg-opacity-60 text-white'>
+                        {/* <div className='desc z-10 tracking-tight bg-gray-800 bg-opacity-60 text-white'> */}
                           <span className=' font-bold md:text-2xl lg:text-3xl'>
                             {det.title}
                           </span>

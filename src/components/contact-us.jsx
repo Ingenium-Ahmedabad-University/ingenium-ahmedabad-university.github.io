@@ -249,7 +249,7 @@ const ImgTemplate = ({
 const Contact_Us = () => {
   return (
     <code class='font-sans'>
-      <div class='w-full mx-auto'>
+      <div class='mx-auto w-4/5 m-auto'>
         <div class='core_team' id='1'>
           <br />
           <br />

@@ -183,7 +183,7 @@ const Card = ({ redirectUrl, logoUrl, name, description }) => (
 
 const Sponsors = () => (
   <section id='sponsors'>
-    <div className='pt-28'>
+    <div className='pt-28 w-4/5 m-auto'>
       {data.map((category, i) => {
         return (
           <div key={i} className='mb-24'>
