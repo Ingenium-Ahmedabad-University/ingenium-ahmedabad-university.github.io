@@ -296,7 +296,7 @@ const EventLists = () => {
                         style={{ backgroundImage: `url(${det.image})` }}
                       >
                         <div className='desc tracking-tight bg-gray-800 bg-opacity-60 text-white'>
-                        {/* <div className='desc z-10 tracking-tight bg-gray-800 bg-opacity-60 text-white'> */}
+                          {/* <div className='desc z-10 tracking-tight bg-gray-800 bg-opacity-60 text-white'> */}
                           <span className=' font-bold md:text-2xl lg:text-3xl'>
                             {det.title}
                           </span>

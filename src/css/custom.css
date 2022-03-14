@@ -495,19 +495,18 @@ html {
   }
 }
 
-.desktop-nav{
+.desktop-nav {
   display: none;
 }
 
-@media (min-width: 769px){
-  .mobile-nav{
+@media (min-width: 769px) {
+  .mobile-nav {
     display: none;
   }
 
-  .desktop-nav{
-    display: block;
+  .desktop-nav {
+    display: flex;
   }
-    
 }
 
 @media only screen and (min-width: 769px) {
@@ -736,11 +735,16 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-.navbar-back{
+.navbar-back {
   width: 100%;
   position: fixed;
   margin-bottom: -96px;
-  background: (0, 0, 0, 0.7);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.blur {
+  background: rgb(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
 }
