@@ -8,9 +8,9 @@ const FaqPage = () => (
   <div>
     <SEO />
     <div className='bg-base'>
+      <Header />
       <AboutUs />
       <Footer />
-      <Header />
     </div>
   </div>
 );

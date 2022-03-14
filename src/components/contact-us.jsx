@@ -17,7 +17,6 @@ import picture15 from '../images/Yash_Longani.jpg';
 import picture16 from '../images/Krina_Khakhariya.jpeg';
 import picture17 from '../images/Vinay_Kakkad.jpg';
 
-
 const icon1 =
   'https://cdn.jsdelivr.net/npm/simple-icons@4.12.0/icons/whatsapp.svg';
 const icon2 =
@@ -29,7 +28,7 @@ const team_details = [
     id: 1,
     name: 'Nisarg Thoriya',
     image: picture1,
-    role : 'Advisor ',
+    role: 'Advisor ',
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+917779033222',
     gmail_Url_Url: 'mailto:shivang.g@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/shivanggohil',
@@ -38,7 +37,7 @@ const team_details = [
     id: 2,
     name: 'Kaushal Patil ',
     image: picture2,
-    role :'Advisor',
+    role: 'Advisor',
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+917043132142',
     gmail_Url_Url: 'mailto:kaushal.p@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/kaushal1011/',
@@ -47,7 +46,7 @@ const team_details = [
     id: 3,
     name: 'Ankit Devani',
     image: picture3,
-    role :'Committee Head',
+    role: 'Committee Head',
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+919104502001',
     gmail_Url_Url: 'mailto:nisarg.t@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/nisarg-thoriya/',
@@ -56,7 +55,7 @@ const team_details = [
     id: 4,
     name: 'Viraj Boghani',
     image: picture4,
-    role :'Committee Head',
+    role: 'Committee Head',
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+919427252347',
     gmail_Url_Url: 'mailto:jeet.s3@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/jeet-shah-3b9a821a4/',
@@ -65,7 +64,7 @@ const team_details = [
   {
     id: 5,
     name: 'Kashish Jivani',
-    role :'Secretary',
+    role: 'Secretary',
     image: picture5,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+917046633383',
     gmail_Url_Url: 'mailto:prachee.j@ahduni.edu.in',
@@ -75,7 +74,7 @@ const team_details = [
   {
     id: 6,
     name: 'Harsh Patel ',
-    role :'Treasurer',
+    role: 'Treasurer',
     image: picture6,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+917600303434',
     gmail_Url_Url: 'mailto:arpitsinh.v@ahduni.edu.in',
@@ -85,7 +84,7 @@ const team_details = [
   {
     id: 7,
     name: 'Krunal Savaj',
-    role :'Registration & Marketing Head',
+    role: 'Registration & Marketing Head',
     image: picture7,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+919099190696',
     gmail_Url_Url: 'mailto:divye.k@ahduni.edu.in',
@@ -95,7 +94,7 @@ const team_details = [
   {
     id: 8,
     name: 'Neel Popat',
-    role :'Sponsorship & Logistic head',
+    role: 'Sponsorship & Logistic head',
     image: picture8,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+918320949532',
     gmail_Url_Url: 'mailto:neel.p@ahduni.edu.in',
@@ -105,7 +104,7 @@ const team_details = [
   {
     id: 9,
     name: 'Jay Mehta',
-    role :'CSE Event Head',
+    role: 'CSE Event Head',
     image: picture9,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+918866556966',
     gmail_Url_Url: 'mailto:ankit.d1@ahduni.edu.in',
@@ -115,7 +114,7 @@ const team_details = [
   {
     id: 10,
     name: 'Jainil Siddhapura',
-    role :'Mechanical Event Head',
+    role: 'Mechanical Event Head',
     image: picture10,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+918511862501',
     gmail_Url_Url: 'mailto:panth.p@ahdni.edu.in',
@@ -125,7 +124,7 @@ const team_details = [
   {
     id: 11,
     name: 'Saurav Pajvani',
-    role :'Chemical Event Head',
+    role: 'Chemical Event Head',
     image: picture11,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+919879624248',
     gmail_Url_Url: 'mailto:sanket.s2@ahduni.edu.in',
@@ -135,7 +134,7 @@ const team_details = [
   {
     id: 12,
     name: 'Aditi Vasa',
-    role :'Content Team Head',
+    role: 'Content Team Head',
     image: picture12,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+919409631234',
     gmail_Url_Url: 'mailto:samkit.k@ahduni.edu.in',
@@ -145,7 +144,7 @@ const team_details = [
   {
     id: 13,
     name: 'Kenil Gondaliya',
-    role :'Design Team Head',
+    role: 'Design Team Head',
     image: picture13,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
@@ -155,7 +154,7 @@ const team_details = [
   {
     id: 14,
     name: 'Anshi Shah',
-    role :'Social Media Head',
+    role: 'Social Media Head',
     image: picture14,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
@@ -165,7 +164,7 @@ const team_details = [
   {
     id: 15,
     name: 'Yash Longani',
-    role :'Hackathon Lead',
+    role: 'Hackathon Lead',
     image: picture15,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
@@ -174,7 +173,7 @@ const team_details = [
   {
     id: 16,
     name: 'Krina Khakhariya',
-    role :'Decoration Head',
+    role: 'Decoration Head',
     image: picture16,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
@@ -184,7 +183,7 @@ const team_details = [
   {
     id: 17,
     name: 'Vinay Kakkad',
-    role :'Tech Lead',
+    role: 'Tech Lead',
     image: picture17,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+916354973976',
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
@@ -249,7 +248,7 @@ const ImgTemplate = ({
 const Contact_Us = () => {
   return (
     <code class='font-sans'>
-      <div class='w-full mx-auto'>
+      <div class='mx-auto w-4/5 m-auto'>
         <div class='core_team' id='1'>
           <br />
           <br />

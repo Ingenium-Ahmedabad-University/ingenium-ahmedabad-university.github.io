@@ -39,7 +39,7 @@ body {
   width: 100vw;
   background-color: #090919;
   color: #a0aec0;
-  z-index: 1000;
+  /* z-index: 1000; */
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -156,7 +156,7 @@ About Us
   display: flex;
   justify-content: end;
   filter: grayscale(0.8);
-  z-index: 0;
+  /* z-index: 0; */
 }
 .grayeffect {
   filter: grayscale(1);
@@ -265,7 +265,7 @@ About Us
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: -1;
+  /* z-index: -1; */
 }
 /*
 * Socials 
@@ -409,7 +409,7 @@ h1.line-height125 {
   border-radius: 50%;
   position: fixed;
   @apply bg-secondary;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 
 .drop-zone {
@@ -492,6 +492,20 @@ html {
   .max_img_size {
     max-width: 300px;
     padding-top: min(300px, 100%);
+  }
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
   }
 }
 
@@ -597,7 +611,7 @@ html {
 
 .has-tooltip:hover .tooltip {
   display: block;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .register-button {
@@ -712,4 +726,25 @@ html {
     transform: scaleY(100%);
     transform-origin: 0% 0%;
   }
+}
+
+.navText:hover {
+  background: -webkit-linear-gradient(#ef4444, #818cf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-back {
+  width: 100%;
+  position: fixed;
+  margin-bottom: -96px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.blur {
+  background: rgb(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
 }

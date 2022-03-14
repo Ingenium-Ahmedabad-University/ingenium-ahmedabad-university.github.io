@@ -157,7 +157,8 @@ const Header = () => (
 );
 
 const Tabs = ({ currentCategory, onCategoryChange }) => (
-  <div className='container max-w-full z-20'>
+  <div className='container max-w-full'>
+    {/* <div className='container max-w-full z-20'> */}
     <div className='flex overflow-auto'>
       {data.map((category, i) => {
         if (category.name === currentCategory) {
