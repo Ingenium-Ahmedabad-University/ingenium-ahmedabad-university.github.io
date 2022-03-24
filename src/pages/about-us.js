@@ -3,12 +3,17 @@ import SEO from '../components/SEO';
 import Header from '../components/header';
 import AboutUs from '../components/about-us';
 import Footer from '../components/footer';
+import TP from '../components/TP';
+import { Mixed } from '../components/matter';
+import Matter from 'matter-js';
 
 const FaqPage = () => (
   <div>
     <SEO />
     <div className='bg-base'>
       <AboutUs />
+      <Mixed />
+
       <Footer />
       <Header />
     </div>

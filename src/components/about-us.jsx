@@ -8,7 +8,7 @@ const AboutUs = () => (
       <div className='contianer flex h-full items-center justify-center bg-black bg-opacity-40'>
         <div className='relative top-1/4'>
           <p className='about-us-heading text-4xl md:text-5xl lg:text-7xl font-bold mb-5'>
-            Ingenium <br></br>2021
+            Ingenium <br></br>2022
           </p>
           <p className='sub-heading md:text-xl'>
             Where innovation is education
@@ -17,6 +17,7 @@ const AboutUs = () => (
       </div>
     </div>
     {/* <div className='flex items-center justify-center py-16 px-6 bg-base-light'> */}
+
     <div className='flex items-center justify-center py-16 px-6'>
       <div className='max-w-2xl'>
         <p className='center-heading center-text text-3xl sm:text-4xl lg-text-5xl social-bg bg-gradient-to-br from-red-500 to-indigo-400 font-bold mb-5'>
