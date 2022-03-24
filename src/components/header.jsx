@@ -20,6 +20,7 @@ const NavIcon = () => {
     { name: 'Contact Us', link: 'contact-us' },
     { name: 'Sponsors', link: 'sponsors' },
     { name: 'FAQ', link: 'faqs' },
+    {name:'Registration',link:'registration'},
   ];
   const [nav_open, change_nav] = useState(false);
 
@@ -88,6 +89,7 @@ const NavMenu = ({ open }) => {
     { name: 'Contact Us', link: 'contact-us' },
     { name: 'Sponsors', link: 'sponsors' },
     { name: 'FAQ', link: 'faqs' },
+    {name:'Registration',link:'registration'},
   ];
   return (
     <>
