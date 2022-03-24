@@ -8,7 +8,7 @@ const AboutUs = () => (
       <div className='contianer flex h-full items-center justify-center bg-black bg-opacity-40'>
         <div className='relative top-1/4'>
           <p className='about-us-heading text-4xl md:text-5xl lg:text-7xl font-bold mb-5'>
-            Ingenium <br></br>2021
+            Ingenium <br></br>2022
           </p>
           <p className='sub-heading md:text-xl'>
             Where innovation is education

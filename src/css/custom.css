@@ -15,6 +15,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: black;
 }
 
 @font-face {
@@ -748,3 +749,32 @@ html {
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
 }
+
+/* Event Page Gradients */
+.event-gradient-left {
+  max-width: 100%;
+  display: block;
+  position:fixed;
+  left: -10%;
+  bottom: -40%;
+  right: -50%;
+  z-index: -2;
+}
+
+.event-gradient-right {
+  max-width: 100%;
+  display: block;
+  position: fixed;
+  top: -50%;
+  right: -50%;
+  z-index: -2;
+}
+
+/* Needs Some Changes Haven't used anywhere */
+.bg-blur {
+  background: rgba(56, 46, 46, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  z-index: -3;
+} 
