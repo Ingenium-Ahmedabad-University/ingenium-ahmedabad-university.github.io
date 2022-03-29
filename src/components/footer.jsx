@@ -69,9 +69,9 @@ const Newletter = () => {
   );
 };
 const Footer = () => (
-  <div className='bg-base'>
+  <div className=''>
     <div className='flex justify-center pt-6'>
-      <div className='w-full h-px bg-gray-900'></div>
+      <div className='w-full h-px bg-gray-400'></div>
     </div>
     {/* <div className='footer grid col-1 lg:row-1 lg:grid-flow-col row-gap-8 lg:gap-0 justify-center\items-center my-16 lg:my-8 mx-3 md:mx-5 lg:mx-10'>
       Signup
@@ -126,13 +126,13 @@ const Footer = () => (
         </ul>
       </div>
     </div>
-    <div className='w-full h-px bg-gray-900'></div>
+    <div className='w-full h-px bg-gray-400'></div>
     {/* logo and copy right */}
     <div className='grid grid-flow-row justify-center py-16 lg:py-10 lg:grid-flow-col lg:justify-start lg:items-center mx-3 md:mx-5 lg:mx-10'>
       <div className='flex justify-center'>
         <img src={logo_src} alt='' />
       </div>
-      <div className='text-gray-700 text-sm font-sans lg:ml-3'>
+      <div className='text-gray-100 text-sm font-sans lg:ml-3'>
         &copy; 2021 Ingenium, Ahmedabad University.
       </div>
     </div>

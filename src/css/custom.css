@@ -15,7 +15,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: black;
+  background-color: #312332;
 }
 
 @font-face {
@@ -754,11 +754,11 @@ html {
 .event-gradient-left {
   max-width: 100%;
   display: block;
-  position:fixed;
+  position: fixed;
   left: -10%;
   bottom: -40%;
   right: -50%;
-  z-index: -2;
+  z-index: -1;
 }
 
 .event-gradient-right {
@@ -767,14 +767,14 @@ html {
   position: fixed;
   top: -50%;
   right: -50%;
-  z-index: -2;
+  z-index: -1;
 }
 
 /* Needs Some Changes Haven't used anywhere */
 .bg-blur {
-  background: rgba(56, 46, 46, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(180%) blur(10px);
   -webkit-backdrop-filter: saturate(180%) blur(10px);
-  z-index: -3;
+  z-index: -8;
 } 
