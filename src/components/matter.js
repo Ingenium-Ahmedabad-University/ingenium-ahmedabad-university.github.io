@@ -45,8 +45,8 @@ export const Mixed = function () {
   // Render.run(render);
 
   useEffect(() => {
-    const cw = document.body.clientWidth;
-    const ch = document.body.clientHeight;
+    var cw = document.body.clientWidth / 2;
+    var ch = document.body.clientHeight / 4;
     // // create renderer
     // var render = Render.create({
     //   element: document.body,
@@ -64,13 +64,42 @@ export const Mixed = function () {
         width: cw,
         height: ch,
         wireframes: false,
-        background: 'transparent',
+        background: 'yellow',
       },
     });
     Render.run(render);
     // // create runner
     var runner = Runner.create();
     Runner.run(runner, engine.current);
+
+    Composite.add(world.current, [
+      // walls
+      // Bodies.rectangle(400, 0, 800, 50, { isStatic: true }), //upper
+      // Bodies.rectangle(400, 600, 800, 50, { isStatic: true }), //lower
+      // Bodies.rectangle(800, 300, 50, 600, { isStatic: true }), //left
+
+      // Bodies.rectangle(0, 300, 50, 600, { isStatic: true }), //right
+
+      Bodies.rectangle(cw / 2, 0, cw, 50, { isStatic: true }), //upper
+      Bodies.rectangle(cw / 2, ch, cw, 50, { isStatic: true }), //lower
+      Bodies.rectangle(0, ch / 2, 50, ch, { isStatic: true }), //left
+      Bodies.rectangle(cw, ch / 2, 50, ch, { isStatic: true }), //right
+
+      Bodies.rectangle(400, 305, 200, 40, {
+        isStatic: true,
+        render: {
+          fillStyle: 'pink',
+          strokeStyle: 'transparent',
+          text: {
+            fillStyle: '#000000',
+            content: 'Poojan',
+            color: 'blue',
+            size: 50,
+          },
+        },
+      }),
+    ]);
+
     // add bodies
     var stack = Composites.stack(20, 20, 10, 5, 0, 0, function (x, y) {
       var sides = Math.round(Common.random(1, 8));
@@ -107,27 +136,10 @@ export const Mixed = function () {
       }
     });
     Composite.add(world.current, stack);
-    Composite.add(world.current, [
-      // walls
-      Bodies.rectangle(400, 0, 800, 50, { isStatic: true }),
-      Bodies.rectangle(400, 600, 800, 50, { isStatic: true }),
-      Bodies.rectangle(800, 300, 50, 600, { isStatic: true }),
+    console.log(ch, cw);
+    // cw = 500;
+    // ch = 500;
 
-      Bodies.rectangle(0, 300, 50, 600, { isStatic: true }),
-      Bodies.rectangle(400, 305, 200, 40, {
-        isStatic: true,
-        render: {
-          fillStyle: 'pink',
-          strokeStyle: 'transparent',
-          text: {
-            fillStyle: '#000000',
-            content: 'Poojan',
-            color: 'blue',
-            size: 50,
-          },
-        },
-      }),
-    ]);
     // add mouse control
     var mouse = Mouse.create(render.canvas),
       mouseConstraint = MouseConstraint.create(engine.current, {
@@ -175,12 +187,11 @@ export const Mixed = function () {
         // onMouseUp={handleUp}
         // onMouseMove={handleAddCircle}
 
-        // className='bg-white'
-        className='bg-white my-auto'
+        className='flex items-center justify-center'
       >
-        Hello World
+        {/* Hello World */}
         <div
-          className='mx-auto interactionBox'
+          className='interactionBox'
           ref={scene}
           // style={{ width: '50%', height: '100%' }}
         />
