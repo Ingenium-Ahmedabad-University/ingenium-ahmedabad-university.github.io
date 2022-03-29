@@ -133,7 +133,7 @@ const Footer = () => (
         <img src={logo_src} alt='' />
       </div>
       <div className='text-gray-700 text-sm font-sans lg:ml-3'>
-        &copy; 2021 Ingenium, Ahmedabad University.
+        &copy; 2022 Ingenium, Ahmedabad University.
       </div>
     </div>
   </div>

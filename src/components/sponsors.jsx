@@ -1,39 +1,46 @@
 import React from 'react';
 
-import inkedstories from '../images/sponsor_logos/inked-stories.png';
 import trendinginahmedabad from '../images/sponsor_logos/trendinginahmedabad.png';
-import youthera from '../images/sponsor_logos/youth_era.png';
+import la_milano from '../images/sponsor_logos/la_milano.png';
+import radiscan from '../images/sponsor_logos/radiscan.png';
+import perpetual from '../images/sponsor_logos/perpetual.png';
+import renaissance from '../images/sponsor_logos/renaissance.png';
 
 const data = [
   {
-    name: 'Gold Sponsors',
+    name: 'Associated with',
     list: [
       {
-        redirectUrl: 'https://www.meditab.com/',
+        redirectUrl: 'https://royaltechnosoft.com/',
         logoUrl:
-          'https://lirp.cdn-website.com/b9c8e2cb/dms3rep/multi/opt/Transparent_Meditab%2BLogo%2B%2B%2BIMS%2BLogo%2B%281%29-720w-720w.png',
-        name: 'Meditab',
-        description: 'Search Engine',
+          'https://royaltechnosoft.com/wp-content/uploads/2018/11/logo_white-1.png',
+        name: 'Royal Technosoft',
+        description: 'Royal Technosoft',
       },
       {
-        redirectUrl: 'https://www.silvertouch.com/',
-        logoUrl:
-          'https://www.silvertouch.com/wp-content/themes/silvertouch/assets/images-new/logo-white.png',
-        name: 'Silver Touch',
-        description: 'Search Engine',
+        redirectUrl: 'http://mfwfoods.com/',
+        logoUrl: la_milano,
+        name: 'La Milano',
+        description: 'La Milano',
       },
       {
         redirectUrl: 'https://therenaissance.co.in/',
-        logoUrl:
-          'https://therenaissance.co.in/wp-content/uploads/2018/06/Renaissance-logo.png',
+        logoUrl: renaissance,
         name: 'Renaissance',
         description: 'Renaissance',
       },
       {
-        redirectUrl: 'https://www.instagram.com/youthera.clothing/',
-        logoUrl: youthera,
-        name: 'Youth Era',
-        description: 'Renaissance',
+        redirectUrl: 'https://www.facebook.com/RadiscanDiagnostics/',
+        logoUrl: radiscan,
+        name: 'Radiscan Diagnostics',
+        description: 'Radiscan Diagnostics',
+      },
+      {
+        redirectUrl:
+          'https://www.facebook.com/people/Perpetual-Pharmaceuticals/100064076289768/',
+        logoUrl: perpetual,
+        name: 'Perpetual Pharmaceuticals',
+        description: 'Perpetual Pharmaceuticals',
       },
       //   {
       //     redirectUrl:
@@ -65,16 +72,10 @@ const data = [
     name: 'Media Partners',
     list: [
       {
-        redirectUrl: 'https://inkedstories.in/',
-        logoUrl: inkedstories,
-        name: 'Inked Stories',
-        description: '',
-      },
-      {
         redirectUrl: 'https://www.instagram.com/trendinginahmedabad/?hl=en',
         logoUrl: trendinginahmedabad,
         name: 'Trending in Ahmedabad',
-        description: '',
+        description: 'Trending in Ahmedabad',
       },
       //   {
       //     redirectUrl:
