@@ -73,7 +73,7 @@ const team_details = [
 
   {
     id: 6,
-    name: 'Harsh Patel ',
+    name: 'Neel Popat',
     role: 'Treasurer',
     image: picture6,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+917600303434',
@@ -252,7 +252,7 @@ const Contact_Us = () => {
         <div class='core_team' id='1'>
           <br />
           <br />
-          <div class='font-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg text-center py-14 text-4xl'>
+          <div class='font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg text-center py-14 text-4xl'>
             MEET THE TEAM
           </div>
           <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-12 gap-y-36 sm:grid-cols-2 lg:grid-cols-3'>

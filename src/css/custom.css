@@ -582,7 +582,7 @@ html {
   left: -1;
   width: 100%;
   height: 2px;
-  background: linear-gradient(87.54deg, #9867f0 -6.8%, #ed4e50 84.14%);
+  background: linear-gradient(87.54deg, theme('colors.secondary') -6.8%, theme('colors.secondary-dark') 84.14%);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: 0.4s ease;
@@ -619,18 +619,18 @@ html {
   border-image-slice: 1;
   border-width: 3px;
   border-image-source: linear-gradient(
-    to bottom right,
-    rgb(239, 68, 68),
-    rgb(129, 140, 248)
+    to bottom,
+    theme('colors.secondary'),
+    theme('colors.secondary-dark')
   );
   transition: all 300ms;
 }
 
 .register-button:hover {
   background-image: linear-gradient(
-    to bottom right,
-    rgb(239, 68, 68),
-    rgb(129, 140, 248)
+    to bottom,
+    theme('colors.secondary'),
+    theme('colors.secondary-dark')
   );
 }
 
@@ -673,8 +673,8 @@ html {
   width: 16px;
   background-image: linear-gradient(
     to bottom right,
-    rgb(239, 68, 68),
-    rgb(129, 140, 248)
+    theme('colors.secondary'),
+    theme('colors.secondary-dark')
   );
   position: absolute;
   left: -25px;
@@ -730,7 +730,7 @@ html {
 }
 
 .navText:hover {
-  background: -webkit-linear-gradient(#ef4444, #818cf8);
+  background: -webkit-linear-gradient(theme('colors.secondary'), theme('colors.secondary'));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -774,7 +774,15 @@ html {
 .bg-blur {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: saturate(180%) blur(10px);
-  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(270%) blur(15px);
+  -webkit-backdrop-filter: saturate(270%) blur(15px);
+  z-index: -8;
+} 
+
+.bg-blur-light {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(20, 20, 20, 0.15);
+  backdrop-filter: saturate(180%) blur(15px);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
   z-index: -8;
 } 

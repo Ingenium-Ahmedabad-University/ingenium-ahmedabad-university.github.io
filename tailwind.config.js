@@ -31,8 +31,9 @@ module.exports = {
       colors: {
         base: '#090919',
         'base-light': '#33334d',
-        primary: '#00adb5',
-        secondary: '#f05454',
+        primary: '#6fee8d',
+        secondary: '#ff1cf7',
+        'secondary-dark': '#b249f8'
       },
       maxWidth: {
         '1/5': '20%',
