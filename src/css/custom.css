@@ -771,8 +771,8 @@ html {
 }
 
 /* Needs Some Changes Haven't used anywhere */
-/* .bg-blur {
-  background: rgba(0, 0, 0, 0.1);
+.bg-blur {
+  background: rgba(255, 255, 255, 0.02);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(270%) blur(15px);
   -webkit-backdrop-filter: saturate(270%) blur(15px);
@@ -780,11 +780,8 @@ html {
 }  */
 
 .bg-blur-light {
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.1);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(5.1px);
-/* border: 1px solid rgba(255, 255, 255, 0.44); */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: saturate(180%) blur(15px);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+  box-shadow: 0 5px 20px -5px rgba(20, 20, 20, 0.1);
 } 
