@@ -1,203 +1,215 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Matter, {
-  Engine,
-  Render,
-  Bodies,
-  World,
-  Runner,
   Mouse,
+  MouseConstraint,
   Composite,
   Composites,
   Common,
-  MouseConstraint,
+  Bodies,
 } from 'matter-js';
 
-export const Mixed = function () {
-  const scene = useRef();
-  // const Engine = useRef(Engine.create());
-  // const Runner = useRef(Engine.create());
-  // const engine = useRef(Engine.create());
-  // const engine = useRef(Engine.create());
-  // const engine = useRef(Engine.create());
+const STATIC_DENSITY = 15;
+const PARTICLE_SIZE = 6;
+const PARTICLE_BOUNCYNESS = 0.9;
 
-  // const engine = useRef(Engine.create());
+export const MatterStepOne = () => {
+  const boxRef = useRef(null);
+  const canvasRef = useRef(null);
 
-  var Engine = Matter.Engine,
-    Render = Matter.Render,
-    Runner = Matter.Runner,
-    Composites = Matter.Composites,
-    Common = Matter.Common,
-    MouseConstraint = Matter.MouseConstraint,
-    Mouse = Matter.Mouse,
-    Composite = Matter.Composite,
-    Bodies = Matter.Bodies;
+  const [constraints, setContraints] = useState();
+  const [scene, setScene] = useState();
 
-  const world = engine.world;
+  const [someStateValue, setSomeStateValue] = useState(false);
+
+  const handleResize = () => {
+    setContraints(boxRef.current.getBoundingClientRect());
+  };
+
+  const handleClick = () => {
+    setSomeStateValue(!someStateValue);
+  };
 
   useEffect(() => {
-    const cw = document.body.clientWidth;
-    const ch = document.body.clientHeight;
-    // create renderer
-    const render = Render.create({
-      element: document.body,
+    let Engine = Matter.Engine;
+    let Render = Matter.Render;
+    let World = Matter.World;
+    let Bodies = Matter.Bodies;
+    var cw = document.body.clientWidth / 2;
+    var ch = document.body.clientHeight / 4;
+
+    let engine = Engine.create({});
+
+    let render = Render.create({
+      element: boxRef.current,
       engine: engine,
+      canvas: canvasRef.current,
       options: {
-        width: 800,
-        height: 600,
-        showAngleIndicator: true,
+        height: '100px',
+        background: 'transparent',
+        wireframes: false,
       },
     });
 
-    World.add(engine.current.world, [
-      Bodies.rectangle(cw / 2, -10, cw, 20, { isStatic: true }),
-      Bodies.rectangle(-10, ch / 2, 20, ch, { isStatic: true }),
-      Bodies.rectangle(cw / 2, ch + 10, cw, 20, { isStatic: true }),
-      Bodies.rectangle(cw + 10, ch / 2, 20, ch, { isStatic: true }),
-    ]);
-
-    Engine.run(engine.current);
-    Render.run(render);
-
-    // var Engine = Matter.Engine,
-    // var Render = Matter.Render,
-    //   Runner = Matter.Runner,
-    //   Composites = Matter.Composites,
-    //   Common = Matter.Common,
-    //   MouseConstraint = Matter.MouseConstraint,
-    //   Mouse = Matter.Mouse,
-    //   Composite = Matter.Composite,
-    //   Bodies = Matter.Bodies;
-
-    Composite.add(world, stack);
-
-    Composite.add(world, [
-      // walls
-      Bodies.rectangle(400, 0, 800, 50, { isStatic: true }),
-      Bodies.rectangle(400, 600, 800, 50, { isStatic: true }),
-      Bodies.rectangle(800, 300, 50, 600, { isStatic: true }),
-      Bodies.rectangle(0, 300, 50, 600, { isStatic: true }),
-    ]);
-
-    //code from down
-
-    Render.run(render);
-
-    // create runner
-    var runner = Runner.create();
-    Runner.run(runner, engine);
-
-    // add bodies
-    var stack = Composites.stack(20, 20, 10, 5, 0, 0, function (x, y) {
-      var sides = Math.round(Common.random(1, 8));
-
-      // round the edges of some bodies
-      var chamfer = null;
-      if (sides > 2 && Common.random() > 0.7) {
-        chamfer = {
-          radius: 10,
-        };
-      }
-
-      switch (Math.round(Common.random(0, 1))) {
-        case 0:
-          if (Common.random() < 0.8) {
-            return Bodies.rectangle(
-              x,
-              y,
-              Common.random(25, 50),
-              Common.random(25, 50),
-              { chamfer: chamfer }
-            );
-          } else {
-            return Bodies.rectangle(
-              x,
-              y,
-              Common.random(80, 120),
-              Common.random(25, 30),
-              { chamfer: chamfer }
-            );
-          }
-        case 1:
-          return Bodies.polygon(x, y, sides, Common.random(25, 50), {
-            chamfer: chamfer,
-          });
-      }
+    const floor = Bodies.rectangle(0, 0, 0, STATIC_DENSITY, {
+      isStatic: true,
+      render: {
+        fillStyle: 'blue',
+      },
     });
 
-    // Composite.add(world, stack);
+    World.add(engine.world, [floor]);
 
-    // Composite.add(world, [
-    //   // walls
-    //   Bodies.rectangle(400, 0, 800, 50, { isStatic: true }),
-    //   Bodies.rectangle(400, 600, 800, 50, { isStatic: true }),
-    //   Bodies.rectangle(800, 300, 50, 600, { isStatic: true }),
-    //   Bodies.rectangle(0, 300, 50, 600, { isStatic: true }),
-    // ]);
+    Engine.run(engine);
+    Render.run(render);
 
-    // add mouse control
-    var mouse = Mouse.create(render.canvas),
-      mouseConstraint = MouseConstraint.create(engine, {
-        mouse: mouse,
-        constraint: {
-          stiffness: 0.2,
-          render: {
-            visible: false,
-          },
+    setContraints(boxRef.current.getBoundingClientRect());
+    setScene(render);
+
+    var mouse = Mouse.create(render.canvas);
+
+    var mouseConstraint = MouseConstraint.create(engine, {
+      mouse: mouse,
+      constraint: {
+        stiffness: 0.2,
+        render: {
+          visible: false,
         },
-      });
-
-    Composite.add(world, mouseConstraint);
-
-    // keep the mouse in sync with rendering
-    render.mouse = mouse;
-
-    // fit the render viewport to the scene
-    Render.lookAt(render, {
-      min: { x: 0, y: 0 },
-      max: { x: 800, y: 600 },
+      },
     });
+    Composite.add(engine.world, mouseConstraint);
+    Matter.World.add(engine.world, mouseConstraint);
+    // // console.log(mouse);
+    // // // // keep the mouse in sync with rendering
+    render.mouse = mouse;
+    handleClick();
+    window.addEventListener('resize', handleResize);
+  }, []);
 
-    // context for MatterTools.Demo
-    // return {
-    //   engine: engine,
-    //   runner: runner,
-    //   render: render,
-    //   canvas: render.canvas,
-    //   stop: function () {
-    //     Matter.Render.stop(render);
-    //     Matter.Runner.stop(runner);
-    //   },
-    // };
-
+  useEffect(() => {
     return () => {
-      Render.stop(render);
-      World.clear(engine.current.world);
-      Engine.clear(engine.current);
-      render.canvas.remove();
-      render.canvas = null;
-      render.context = null;
-      render.textures = {};
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  // create engine
-  // var engine = Engine.create(),
-  //   world = engine.world;
+  useEffect(() => {
+    if (constraints) {
+      let { width, height } = constraints;
+
+      // Dynamically update canvas and bounds
+      scene.bounds.max.x = width;
+      scene.bounds.max.y = height;
+      scene.options.width = width;
+      scene.options.height = height;
+      scene.canvas.width = width;
+      scene.canvas.height = height;
+
+      // Dynamically update floor
+      const floor = scene.engine.world.bodies[0];
+
+      Matter.Body.setPosition(floor, {
+        x: width / 2,
+        y: height + STATIC_DENSITY / 2,
+      });
+
+      Matter.Body.setVertices(floor, [
+        { x: 0, y: height },
+        { x: width, y: height },
+        { x: width, y: height + STATIC_DENSITY },
+        { x: 0, y: height + STATIC_DENSITY },
+      ]);
+    }
+  }, [scene, constraints]);
+
+  useEffect(() => {
+    // Add a new "ball" everytime `someStateValue` changes
+    if (scene) {
+      let { width } = constraints;
+      let randomX = Math.floor(Math.random() * -width) + width;
+      // Matter.World.add(
+      //   scene.engine.world,
+      //   Matter.Bodies.circle(randomX, -PARTICLE_SIZE, PARTICLE_SIZE, {
+      //     restitution: PARTICLE_BOUNCYNESS,
+      //   })
+      // );
+      // add bodies
+      var stack = Composites.stack(20, 20, 10, 5, 0, 0, function (x, y) {
+        var sides = Math.round(Common.random(1, 8));
+        // round the edges of some bodies
+        var chamfer = null;
+        if (sides > 2 && Common.random() > 0.7) {
+          chamfer = {
+            radius: 10,
+          };
+        }
+        switch (Math.round(Common.random(0, 1))) {
+          case 0:
+            if (Common.random() < 0.8) {
+              return Bodies.rectangle(
+                x,
+                y,
+                Common.random(25, 50),
+                Common.random(25, 50),
+                { chamfer: chamfer }
+              );
+            } else {
+              return Bodies.rectangle(
+                x,
+                y,
+                Common.random(80, 120),
+                Common.random(25, 30),
+                { chamfer: chamfer }
+              );
+            }
+          case 1:
+            return Bodies.polygon(x, y, sides, Common.random(25, 50), {
+              chamfer: chamfer,
+            });
+        }
+      });
+
+      Composite.add(scene.engine.world, stack);
+    }
+  }, [someStateValue]);
 
   return (
     <div
-    // onMouseDown={handleDown}
-    // onMouseUp={handleUp}
-    // onMouseMove={handleAddCircle}
+      style={{
+        position: 'relative',
+        border: '1px solid white',
+        padding: '8px',
+        height: '300px',
+      }}
+      // onClick={() => handleClick()}
     >
-      <div ref={scene} style={{ width: '100%', height: '100%' }} />
+      <button
+        style={{
+          cursor: 'pointer',
+          display: 'block',
+          textAlign: 'center',
+          marginBottom: '16px',
+          width: '100%',
+
+          color: 'white',
+        }}
+        className='font-extrabold text-4xl mt-10'
+        // onClick={() => handleClick()}
+      >
+        Ingenium
+      </button>
+
+      <div
+        ref={boxRef}
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '300px',
+          // pointerEvents: 'none',
+        }}
+      >
+        <canvas ref={canvasRef} />
+      </div>
     </div>
   );
 };
-
-// Example.mixed.title = 'Mixed Shapes';
-// Example.mixed.for = '>=0.14.2';
-
-// if (typeof module !== 'undefined') {
-//   module.exports = Example.mixed;
-// }

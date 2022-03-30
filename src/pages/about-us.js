@@ -6,14 +6,15 @@ import Footer from '../components/footer';
 import TP from '../components/TP';
 import { Mixed } from '../components/matter';
 import Matter from 'matter-js';
+import { MatterStepOne } from '../components/matter2';
 
 const FaqPage = () => (
   <div>
     <SEO />
     <div className='bg-base'>
       <AboutUs />
-      <Mixed />
-
+      {/* <Mixed /> */}
+      <MatterStepOne />
       <Footer />
       <Header />
     </div>

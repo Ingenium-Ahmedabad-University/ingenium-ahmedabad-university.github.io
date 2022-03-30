@@ -71,7 +71,10 @@ export const Mixed = function () {
     // // create runner
     var runner = Runner.create();
     Runner.run(runner, engine.current);
-
+    console.log(-cw / 2, 0, cw * 4, 50);
+    console.log(-cw / 2, ch * 2, cw * 4, 50);
+    console.log(0, ch / 2, 50, ch);
+    console.log(cw, ch / 2, 50, ch);
     Composite.add(world.current, [
       // walls
       // Bodies.rectangle(400, 0, 800, 50, { isStatic: true }), //upper
@@ -80,8 +83,8 @@ export const Mixed = function () {
 
       // Bodies.rectangle(0, 300, 50, 600, { isStatic: true }), //right
 
-      Bodies.rectangle(cw / 2, 0, cw, 50, { isStatic: true }), //upper
-      Bodies.rectangle(cw / 2, ch, cw, 50, { isStatic: true }), //lower
+      Bodies.rectangle(-cw / 2, 0, cw * 4, 50, { isStatic: true }), //upper
+      Bodies.rectangle(-cw / 2, ch * 2, cw * 4, 50, { isStatic: true }), //lower
       Bodies.rectangle(0, ch / 2, 50, ch, { isStatic: true }), //left
       Bodies.rectangle(cw, ch / 2, 50, ch, { isStatic: true }), //right
 
@@ -135,6 +138,7 @@ export const Mixed = function () {
           });
       }
     });
+
     Composite.add(world.current, stack);
     console.log(ch, cw);
     // cw = 500;
