@@ -756,7 +756,7 @@ html {
   display: block;
   position: fixed;
   left: -10%;
-  bottom: -40%;
+  bottom: -65%;
   right: -50%;
   z-index: -1;
 }
@@ -766,7 +766,7 @@ html {
   display: block;
   position: fixed;
   top: -50%;
-  right: -50%;
+  right: -40%;
   z-index: -1;
 }
 
@@ -777,7 +777,7 @@ html {
   backdrop-filter: saturate(270%) blur(15px);
   -webkit-backdrop-filter: saturate(270%) blur(15px);
   z-index: -8;
-}  */
+}  
 
 .bg-blur-light {
   background: rgba(255, 255, 255, 0.08);

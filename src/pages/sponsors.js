@@ -14,7 +14,7 @@ const SponsorsPage = () => (
       <Sponsors />
       <Footer />
       <img src={leftGradient} alt='background gradient left' className='event-gradient-left'/>
-      <img src={rightGradient} alt='background gradient right' className='event-gradient-right'/>
+      <img src={leftGradient} alt='background gradient right' className='event-gradient-right'/>
     </div>
   </div>
 );
