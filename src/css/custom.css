@@ -772,7 +772,7 @@ html {
 
 /* Needs Some Changes Haven't used anywhere */
 .bg-blur {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.02);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(270%) blur(15px);
   -webkit-backdrop-filter: saturate(270%) blur(15px);
@@ -780,9 +780,8 @@ html {
 } 
 
 .bg-blur-light {
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 30px rgba(20, 20, 20, 0.15);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: saturate(180%) blur(15px);
   -webkit-backdrop-filter: saturate(180%) blur(15px);
-  z-index: -8;
+  box-shadow: 0 5px 20px -5px rgba(20, 20, 20, 0.1);
 } 
