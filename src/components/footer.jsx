@@ -69,7 +69,7 @@ const Newletter = () => {
   );
 };
 const Footer = () => (
-  <div className='bg-base'>
+  <div className=''>
     <div className='flex justify-center pt-6'>
       <div className='w-full h-px bg-gray-900'></div>
     </div>
@@ -82,7 +82,7 @@ const Footer = () => (
       <div className='text-gray-300 flex items-center flex-col lg:grid lg:grid-flow-col'>
         <div classNmae='text-right'>
           Follow the event{' '}
-          <span className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+          <span className='bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
             #feelingenium
           </span>
         </div>
@@ -105,7 +105,7 @@ const Footer = () => (
     <div className='grid grid-cols-1 sm:grid-cols-2 py-5 justify-center text-gray-300 items-center'>
       <div className='flex justify-center sm:justify-end sm:-mr-3'>
         Follow the event{' '}
-        <span className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+        <span className='bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
           #feelingenium
         </span>
       </div>
@@ -132,7 +132,8 @@ const Footer = () => (
       <div className='flex justify-center'>
         <img src={logo_src} alt='' />
       </div>
-      <div className='text-gray-700 text-sm font-sans lg:ml-3'>
+
+      <div className='text-gray-300 text-sm font-sans lg:ml-3'>
         &copy; 2022 Ingenium, Ahmedabad University.
       </div>
     </div>

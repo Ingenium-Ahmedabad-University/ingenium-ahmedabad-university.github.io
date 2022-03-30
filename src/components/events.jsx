@@ -269,20 +269,20 @@ const EventLists = () => {
     <div className='mt-12 w-4/5 m-auto'>
       {data.map((el, key) => (
         <div>
-          <h1 className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+          <h1 className='event_title text-3xl md:text-5xl text-center pt-16 pb-3 bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
             {el.category}
           </h1>
-          <div className='underline mx-auto md:w-64 w-40 h-1 items-center bg-gradient-to-br from-red-500 to-indigo-400'>
+          <div className='underline mx-auto md:w-64 w-40 h-1 items-center bg-gradient-to-br from-secondary to-secondary-dark'>
             {' '}
           </div>
 
           {el.event.map((typ, key1) => (
             <div>
-              <h1 className='text-left font-bold text-xl md:text-3xl pt-12 pb-1 bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+              <h1 className='text-left font-bold text-xl md:text-3xl pt-12 pb-1 bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
                 {typ.type}{' '}
               </h1>
 
-              <div className='underline md:w-40 w-28 h-1 left-0 bg-gradient-to-br from-red-500 to-indigo-400'>
+              <div className='underline md:w-40 w-28 h-1 left-0 bg-gradient-to-br from-secondary to-secondary-dark'>
                 {' '}
               </div>
               <div className='grid grid-cols-1 gap-12 lg:grid-cols-3 sm:grid-cols-2 xl:gap-20 md:gap-16 py-10'>

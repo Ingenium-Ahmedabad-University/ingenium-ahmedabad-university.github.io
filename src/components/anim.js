@@ -86,7 +86,7 @@ const Hero = () => {
       <div className='relative'>
         <div>
           <div
-            className='bg-secondary absolute text-5xl md:text-8xl lg:text-9xl strike h-px w-full z-0'
+            className='bg-secondary-last absolute text-5xl md:text-8xl lg:text-9xl strike h-px w-full z-0'
             ref={refBox}
           />
           <h1
@@ -115,7 +115,7 @@ const Hero = () => {
           }
         >
           <div
-            className='absolute drag-me-text text-sm pr-4 top-1/3 text-secondary opacity-0'
+            className='absolute drag-me-text text-sm pr-4 top-1/3 text-secondary-last opacity-0'
             ref={refDragMe}
           >
             drag me

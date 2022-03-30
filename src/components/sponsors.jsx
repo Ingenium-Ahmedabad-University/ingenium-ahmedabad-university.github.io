@@ -167,9 +167,9 @@ const data = [
 ];
 
 const Card = ({ redirectUrl, logoUrl, name, description }) => (
-  <div class='w-full max-w-sm mx-auto border border-base-light hover:border-primary sponsors-cards'>
+  <div class='w-full max-w-sm mx-auto border border-gray-800 rounded-xl hover:border-primary sponsors-cards'>
     <a href={redirectUrl}>
-      <div className='flex justify-center items-center bg-base-light w-full h-32 max-h-32'>
+      <div className='flex justify-center rounded-t-xl items-center bg-blur-light w-full h-32 max-h-32'>
         <img className='sponsors-logo' src={logoUrl} alt={name} />
       </div>
       <div className='flex text-primary sponsors-content-box h-32 max-h-32 justify-center items-center'>
@@ -188,7 +188,7 @@ const Sponsors = () => (
       {data.map((category, i) => {
         return (
           <div key={i} className='mb-24'>
-            <h1 className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg text-3xl font-bold sm:text-4xl'>
+            <h1 className='bg-gradient-to-br from-secondary to-secondary-dark social-bg text-3xl font-bold sm:text-4xl'>
               {category.name}
             </h1>
 

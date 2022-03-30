@@ -15,6 +15,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: #000000;
 }
 
 @font-face {
@@ -408,7 +409,7 @@ h1.line-height125 {
   left: calc(50vw - 25px);
   border-radius: 50%;
   position: fixed;
-  @apply bg-secondary;
+  @apply bg-secondary-last;
   /* z-index: 1000; */
 }
 
@@ -420,7 +421,7 @@ h1.line-height125 {
   height: 65px;
   width: 65px;
   border-radius: 50%;
-  border: 10px solid theme('colors.secondary');
+  border: 10px solid theme('colors.secondary-last');
   opacity: 0;
 }
 .drag-me-text {
@@ -581,7 +582,11 @@ html {
   left: -1;
   width: 100%;
   height: 2px;
-  background: linear-gradient(87.54deg, #9867f0 -6.8%, #ed4e50 84.14%);
+  background: linear-gradient(
+    87.54deg,
+    theme('colors.secondary') -6.8%,
+    theme('colors.secondary-dark') 84.14%
+  );
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: 0.4s ease;
@@ -618,18 +623,18 @@ html {
   border-image-slice: 1;
   border-width: 3px;
   border-image-source: linear-gradient(
-    to bottom right,
-    rgb(239, 68, 68),
-    rgb(129, 140, 248)
+    to bottom,
+    theme('colors.secondary'),
+    theme('colors.secondary-dark')
   );
   transition: all 300ms;
 }
 
 .register-button:hover {
   background-image: linear-gradient(
-    to bottom right,
-    rgb(239, 68, 68),
-    rgb(129, 140, 248)
+    to bottom,
+    theme('colors.secondary'),
+    theme('colors.secondary-dark')
   );
 }
 
@@ -672,8 +677,8 @@ html {
   width: 16px;
   background-image: linear-gradient(
     to bottom right,
-    rgb(239, 68, 68),
-    rgb(129, 140, 248)
+    theme('colors.secondary'),
+    theme('colors.secondary-dark')
   );
   position: absolute;
   left: -25px;
@@ -729,7 +734,10 @@ html {
 }
 
 .navText:hover {
-  background: -webkit-linear-gradient(#ef4444, #818cf8);
+  background: -webkit-linear-gradient(
+    theme('colors.secondary'),
+    theme('colors.secondary')
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -747,4 +755,40 @@ html {
   background: rgb(0, 0, 0, 0.5);
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
+}
+
+/* Event Page Gradients */
+.event-gradient-left {
+  max-width: 100%;
+  display: block;
+  position: fixed;
+  left: -10%;
+  bottom: -65%;
+  right: -50%;
+  z-index: -1;
+}
+
+.event-gradient-right {
+  max-width: 100%;
+  display: block;
+  position: fixed;
+  top: -50%;
+  right: -40%;
+  z-index: -1;
+}
+
+/* Needs Some Changes Haven't used anywhere */
+.bg-blur {
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(270%) blur(15px);
+  -webkit-backdrop-filter: saturate(270%) blur(15px);
+  z-index: -8;
+}
+
+.bg-blur-light {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: saturate(180%) blur(15px);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+  box-shadow: 0 5px 20px -5px rgba(20, 20, 20, 0.1);
 }
