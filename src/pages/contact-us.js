@@ -3,8 +3,7 @@ import SEO from '../components/SEO';
 import Header from '../components/header';
 import Contact from '../components/contact-us';
 import Footer from '../components/footer';
-import leftGradient from './../images/gradients/events-gradient-left.svg';
-import rightGradient from './../images/gradients/events-gradient-right.svg';
+import Gradient from '../components/gradients';
 
 const ContactUs = () => (
   <div>
@@ -13,16 +12,7 @@ const ContactUs = () => (
       <Header />
       <Contact />
       <Footer />
-      <img
-        src={leftGradient}
-        alt='background gradient left'
-        className='event-gradient-left'
-      />
-      <img
-        src={leftGradient}
-        alt='background gradient right'
-        className='event-gradient-right'
-      />
+      <Gradient />
     </div>
   </div>
 );

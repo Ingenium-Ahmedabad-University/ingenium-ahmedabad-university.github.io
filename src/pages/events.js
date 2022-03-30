@@ -3,8 +3,7 @@ import EventLists from '../components/events';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import SEO from '../components/SEO';
-import leftGradient from './../images/gradients/events-gradient-left.svg';
-import rightGradient from './../images/gradients/events-gradient-right.svg';
+import Gradient from '../components/gradients';
 
 const Eventpage = () => (
   <>
@@ -13,16 +12,7 @@ const Eventpage = () => (
       <Header />
       <EventLists />
       <Footer />
-      <img
-        src={leftGradient}
-        alt='background gradient left'
-        className='event-gradient-left'
-      />
-      <img
-        src={leftGradient}
-        alt='background gradient right'
-        className='event-gradient-right'
-      />
+      <Gradient />
     </div>
   </>
 );
