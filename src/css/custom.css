@@ -409,7 +409,7 @@ h1.line-height125 {
   left: calc(50vw - 25px);
   border-radius: 50%;
   position: fixed;
-  @apply bg-secondary;
+  @apply bg-secondary-last;
   /* z-index: 1000; */
 }
 
@@ -421,7 +421,7 @@ h1.line-height125 {
   height: 65px;
   width: 65px;
   border-radius: 50%;
-  border: 10px solid theme('colors.secondary');
+  border: 10px solid theme('colors.secondary-last');
   opacity: 0;
 }
 .drag-me-text {
@@ -582,7 +582,11 @@ html {
   left: -1;
   width: 100%;
   height: 2px;
-  background: linear-gradient(87.54deg, theme('colors.secondary') -6.8%, theme('colors.secondary-dark') 84.14%);
+  background: linear-gradient(
+    87.54deg,
+    theme('colors.secondary') -6.8%,
+    theme('colors.secondary-dark') 84.14%
+  );
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: 0.4s ease;
@@ -730,7 +734,10 @@ html {
 }
 
 .navText:hover {
-  background: -webkit-linear-gradient(theme('colors.secondary'), theme('colors.secondary'));
+  background: -webkit-linear-gradient(
+    theme('colors.secondary'),
+    theme('colors.secondary')
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -777,11 +784,11 @@ html {
   backdrop-filter: saturate(270%) blur(15px);
   -webkit-backdrop-filter: saturate(270%) blur(15px);
   z-index: -8;
-}  
+}
 
 .bg-blur-light {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: saturate(180%) blur(15px);
   -webkit-backdrop-filter: saturate(180%) blur(15px);
   box-shadow: 0 5px 20px -5px rgba(20, 20, 20, 0.1);
-} 
+}

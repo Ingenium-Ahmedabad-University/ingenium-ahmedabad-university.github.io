@@ -13,8 +13,16 @@ const ContactUs = () => (
       <Header />
       <Contact />
       <Footer />
-      <img src={leftGradient} alt='background gradient left' className='event-gradient-left'/>
-      <img src={leftGradient} alt='background gradient right' className='event-gradient-right'/>
+      <img
+        src={leftGradient}
+        alt='background gradient left'
+        className='event-gradient-left'
+      />
+      <img
+        src={leftGradient}
+        alt='background gradient right'
+        className='event-gradient-right'
+      />
     </div>
   </div>
 );

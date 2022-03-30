@@ -91,7 +91,6 @@ const team_details = [
     linkedLn_Url: 'https://www.linkedin.com/in/divye-kanawala/',
   },
 
-
   {
     id: 9,
     name: 'Jay Mehta',

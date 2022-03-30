@@ -33,7 +33,8 @@ module.exports = {
         'base-light': '#33334d',
         primary: '#64B8FB',
         secondary: '#ff1cf7',
-        'secondary-dark': '#b249f8'
+        'secondary-dark': '#b249f8',
+        'secondary-last': '#f05454',
       },
       maxWidth: {
         '1/5': '20%',
