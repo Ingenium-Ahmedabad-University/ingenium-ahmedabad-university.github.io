@@ -36,13 +36,15 @@ const Registration=()=>{
                         {
                             data.map((item)=>{
                                 return(
-                                    <div className="text-black bg-white shadow shadow-white mx-12 px-10">
+                                    <div className="text-black bg-white shadow shadow-white mx-8 p-8 rounded-xl">
                                     <>
-                                        <p>{item.title}</p>
-                                        <p>{item.description}</p>
-                                        <p>{item.price}</p>
-                                        <p>{item.brief}</p>                    
-                                        <button className="py-2 bg-gradient-to-br from-red-500 to-indigo-400 social-bg text-2xl font-bold sm:text-4xl flex justify-center rounded-xl">Register</button>
+                                        <p className="text-3xl font-bold mb-6">{item.title}</p>
+                                        <p className="mb-6">{item.description}</p>
+                                        <p className="text-3xl font-bold mb-6">Entry Fee: {item.price} Rs</p>
+                                        <p className="font-medium">Brief Detail : </p>
+                                        <p className="font-medium mb-6">{item.brief}</p>                    
+                                        <button className="bg-gradient-to-br from-red-500 to-indigo-400 social-bg text-xl font-bold sm:text-3xl flex justify-center rounded-3xl">Register</button>
+                                    
                                     </>
                                     </div>
                                 )
