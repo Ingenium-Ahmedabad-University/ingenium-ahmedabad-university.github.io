@@ -32,6 +32,7 @@ module.exports = {
         base: '#090919',
         'base-light': '#33334d',
         primary: '#64B8FB',
+        'primary-dark': '#0070F3',
         secondary: '#ff1cf7',
         'secondary-dark': '#b249f8',
         'secondary-last': '#f05454',

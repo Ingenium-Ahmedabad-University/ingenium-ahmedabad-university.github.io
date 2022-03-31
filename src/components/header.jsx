@@ -17,10 +17,10 @@ const NavIcon = () => {
     { name: 'Home', link: '' },
     { name: 'About Us', link: 'about-us' },
     { name: 'Events', link: 'events' },
+    { name: 'Register', link: 'register' },
     { name: 'Contact Us', link: 'contact-us' },
     { name: 'Sponsors', link: 'sponsors' },
     { name: 'FAQ', link: 'faqs' },
-    {name:'Registration',link:'registration'},
   ];
   const [nav_open, change_nav] = useState(false);
 
@@ -86,10 +86,10 @@ const NavMenu = ({ open }) => {
     { name: 'Home', link: '' },
     { name: 'About Us', link: 'about-us' },
     { name: 'Events', link: 'events' },
+    { name: 'Register', link: 'register' },
     { name: 'Contact Us', link: 'contact-us' },
     { name: 'Sponsors', link: 'sponsors' },
     { name: 'FAQ', link: 'faqs' },
-    {name:'Registration',link:'registration'},
   ];
   return (
     <>
