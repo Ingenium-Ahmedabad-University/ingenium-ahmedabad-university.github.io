@@ -494,6 +494,10 @@ html {
     max-width: 300px;
     padding-top: min(300px, 100%);
   }
+  .max_img_size_advisor {
+    max-width: 350px;
+    padding-top: min(350px, 100%);
+  }
 }
 
 .desktop-nav {
@@ -514,6 +518,10 @@ html {
   .max_img_size {
     max-width: 350px;
     padding-top: min(350px, 100%);
+  }
+  .max_img_size_advisor {
+    max-width: 400px;
+    padding-top: min(400px, 100%);
   }
 }
 
