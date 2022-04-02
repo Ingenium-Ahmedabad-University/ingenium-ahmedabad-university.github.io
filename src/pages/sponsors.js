@@ -3,14 +3,16 @@ import SEO from '../components/SEO';
 import Header from '../components/header';
 import Sponsors from '../components/sponsors';
 import Footer from '../components/footer';
+import Gradient from '../components/gradients';
 
 const SponsorsPage = () => (
   <div>
     <SEO />
-    <div className='base px-3 md:px-5 lg:px-10 bg-base'>
+    <div className='base'>
+      <Header />
       <Sponsors />
       <Footer />
-      <Header />
+      <Gradient />
     </div>
   </div>
 );

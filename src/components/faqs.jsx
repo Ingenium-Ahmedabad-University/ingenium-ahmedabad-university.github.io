@@ -137,7 +137,7 @@ const Header = () => (
     data-detect-viewport
   >
     <div className='hero__content' data-animate-in='up'>
-      <h1 className='mb-5 text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+      <h1 className='mb-5 text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
         Frequently asked questions
       </h1>
       <p className='f3 text-white text-lg'>
@@ -157,7 +157,8 @@ const Header = () => (
 );
 
 const Tabs = ({ currentCategory, onCategoryChange }) => (
-  <div className='container max-w-full z-20'>
+  <div className='container max-w-full'>
+    {/* <div className='container max-w-full z-20'> */}
     <div className='flex overflow-auto'>
       {data.map((category, i) => {
         if (category.name === currentCategory) {

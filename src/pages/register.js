@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SEO from '../components/SEO';
 import Header from '../components/header';
-import Contact from '../components/contact-us';
 import Footer from '../components/footer';
+import Registration from '../components/registration';
 import Gradient from '../components/gradients';
 
-const ContactUs = () => (
+const RegisterPage = () => (
   <div>
     <SEO />
     <div className='base'>
       <Header />
-      <Contact />
+      <Registration />
       <Footer />
       <Gradient />
     </div>
   </div>
 );
 
-export default ContactUs;
+export default RegisterPage;

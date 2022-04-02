@@ -7,16 +7,18 @@ import TP from '../components/TP';
 import { Mixed } from '../components/matter';
 import Matter from 'matter-js';
 import { MatterStepOne } from '../components/matter2';
+import Gradient from '../components/gradients';
 
 const FaqPage = () => (
   <div>
     <SEO />
-    <div className='bg-base'>
+    <div className=''>
+      <Header />
       <AboutUs />
       {/* <Mixed /> */}
       <MatterStepOne />
       <Footer />
-      <Header />
+      <Gradient />
     </div>
   </div>
 );

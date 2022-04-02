@@ -20,18 +20,19 @@ const AboutUs = () => (
 
     <div className='flex items-center justify-center py-16 px-6'>
       <div className='max-w-2xl'>
-        <p className='center-heading center-text text-3xl sm:text-4xl lg-text-5xl social-bg bg-gradient-to-br from-red-500 to-indigo-400 font-bold mb-5'>
+        <p className='center-heading center-text text-3xl sm:text-4xl lg-text-5xl social-bg bg-gradient-to-br from-secondary to-secondary-dark font-bold mb-5'>
           Tech-Fest @ Ahmedabad University
         </p>
         <p className='center-text text-white text-xl'>
           Ingenium is the official technology festival of Ahmedabad University
           hosted at the School of Engineering and Applied Science each year
           since 2016. It is a platform to provide opportunities to young and
-          aspiring students to compete in various innovate events. We invite and
-          host participants from all national level universities and institutes
-          as well as institutes from other countries as well. This year Ingenium
-          is online. We are successfully getting participation from nearly 60
-          institutes across India.
+          aspiring students to compete in various innovative events. We invite
+          and host participants from all national universities and institutes.
+          Moreover, we invite overseas institutes as well. This year, Ingenium
+          2022 is hybrid, presenting online and offline events. We have
+          successfully counted participants from 50+ institutes across India,
+          and counting more. We look forward to welcome you all!
           <Link
             to='/events'
             className='flex mt-12 justify-center hover:text-gray-300'
