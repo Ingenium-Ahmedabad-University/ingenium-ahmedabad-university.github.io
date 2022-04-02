@@ -1,16 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
-import Matter, {
-  Mouse,
-  MouseConstraint,
-  Composite,
-  Composites,
-  Common,
-  Bodies,
-} from 'matter-js';
+import Matter from 'matter-js';
 
-const STATIC_DENSITY = 15;
-const PARTICLE_SIZE = 6;
-const PARTICLE_BOUNCYNESS = 0.9;
+const thick = 10;
 
 export const MatterStepOne = () => {
   const boxRef = useRef(null);
@@ -19,51 +10,182 @@ export const MatterStepOne = () => {
   const [constraints, setContraints] = useState();
   const [scene, setScene] = useState();
 
-  const [someStateValue, setSomeStateValue] = useState(false);
-
   const handleResize = () => {
+    console.log(boxRef.current.getBoundingClientRect());
     setContraints(boxRef.current.getBoundingClientRect());
   };
 
-  const handleClick = () => {
-    setSomeStateValue(!someStateValue);
+  const update_dims = () => {
+    if (constraints) {
+      let { width, height } = boxRef.current.getBoundingClientRect();
+
+      // Dynamically update canvas and bounds
+      scene.bounds.max.x = width;
+      scene.bounds.max.y = height;
+      scene.options.width = width;
+      scene.options.height = height;
+      scene.canvas.width = width;
+      scene.canvas.height = height;
+
+      console.log(scene.engine.world.bodies);
+      console.log(height, width);
+
+      // Dynamically update floors
+      const top = scene.engine.world.bodies[0];
+
+      Matter.Body.setPosition(top, {
+        x: width / 2,
+        y: thick / 2,
+      });
+
+      Matter.Body.setVertices(top, [
+        { x: 0, y: 0 },
+        { x: width, y: 0 },
+        { x: width, y: thick },
+        { x: 0, y: thick },
+      ]);
+
+      const bottom = scene.engine.world.bodies[1];
+
+      Matter.Body.setPosition(bottom, {
+        x: width / 2,
+        y: height - thick / 2,
+      });
+
+      Matter.Body.setVertices(bottom, [
+        { x: 0, y: height - thick },
+        { x: width, y: height - thick },
+        { x: width, y: height },
+        { x: 0, y: height },
+      ]);
+
+      const left = scene.engine.world.bodies[2];
+
+      Matter.Body.setPosition(left, {
+        x: thick / 2,
+        y: height / 2,
+      });
+
+      Matter.Body.setVertices(left, [
+        { x: 0, y: 0 },
+        { x: thick, y: 0 },
+        { x: thick, y: height },
+        { x: 0, y: height },
+      ]);
+
+      const right = scene.engine.world.bodies[3];
+
+      Matter.Body.setPosition(right, {
+        x: width - thick,
+        y: height / 2,
+      });
+
+      Matter.Body.setVertices(right, [
+        { x: width - thick * 2, y: 0 },
+        { x: width, y: 0 },
+        { x: width, y: height },
+        { x: width - thick * 2, y: height },
+      ]);
+    }
   };
 
   useEffect(() => {
-    let Engine = Matter.Engine;
-    let Render = Matter.Render;
-    let World = Matter.World;
-    let Bodies = Matter.Bodies;
-    var cw = document.body.clientWidth / 2;
-    var ch = document.body.clientHeight / 4;
+    var Engine = Matter.Engine,
+      Render = Matter.Render,
+      Composites = Matter.Composites,
+      Common = Matter.Common,
+      MouseConstraint = Matter.MouseConstraint,
+      Mouse = Matter.Mouse,
+      Composite = Matter.Composite,
+      Bodies = Matter.Bodies;
 
-    let engine = Engine.create({});
+    // create engine
+    var engine = Engine.create(),
+      world = engine.world;
 
     let render = Render.create({
       element: boxRef.current,
       engine: engine,
       canvas: canvasRef.current,
       options: {
-        height: '100px',
         background: 'transparent',
+        showAngleIndicator: true,
         wireframes: false,
       },
     });
 
-    const floor = Bodies.rectangle(0, 0, 0, STATIC_DENSITY, {
+    // add bodies
+    var stack = Composites.stack(2, 2, 2, 2, 0, 0, function (x, y) {
+      var sides = Math.round(Common.random(1, 8));
+
+      // round the edges of some bodies
+      var chamfer = null;
+      if (sides > 2 && Common.random() > 0.7) {
+        chamfer = {
+          radius: 10,
+        };
+      }
+
+      switch (Math.round(Common.random(0, 1))) {
+        case 0:
+          if (Common.random() < 0.8) {
+            return Bodies.rectangle(
+              x,
+              y,
+              Common.random(25, 50),
+              Common.random(25, 50),
+              { chamfer: chamfer }
+            );
+          } else {
+            return Bodies.rectangle(
+              x,
+              y,
+              Common.random(80, 120),
+              Common.random(25, 30),
+              { chamfer: chamfer }
+            );
+          }
+        case 1:
+          return Bodies.polygon(x, y, sides, Common.random(25, 50), {
+            chamfer: chamfer,
+          });
+      }
+    });
+
+    Composite.add(world, stack);
+
+    const top = Bodies.rectangle(0, 0, 0, 0, {
       isStatic: true,
       render: {
         fillStyle: 'blue',
       },
     });
 
-    World.add(engine.world, [floor]);
+    const bottom = Bodies.rectangle(0, 0, 0, 0, {
+      isStatic: true,
+      render: {
+        fillStyle: 'blue',
+      },
+    });
+
+    const left = Bodies.rectangle(0, 0, 0, 0, {
+      isStatic: true,
+      render: {
+        fillStyle: 'blue',
+      },
+    });
+
+    const right = Bodies.rectangle(0, 0, 0, 0, {
+      isStatic: true,
+      render: {
+        fillStyle: 'blue',
+      },
+    });
+
+    Composite.add(world, [top, bottom, left, right]);
 
     Engine.run(engine);
     Render.run(render);
-
-    setContraints(boxRef.current.getBoundingClientRect());
-    setScene(render);
 
     var mouse = Mouse.create(render.canvas);
 
@@ -76,13 +198,24 @@ export const MatterStepOne = () => {
         },
       },
     });
+
+    mouseConstraint.mouse.element.removeEventListener(
+      'mousewheel',
+      mouseConstraint.mouse.mousewheel
+    );
+    mouseConstraint.mouse.element.removeEventListener(
+      'DOMMouseScroll',
+      mouseConstraint.mouse.mousewheel
+    );
+
     Composite.add(engine.world, mouseConstraint);
     Matter.World.add(engine.world, mouseConstraint);
-    // // console.log(mouse);
-    // // // // keep the mouse in sync with rendering
     render.mouse = mouse;
-    handleClick();
+
     window.addEventListener('resize', handleResize);
+
+    setContraints(boxRef.current.getBoundingClientRect());
+    setScene(render);
   }, []);
 
   useEffect(() => {
@@ -92,95 +225,11 @@ export const MatterStepOne = () => {
   }, []);
 
   useEffect(() => {
-    if (constraints) {
-      let { width, height } = constraints;
-
-      // Dynamically update canvas and bounds
-      scene.bounds.max.x = width;
-      scene.bounds.max.y = height;
-      scene.options.width = width;
-      scene.options.height = height;
-      scene.canvas.width = width;
-      scene.canvas.height = height;
-
-      // Dynamically update floor
-      const floor = scene.engine.world.bodies[0];
-
-      Matter.Body.setPosition(floor, {
-        x: width / 2,
-        y: height + STATIC_DENSITY / 2,
-      });
-
-      Matter.Body.setVertices(floor, [
-        { x: 0, y: height },
-        { x: width, y: height },
-        { x: width, y: height + STATIC_DENSITY },
-        { x: 0, y: height + STATIC_DENSITY },
-      ]);
-    }
+    setTimeout(update_dims, 100);
   }, [scene, constraints]);
 
-  useEffect(() => {
-    // Add a new "ball" everytime `someStateValue` changes
-    if (scene) {
-      let { width } = constraints;
-      let randomX = Math.floor(Math.random() * -width) + width;
-      // Matter.World.add(
-      //   scene.engine.world,
-      //   Matter.Bodies.circle(randomX, -PARTICLE_SIZE, PARTICLE_SIZE, {
-      //     restitution: PARTICLE_BOUNCYNESS,
-      //   })
-      // );
-      // add bodies
-      var stack = Composites.stack(20, 20, 10, 5, 0, 0, function (x, y) {
-        var sides = Math.round(Common.random(1, 8));
-        // round the edges of some bodies
-        var chamfer = null;
-        if (sides > 2 && Common.random() > 0.7) {
-          chamfer = {
-            radius: 10,
-          };
-        }
-        switch (Math.round(Common.random(0, 1))) {
-          case 0:
-            if (Common.random() < 0.8) {
-              return Bodies.rectangle(
-                x,
-                y,
-                Common.random(25, 50),
-                Common.random(25, 50),
-                { chamfer: chamfer }
-              );
-            } else {
-              return Bodies.rectangle(
-                x,
-                y,
-                Common.random(80, 120),
-                Common.random(25, 30),
-                { chamfer: chamfer }
-              );
-            }
-          case 1:
-            return Bodies.polygon(x, y, sides, Common.random(25, 50), {
-              chamfer: chamfer,
-            });
-        }
-      });
-
-      Composite.add(scene.engine.world, stack);
-    }
-  }, [someStateValue]);
-
   return (
-    <div
-      style={{
-        position: 'relative',
-        border: '1px solid white',
-        padding: '8px',
-        height: '300px',
-      }}
-      // onClick={() => handleClick()}
-    >
+    <div className='relative border border-yellow-400 p-2 min-h-screen min-w-screen max-h-screen'>
       <button
         style={{
           cursor: 'pointer',
@@ -199,14 +248,7 @@ export const MatterStepOne = () => {
 
       <div
         ref={boxRef}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '300px',
-          // pointerEvents: 'none',
-        }}
+        className='absolute top-0 left-0 border border-white min-w-screen min-h-screen max-h-screen'
       >
         <canvas ref={canvasRef} />
       </div>
