@@ -4,7 +4,7 @@ import logo_src from '../images/icon.svg';
 
 const Logo = () => (
   <div className='flex items-center'>
-    <Link to='/about-us'>
+    <Link to='/home'>
       <div className='mx-4 my-3'>
         <img src={logo_src} alt='' />
       </div>
@@ -15,7 +15,6 @@ const Logo = () => (
 const NavIcon = () => {
   const options = [
     { name: 'Home', link: '' },
-    { name: 'About Us', link: 'about-us' },
     { name: 'Events', link: 'events' },
     { name: 'Register', link: 'register' },
     { name: 'Contact Us', link: 'contact-us' },
@@ -84,7 +83,6 @@ const NavOption = ({ name, link }) => {
 const NavMenu = ({ open }) => {
   const options = [
     { name: 'Home', link: '' },
-    { name: 'About Us', link: 'about-us' },
     { name: 'Events', link: 'events' },
     { name: 'Register', link: 'register' },
     { name: 'Contact Us', link: 'contact-us' },
