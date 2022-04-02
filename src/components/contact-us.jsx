@@ -16,13 +16,13 @@ import picture14 from '../images/Anshi_Shah.jpg';
 import picture15 from '../images/Yash_Longani.jpg';
 import picture16 from '../images/Krina_Khakhariya.jpeg';
 import picture17 from '../images/Vinay_Kakkad.jpg';
-import picture18 from "../images/Prof_Akhand_Rai.jpeg";
-import picture19 from "../images/Prof_Jayendra_Bhalodiya.jpeg";
-import picture20 from "../images/Tirth_Patel.jpeg";
-import picture21 from "../images/Poojan_Gandhi.jpeg";
-import picture22 from "../images/Nipun_Patel.jpeg";
-import picture23 from "../images/Jinesh_Salot_updated.jpeg";
-import picture24 from "../images/Henil_Shah.jpg";
+import picture18 from '../images/Prof_Akhand_Rai.jpeg';
+import picture19 from '../images/Prof_Jayendra_Bhalodiya.jpeg';
+import picture20 from '../images/Tirth_Patel.jpeg';
+import picture21 from '../images/Poojan_Gandhi.jpeg';
+import picture22 from '../images/Nipun_Patel.jpeg';
+import picture23 from '../images/Jinesh_Salot_updated.jpeg';
+import picture24 from '../images/Henil_Shah.jpg';
 
 const icon1 =
   'https://cdn.jsdelivr.net/npm/simple-icons@4.12.0/icons/whatsapp.svg';
@@ -55,7 +55,7 @@ const advisory_team_details = [
     name: 'Kaushal Patil ',
     image: picture2,
     role: 'Advisor',
-  }
+  },
 ];
 const core_team_details = [
   {
@@ -257,11 +257,7 @@ const tech_team_details = [
   },
 ];
 
-const AdvisorImgTemplate = ({
-  name,
-  image,
-  role,
-}) => {
+const AdvisorImgTemplate = ({ name, image, role }) => {
   /* const [hoverRef, isHovered] = useState(false); */
   return (
     <div>
@@ -295,7 +291,9 @@ const CoreImgTemplate = ({
       ></div>
       <br />
       <div class='text-center text-white font-bold text-xl'>{name}</div>
-      <div class='text-center text-white py-4 font-bold italic text-xl'>{role}</div>
+      <div class='text-center text-white py-4 font-bold italic text-xl'>
+        {role}
+      </div>
 
       <div class='grid grid-cols-3 justify-center py-3 align-middle place-items-center object-cover icon_padding'>
         <a href={whatsapp_Url}>
@@ -347,7 +345,9 @@ const TechImgTemplate = ({
       ></div>
       <br />
       <div class='text-center text-white font-bold text-xl'>{name}</div>
-      <div class='text-center py-3 text-white font-bold italic text-xl'>{role}</div>
+      <div class='text-center py-3 text-white font-bold italic text-xl'>
+        {role}
+      </div>
 
       <div class='grid grid-cols-3 py-3 justify-center align-middle place-items-center object-cover icon_padding'>
         <a href={whatsapp_Url}>
@@ -392,64 +392,64 @@ const Contact_Us = () => {
           <div class='font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg text-center py-14 text-4xl'>
             MEET THE TEAM
           </div>
-          <div class = "core-team">
-          <div class='font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg py-14 text-3xl'>
-            ADVISORS
-          </div>  
-          <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-12 gap-y-32 sm:grid-cols-2'>
-            {advisory_team_details.map((e) => {
-              return (
-                <AdvisorImgTemplate
-                  name={e.name}
-                  image={e.image}
-                  role={e.role}
-                  whatsapp_Url={e.whatsapp_Url}
-                  gmail_Url_Url={e.gmail_Url_Url}
-                  linkedLn_Url={e.linkedLn_Url}
-                />
-              );
-            })}
-          </div>
-          </div>
-
-          <div class = "core-team">
-          <div class='font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg py-14 text-3xl'>
-            CORE TEAM
-          </div>  
-          <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-12 gap-y-32 sm:grid-cols-2 lg:grid-cols-3'>
-            {core_team_details.map((e) => {
-              return (
-                <CoreImgTemplate
-                  name={e.name}
-                  image={e.image}
-                  role={e.role}
-                  whatsapp_Url={e.whatsapp_Url}
-                  gmail_Url_Url={e.gmail_Url_Url}
-                  linkedLn_Url={e.linkedLn_Url}
-                />
-              );
-            })}
-          </div>
+          <div class='core-team'>
+            <div class='font-bold bg-gradient-to-br from-primary to-primary-dark social-bg py-14 text-3xl'>
+              Advisors
+            </div>
+            <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-12 gap-y-32 sm:grid-cols-2'>
+              {advisory_team_details.map((e) => {
+                return (
+                  <AdvisorImgTemplate
+                    name={e.name}
+                    image={e.image}
+                    role={e.role}
+                    whatsapp_Url={e.whatsapp_Url}
+                    gmail_Url_Url={e.gmail_Url_Url}
+                    linkedLn_Url={e.linkedLn_Url}
+                  />
+                );
+              })}
+            </div>
           </div>
 
-          <div class = "tech-team">
-          <div class='font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg py-14 text-3xl'>
-            TECH TEAM
+          <div class='core-team'>
+            <div class='font-bold bg-gradient-to-br from-primary to-primary-dark social-bg py-14 text-3xl'>
+              Core Team
+            </div>
+            <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-12 gap-y-32 sm:grid-cols-2 lg:grid-cols-3'>
+              {core_team_details.map((e) => {
+                return (
+                  <CoreImgTemplate
+                    name={e.name}
+                    image={e.image}
+                    role={e.role}
+                    whatsapp_Url={e.whatsapp_Url}
+                    gmail_Url_Url={e.gmail_Url_Url}
+                    linkedLn_Url={e.linkedLn_Url}
+                  />
+                );
+              })}
+            </div>
           </div>
-          <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-16 gap-y-32 sm:grid-cols-3 lg:grid-cols-4'>
-            {tech_team_details.map((e) => {
-              return (
-                <TechImgTemplate
-                  name={e.name}
-                  image={e.image}
-                  role={e.role}
-                  whatsapp_Url={e.whatsapp_Url}
-                  gmail_Url_Url={e.gmail_Url_Url}
-                  linkedLn_Url={e.linkedLn_Url}
-                />
-              );
-            })}
-          </div>
+
+          <div class='tech-team'>
+            <div class='font-bold bg-gradient-to-br from-primary to-primary-dark social-bg py-14 text-3xl'>
+              Tech Team
+            </div>
+            <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-16 gap-y-32 sm:grid-cols-3 lg:grid-cols-4'>
+              {tech_team_details.map((e) => {
+                return (
+                  <TechImgTemplate
+                    name={e.name}
+                    image={e.image}
+                    role={e.role}
+                    whatsapp_Url={e.whatsapp_Url}
+                    gmail_Url_Url={e.gmail_Url_Url}
+                    linkedLn_Url={e.linkedLn_Url}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

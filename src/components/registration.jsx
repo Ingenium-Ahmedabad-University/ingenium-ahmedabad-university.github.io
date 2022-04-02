@@ -4,23 +4,31 @@ const data = [
   {
     title: 'Tech Events',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+      'This pass covers all the  technical events ranging from code-fi to chem-mystery. So buy it now and get a chance to attend them all.',
     price: '80',
-    points: ['benefit #1', 'benefit #2', 'benefit #3'],
+    points: [
+      'Assured Certificate worth 9 points',
+      'Exciting prizes',
+      'Cash vouchers',
+    ],
   },
   {
     title: 'Gaming Events',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+      'A night filled with fun and thrilling games. So come over and enjoy playing your favourite games which are BGMI, Valorant and E-Treasure Hunt.',
     price: '50',
-    points: ['benefit #1', 'benefit #2', 'benefit #3'],
+    points: ['Exciting gifts', 'Cash prizes', 'E-sports membership '],
   },
   {
     title: 'Combo',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+      'Want to have it all? All the tech and gaming events... Grab this opportunity before the passes get over.',
     price: '100',
-    points: ['benefit #1', 'benefit #2', 'benefit #3'],
+    points: [
+      'Assured Certificate worth 9 points',
+      'Entry to all events',
+      'Lots of fun',
+    ],
   },
 ];
 
@@ -32,9 +40,9 @@ const Registration = () => (
           Only one step away!
         </h1>
         <p className='f3 mt-4 text-white text-lg'>
-          Click the button below to register and associate yourself with the
-          51st edition of Mood Indigo, IIT Bombay. Who knows, you might even get
-          free coupons!
+          Registrations to Ingenium 2k22 have opened, be it competitive tech
+          events or exciting games we have it all. Select from the options we
+          have and join in the events of your choice.
         </p>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
