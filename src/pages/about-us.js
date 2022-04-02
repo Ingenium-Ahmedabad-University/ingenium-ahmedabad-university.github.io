@@ -15,6 +15,7 @@ const FaqPage = () => (
       <AboutUs />
       {/* <Mixed /> */}
       <MatterStepOne />
+
       <Footer />
       <Header />
     </div>

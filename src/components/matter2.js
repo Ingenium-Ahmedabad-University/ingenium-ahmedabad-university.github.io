@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Matter from 'matter-js';
-
+import Svg1 from '../svg/noise-svgrepo-com.svg';
+import Svg2 from '../svg/random-svgrepo-com.svg';
 const thick = 10;
 
 export const MatterStepOne = () => {
@@ -88,7 +89,30 @@ export const MatterStepOne = () => {
       ]);
     }
   };
+  var select = function (root, selector) {
+    console.log(selector, root);
+    console.log(Array.prototype.slice.call(root.querySelectorAll(selector)));
+    return Array.prototype.slice.call(root.querySelectorAll(selector));
+  };
 
+  // const loadSvg = (url) => {
+  //   console.log(loadSvg);
+  //   return fetch(url)
+  //     .then(function (response) {
+  //       console.log(response.text());
+  //       return response.text();
+  //     })
+  //     .then(function (raw) {
+  //       return new window.DOMParser().parseFromString(raw, 'image/svg+xml');
+  //     });
+  // };
+  async function loadSvg(url) {
+    var x = await fetch(url);
+    var y = await x.text();
+    var z = new window.DOMParser().parseFromString(y, 'image/svg+xml');
+
+    return z;
+  }
   useEffect(() => {
     var Engine = Matter.Engine,
       Render = Matter.Render,
@@ -97,7 +121,9 @@ export const MatterStepOne = () => {
       MouseConstraint = Matter.MouseConstraint,
       Mouse = Matter.Mouse,
       Composite = Matter.Composite,
-      Bodies = Matter.Bodies;
+      Bodies = Matter.Bodies,
+      Svg = Matter.Svg,
+      Vertices = Matter.Vertices;
 
     // create engine
     var engine = Engine.create(),
@@ -115,44 +141,226 @@ export const MatterStepOne = () => {
     });
 
     // add bodies
-    var stack = Composites.stack(2, 2, 2, 2, 0, 0, function (x, y) {
-      var sides = Math.round(Common.random(1, 8));
+    // var stack = Composites.stack(2, 2, 2, 2, 0, 0, function (x, y) {
+    //   var sides = Math.round(Common.random(1, 8));
 
-      // round the edges of some bodies
-      var chamfer = null;
-      if (sides > 2 && Common.random() > 0.7) {
-        chamfer = {
-          radius: 10,
-        };
-      }
+    //   // round the edges of some bodies
+    //   var chamfer = null;
+    //   if (sides > 2 && Common.random() > 0.7) {
+    //     chamfer = {
+    //       radius: 10,
+    //     };
+    //   }
 
-      switch (Math.round(Common.random(0, 1))) {
-        case 0:
-          if (Common.random() < 0.8) {
-            return Bodies.rectangle(
-              x,
-              y,
-              Common.random(25, 50),
-              Common.random(25, 50),
-              { chamfer: chamfer }
-            );
-          } else {
-            return Bodies.rectangle(
-              x,
-              y,
-              Common.random(80, 120),
-              Common.random(25, 30),
-              { chamfer: chamfer }
-            );
-          }
-        case 1:
-          return Bodies.polygon(x, y, sides, Common.random(25, 50), {
-            chamfer: chamfer,
+    //   switch (Math.round(Common.random(0, 1))) {
+    //     case 0:
+    //       if (Common.random() < 0.8) {
+    //         return Bodies.rectangle(
+    //           x,
+    //           y,
+    //           Common.random(25, 50),
+    //           Common.random(25, 50),
+    //           { chamfer: chamfer }
+    //         );
+    //       } else {
+    //         return Bodies.rectangle(
+    //           x,
+    //           y,
+    //           Common.random(80, 120),
+    //           Common.random(25, 30),
+    //           { chamfer: chamfer }
+    //         );
+    //       }
+    //     case 1:
+    //       return Bodies.polygon(x, y, sides, Common.random(25, 50), {
+    //         chamfer: chamfer,
+    //       });
+    //   }
+    // });
+
+    // Composite.add(world, stack);
+    console.log(Composite);
+    // ['./components/tp.svg', './tp.svg', './tp.svg', './tp.svg'].forEach(
+    //   function (path, i) {
+    //     console.log(path);
+    //     // const loadSvg =(url) => {
+    //     //   console.log(loadSvg);
+    //     //   return fetch(url)
+    //     //     .then(function (response) {
+    //     //       console.log(response.text());
+    //     //       return response.text();
+    //     //     })
+    //     //     .then(function (raw) {
+    //     //       return new window.DOMParser().parseFromString(raw, 'image/svg+xml');
+    //     //     });
+    //     // };
+    //     async function loadSvg(url) {
+    //       var x = await fetch(url);
+    //       var y = await x.text();
+    //       console.log(y);
+    //       var z = new window.DOMParser().parseFromString(y, 'image/svg+xml');
+
+    //       return z;
+    //     }
+    //     loadSvg(path).then(function (root) {
+    //       var color = Common.choose([
+    //         '#f19648',
+    //         '#f5d259',
+    //         '#f55a3c',
+    //         '#063e7b',
+    //         '#ececd1',
+    //       ]);
+
+    //       var vertexSets = ()=>{select(root, 'path').map(function (path) {
+    //         return Vertices.scale(Svg.pathToVertices(path, 30), 0.4, 0.4);
+    //       })};
+    //       vertexSets()
+
+    //       Composite.add(
+    //         world,
+    //         Bodies.fromVertices(
+    //           100 + i * 150,
+    //           200 + i * 50,
+    //           vertexSets,
+    //           {
+    //             render: {
+    //               fillStyle: color,
+    //               strokeStyle: color,
+    //               lineWidth: 1,
+    //             },
+    //           },
+    //           true
+    //         )
+    //       );
+    //       console.log(Composite);
+    //     });
+    //   }
+    // );
+
+    // loadSvg('./svg/svg.svg').then(function (root) {
+    //   var color = Common.choose([
+    //     '#f19648',
+    //     '#f5d259',
+    //     '#f55a3c',
+    //     '#063e7b',
+    //     '#ececd1',
+    //   ]);
+
+    //   var vertexSets = select(root, 'path').map(function (path) {
+    //     return Svg.pathToVertices(path, 30);
+    //   });
+
+    //   Composite.add(
+    //     world,
+    //     Bodies.fromVertices(
+    //       400,
+    //       80,
+    //       vertexSets,
+    //       {
+    //         render: {
+    //           fillStyle: color,
+    //           strokeStyle: color,
+    //           lineWidth: 1,
+    //         },
+    //       },
+    //       true
+    //     )
+    //   );
+    // });
+    if (typeof fetch !== 'undefined') {
+      var select = function (root, selector) {
+        return Array.prototype.slice
+          .call(root.querySelectorAll(selector))
+          .map(function (path) {
+            return Vertices.scale(Svg.pathToVertices(path, 30), 0.4, 0.4);
           });
-      }
-    });
+      };
+      async function loadSvg(url) {
+        var x = await fetch(url);
+        var y = await x.text();
+        var z = new window.DOMParser().parseFromString(y, 'image/svg+xml');
 
-    Composite.add(world, stack);
+        return z;
+      }
+
+      ['./tp.svg', './tp.svg', './tp.svg', './tp.svg'].forEach(function (
+        path,
+        i
+      ) {
+        loadSvg(path).then(function (root) {
+          var color = Common.choose([
+            '#f19648',
+            '#f5d259',
+            '#f55a3c',
+            '#063e7b',
+            '#ececd1',
+          ]);
+          document.addEventListener('DOMContentLoaded', () => {
+            // select(root, 'path');
+            console.log(
+              'asdijofoiadfjaewifaewipojfipoaewjfaewjfpaewipfjewafijewfijp'
+            );
+            var vertexSets = Array.prototype.slice
+              .call(root.querySelectorAll('path'))
+              .map(function (path) {
+                return Vertices.scale(Svg.pathToVertices(path, 30), 0.4, 0.4);
+              });
+            Composite.add(
+              world,
+              Bodies.fromVertices(
+                100 + i * 150,
+                200 + i * 50,
+                vertexSets,
+                {
+                  render: {
+                    fillStyle: color,
+                    strokeStyle: color,
+                    lineWidth: 1,
+                  },
+                },
+                true
+              )
+            );
+            loadSvg('./tp.svg').then(function (root) {
+              var color = Common.choose([
+                '#f19648',
+                '#f5d259',
+                '#f55a3c',
+                '#063e7b',
+                '#ececd1',
+              ]);
+
+              var vertexSets = select(root, 'path').map(function (path) {
+                console.log(path);
+                return Svg.pathToVertices(path, 30);
+              });
+
+              Composite.add(
+                world,
+                Bodies.fromVertices(
+                  400,
+                  80,
+                  vertexSets,
+                  {
+                    render: {
+                      fillStyle: color,
+                      strokeStyle: color,
+                      lineWidth: 1,
+                    },
+                  },
+                  true
+                )
+              );
+            });
+          });
+          // var vertexSets = select(root, 'path').map(function (path) {
+          //   return Vertices.scale(Svg.pathToVertices(path, 30), 0.4, 0.4);
+          // });
+        });
+      });
+    } else {
+      Common.warn('Fetch is not available. Could not load SVG.');
+    }
 
     const top = Bodies.rectangle(0, 0, 0, 0, {
       isStatic: true,
@@ -250,6 +458,7 @@ export const MatterStepOne = () => {
         ref={boxRef}
         className='absolute top-0 left-0 border border-white min-w-screen min-h-screen max-h-screen'
       >
+        <div>{/* <Svg2 /> */}</div>
         <canvas ref={canvasRef} />
       </div>
     </div>
