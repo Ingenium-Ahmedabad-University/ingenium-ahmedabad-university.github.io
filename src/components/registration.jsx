@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 const data = [
@@ -68,10 +69,11 @@ const Registration = () => (
                     {point}
                   </div>
                 ))}
-
-                <button className='px-5 py-2 mt-10 font-bold border border-primary text-white rounded-md hover:bg-primary'>
-                  Register
-                </button>
+                <Link to='https://forms.gle/Yg7SeCbGSuPAH31z6' target='_blank'>
+                  <button className='px-5 py-2 mt-10 font-bold border border-primary text-white rounded-md hover:bg-primary'>
+                    Register
+                  </button>
+                </Link>
               </>
             </div>
           );
