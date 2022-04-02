@@ -42,30 +42,6 @@ const data = [
         name: 'Perpetual Pharmaceuticals',
         description: 'Perpetual Pharmaceuticals',
       },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/SonarSource%20-%20blanc.svg',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Codame_Badge_Logo_08_white.png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Datree_Logo_1_color%20(1).png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
     ],
   },
   {
@@ -77,93 +53,8 @@ const data = [
         name: 'Trending in Ahmedabad',
         description: 'Trending in Ahmedabad',
       },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
     ],
   },
-  //   {
-  //     name: 'Media Partners',
-  //     list: [
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //     ],
-  //   },
 ];
 
 const Card = ({ redirectUrl, logoUrl, name, description }) => (
@@ -175,7 +66,6 @@ const Card = ({ redirectUrl, logoUrl, name, description }) => (
       <div className='flex text-primary sponsors-content-box h-32 max-h-32 justify-center items-center'>
         <div className='align-middle text-center px-5'>
           <h3 className='font-sans font-bold text-xl my-2'>{name}</h3>
-          {/* <p className='text-lg'>{description}</p> */}
         </div>
       </div>
     </a>

@@ -11,6 +11,7 @@ module.exports = {
       '1/2': '50%',
       '3/4': '75%',
       full: '100%',
+      screen: '100vh',
     },
     maxHeight: {
       'half-screen': '50vh',
@@ -43,6 +44,10 @@ module.exports = {
         '3/5': '60%',
         '4/5': '80%',
         '7/10': '70%',
+        screen: '100vw',
+      },
+      minWidth: {
+        screen: '100vw',
       },
     },
   },

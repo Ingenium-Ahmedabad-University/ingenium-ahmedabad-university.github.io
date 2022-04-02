@@ -89,9 +89,9 @@ const core_team_details = [
 
   {
     id: 4,
-    name: 'Harsh Patel ',
+    name: 'Neel Popat',
     role: 'Treasurer',
-    image: picture6,
+    image: picture8,
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+917600303434',
     gmail_Url_Url: 'mailto:arpitsinh.v@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/arpitvaghela/',
@@ -105,16 +105,6 @@ const core_team_details = [
     whatsapp_Url: 'https://api.whatsapp.com/send?phone=+919099190696',
     gmail_Url_Url: 'mailto:divye.k@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/divye-kanawala/',
-  },
-
-  {
-    id: 6,
-    name: 'Neel Popat',
-    role: 'Sponsorship & Logistic head',
-    image: picture8,
-    whatsapp_Url: 'https://api.whatsapp.com/send?phone=+918320949532',
-    gmail_Url_Url: 'mailto:neel.p@ahduni.edu.in',
-    linkedLn_Url: 'https://www.linkedin.com/in/viraj-boghani-a270671b1',
   },
 
   {
@@ -186,6 +176,7 @@ const core_team_details = [
     gmail_Url_Url: 'mailto:sanket.s1@ahduni.edu.in',
     linkedLn_Url: 'https://www.linkedin.com/in/sanket-shah-978828167/',
   },
+
   {
     id: 14,
     name: 'Krina Khakhariya',

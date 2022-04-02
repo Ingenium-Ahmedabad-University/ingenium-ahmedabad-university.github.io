@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import notFoundImage from '../images/not-found-image.svg';
 
 export default () => {

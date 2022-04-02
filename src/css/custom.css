@@ -740,6 +740,18 @@ html {
     transform-origin: 0% 0%;
   }
 }
+.interactionBox {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 500px) {
+  .interactionBox {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* For temp purpose */
 
 .navText:hover {
   background: -webkit-linear-gradient(
