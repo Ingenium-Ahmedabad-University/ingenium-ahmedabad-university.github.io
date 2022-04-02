@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Matter from './matter';
+import MatterMagic from './matter';
 
 const cardList = [
   {
@@ -81,7 +81,7 @@ const Cards = () => (
 
 const Landing = () => (
   <>
-    <Matter />
+    <MatterMagic />
     <div className='bg-blur-light border-t border-b border-gray-600 mt-4 py-16'>
       <Cards />
       <AboutUs />

@@ -3,7 +3,7 @@ import Matter from 'matter-js';
 
 const thick = 10;
 
-const Matter = () => {
+const MatterMagic = () => {
   const boxRef = useRef(null);
   const canvasRef = useRef(null);
 
@@ -227,4 +227,4 @@ const Matter = () => {
   );
 };
 
-export default Matter;
+export default MatterMagic;
