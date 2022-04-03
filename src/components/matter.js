@@ -1,5 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Matter from 'matter-js';
+import comp_1 from '../images/comp_1.png';
+import comp_2 from '../images/comp_2.png';
+import chem_1 from '../images/chem_1.png';
+import chem_2 from '../images/chem_2.png';
+import mech_1 from '../images/mech_1.png';
+import mech_2 from '../images/mech_2.png';
 
 const thick = 10;
 
@@ -116,16 +122,33 @@ const MatterMagic = () => {
     console.log(cw, ch);
 
     // add bodies
-    var stack = Composites.stack(20, 20, 16, 1, 0, 0, function (x, y) {
-      return Bodies.circle((2 * x) / 3, (2 * y) / 3, cw > 800 ? 50 : 25, {
-        render: {
-          fillStyle: Common.choose(['#64B8FB', '#ff1cf7']),
-          strokeStyle: Common.choose(['#64B8FB', '#ff1cf7']),
-        },
-
-        restitution: Matter.Common.random(0.4, 0.7),
-      });
-    });
+    var stack = Composites.stack(
+      20,
+      20,
+      cw < 500 ? 10 : 16,
+      1,
+      0,
+      0,
+      function (x, y) {
+        return Bodies.circle(cw / 2, 3 * y, cw < 500 ? 33 : 55, {
+          render: {
+            sprite: {
+              texture: Matter.Common.choose([
+                comp_1,
+                comp_2,
+                chem_1,
+                chem_2,
+                mech_1,
+                mech_2,
+              ]),
+              xScale: cw < 500 ? 0.12 : 0.2,
+              yScale: cw < 500 ? 0.12 : 0.2,
+            },
+          },
+          restitution: Matter.Common.random(0.45, 0.7),
+        });
+      }
+    );
 
     Composite.add(world, stack);
 
