@@ -69,7 +69,7 @@ const AboutUs = () => (
 const Cards = () => (
   <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-full sm:w-4/5 mx-auto border-gray-300 pb-16'>
     {cardList.map((item) => (
-      <div className='w-40 bg-blur-light rounded-xl mx-auto p-4'>
+      <div className='w-40 bg-blur-light rounded-xl mx-auto p-4 text-center'>
         <h1 className='text-secondary font-bold text-4xl pb-2'>
           {item.number}
         </h1>

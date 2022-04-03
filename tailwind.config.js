@@ -11,12 +11,12 @@ module.exports = {
       '1/2': '50%',
       '3/4': '75%',
       full: '100%',
-      screen: '100vh',
+      screen: '92vh',
     },
     maxHeight: {
       'half-screen': '50vh',
       '3/4-screen': '75vh',
-      screen: '100vh',
+      screen: '92vh',
       full: '100%',
     },
     // height:{
