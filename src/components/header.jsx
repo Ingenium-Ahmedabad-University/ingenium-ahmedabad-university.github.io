@@ -4,7 +4,7 @@ import logo_src from '../images/icon.svg';
 
 const Logo = () => (
   <div className='flex items-center'>
-    <Link to='/home'>
+    <Link to='/'>
       <div className='mx-4 my-3'>
         <img src={logo_src} alt='' />
       </div>
