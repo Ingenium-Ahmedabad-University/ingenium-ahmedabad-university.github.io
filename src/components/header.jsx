@@ -1,22 +1,42 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo_src from '../images/icon.svg';
+
 const Logo = () => (
-  <Link to='/about-us'>
-    <div className='fixed top-0 left-0'>
-      <div className='m-4'>
+  <div className='flex items-center'>
+    <Link to='/'>
+      <div className='mx-4 my-3'>
         <img src={logo_src} alt='' />
       </div>
-    </div>
-  </Link>
+    </Link>
+  </div>
 );
 
 const NavIcon = () => {
+  const options = [
+    { name: 'Home', link: '' },
+    { name: 'Events', link: 'events' },
+    { name: 'Register', link: 'register' },
+    { name: 'Contact Us', link: 'contact-us' },
+    { name: 'Sponsors', link: 'sponsors' },
+    { name: 'FAQ', link: 'faqs' },
+  ];
   const [nav_open, change_nav] = useState(false);
+
   return (
     <>
+      <div className='desktop-nav flex items-center'>
+        <div className='pr-6 flex gap-4'>
+          {options.map((e) => (
+            <div className='text-white text-md font-semibold navText'>
+              <Link to={`/${e.link}`}>{e.name}</Link>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div
-        className='fixed top-0 right-0 z-50 h-24 w-24 grid place-items-center cursor-pointer'
+        className=' h-24 w-24 z-50 grid place-items-center cursor-pointer mobile-nav'
         onClick={() => {
           console.log('state change');
           change_nav(!nav_open);
@@ -39,10 +59,12 @@ const NavIcon = () => {
           ></div>
         </div>
       </div>
+
       <NavMenu open={nav_open} />
     </>
   );
 };
+
 const NavOption = ({ name, link }) => {
   return (
     <Link to={`/${link}`}>
@@ -61,35 +83,58 @@ const NavOption = ({ name, link }) => {
 const NavMenu = ({ open }) => {
   const options = [
     { name: 'Home', link: '' },
-    { name: 'About Us', link: 'about-us' },
     { name: 'Events', link: 'events' },
+    { name: 'Register', link: 'register' },
     { name: 'Contact Us', link: 'contact-us' },
     { name: 'Sponsors', link: 'sponsors' },
     { name: 'FAQ', link: 'faqs' },
   ];
   return (
-    <div className='fixed top-0 left-0 z-40'>
-      <div
-        className={
-          'absolute top-0 left-0 h-screen w-screen justify-center z-50 ' +
-          (open ? ' flex nav-bg-in bg-base-light' : 'hidden')
-        }
-      >
-        <div className='w-10/12 h-auto mt-20'>
-          {options.map((e) => (
-            <NavOption name={e.name} link={e.link} />
-          ))}
+    <>
+      <div className='fixed top-0 left-0'>
+        <div
+          className={
+            'absolute top-0 left-0 h-screen w-screen justify-center ' +
+            (open ? ' flex nav-bg-in bg-base-light' : 'hidden')
+          }
+        >
+          <div className='w-10/12 h-auto mt-20'>
+            {options.map((e) => (
+              <NavOption name={e.name} link={e.link} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-const Header = () => (
-  <>
-    <Logo />
-    <NavIcon />
-  </>
-);
+const Header = () => {
+  useEffect(() => {
+    const updateNav = () => {
+      try {
+        let navbar = document.querySelector('.navbar-back');
+
+        if (window.scrollY > 10) navbar.classList.add('blur');
+        else navbar.classList.remove('blur');
+      } catch (error) {
+        console.log('no-nav');
+      }
+    };
+
+    window.addEventListener('scroll', updateNav);
+
+    return () => {
+      window.removeEventListener('scroll', updateNav);
+    };
+  }, []);
+
+  return (
+    <div className='navbar-back flex z-10 justify-between sm:px-0 md:px-4 lg:px-12 xl:px-24'>
+      <Logo />
+      <NavIcon />
+    </div>
+  );
+};
 
 export default Header;

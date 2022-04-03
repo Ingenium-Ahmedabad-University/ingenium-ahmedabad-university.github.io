@@ -11,12 +11,12 @@ module.exports = {
       '1/2': '50%',
       '3/4': '75%',
       full: '100%',
-      screen: '100vh',
+      screen: '92vh',
     },
     maxHeight: {
       'half-screen': '50vh',
       '3/4-screen': '75vh',
-      screen: '100vh',
+      screen: '92vh',
       full: '100%',
     },
     // height:{
@@ -32,8 +32,11 @@ module.exports = {
       colors: {
         base: '#090919',
         'base-light': '#33334d',
-        primary: '#00adb5',
-        secondary: '#f05454',
+        primary: '#64B8FB',
+        'primary-dark': '#0070F3',
+        secondary: '#ff1cf7',
+        'secondary-dark': '#b249f8',
+        'secondary-last': '#f05454',
       },
       maxWidth: {
         '1/5': '20%',
@@ -41,6 +44,10 @@ module.exports = {
         '3/5': '60%',
         '4/5': '80%',
         '7/10': '70%',
+        screen: '100vw',
+      },
+      minWidth: {
+        screen: '100vw',
       },
       minWidth: {
         screen: '100vw',

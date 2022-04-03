@@ -41,7 +41,7 @@ const Competition = ({
         <Icons />
       </div>
       <div className='mb-6'>
-        <h1 className='text-4xl sm:text-6xl py-3 font-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+        <h1 className='text-4xl sm:text-6xl py-3 font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
           {eventTitle}
         </h1>
         <p className='text-gray-400 text-lg py-3'>{desc}</p>
@@ -76,14 +76,6 @@ const Competition = ({
         className='text-white event-rules'
         dangerouslySetInnerHTML={{ __html: certificatePolicy }}
       />
-      {/*
-      <Suggestions
-        eventName="Paying down technical debt at GitHub"
-        speakerName="Keith Ballinger"
-        speakerDetails="SVP, Engineering, GitHub"
-        speakerImg="https://githubuniverse.com/assets/img/speakers/Keith_Ballinger_Headshot.jpg"
-      />
-      */}
     </div>
   </section>
 );

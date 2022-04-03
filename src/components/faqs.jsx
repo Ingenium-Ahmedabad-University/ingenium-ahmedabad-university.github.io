@@ -15,117 +15,78 @@ function accordionToggler(id) {
 
 const data = [
   {
-    name: 'general',
+    name: 'About',
     list: [
       {
-        question:
-          'General - Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'What is Ingenium?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'Since 2016, the students at the School of Engineering and Applied Science organize Tech Ingenium, the annual technological fest of Ahmedabad University. ',
       },
       {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'Who can attend the event?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'Students across all the universities of India can attend the fest. ',
+      },
+
+      {
+        question: 'In which mode Tech Ingenium conducted this year?',
+        answer: 'For the year 2022, the event will be held in hybrid mode. ',
       },
       {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'Who organises Ingenium?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          "Students from the Ahmedabad University's School of Engineering and Applied Sciences.",
       },
     ],
   },
   {
-    name: 'workshops',
+    name: 'Particpation',
     list: [
       {
-        question:
-          'Workshops - Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'How to participate in the events organised?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'Head over to register page and fill out the respective form for the events ',
       },
       {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'Is there a registration fee for participating?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'Yes, there are three categories for registration. One for all the events, one for gaming events and the other for both. For more details head over to the register page.',
       },
       {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'What should I do after completing the registration?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'For participating in the events , go to events page and you can find the registration for the particular event. You can register it by filling the google form of the particular event. ',
       },
     ],
   },
   {
-    name: 'experience',
+    name: 'Events',
     list: [
       {
-        question:
-          'Experience - Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'When will the results of the events be announced?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'The results will be announced during the closing ceremony of Ingenium.',
       },
       {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'Which events are going to be held online?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'The events mode will be announced soon and details of each event will be on the events page.',
       },
       {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
-        answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+        question: 'What all events will be conducted?',
+        answer: 'Tech and gaming events will be conducted.',
       },
-    ],
-  },
-  {
-    name: 'policies',
-    list: [
+
       {
-        question:
-          'Policies - Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'How many events can I participate in?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'As in total we are having around 15-20 events in total , you can participate in all events as per your convenience.',
       },
+
       {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
+        question: 'Who will be the judges of the event?',
         answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
-      },
-      {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
-        answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
-      },
-    ],
-  },
-  {
-    name: 'sponsorship',
-    list: [
-      {
-        question:
-          'Sponsorship - Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
-        answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
-      },
-      {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
-        answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
-      },
-      {
-        question:
-          'Will your books and materials withstand repeated use—are they satisfaction guarenteed?',
-        answer:
-          'Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. ',
+          'The entries will be judged by experts with a proven track record in their respective fields',
       },
     ],
   },
@@ -137,7 +98,7 @@ const Header = () => (
     data-detect-viewport
   >
     <div className='hero__content' data-animate-in='up'>
-      <h1 className='mb-5 text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+      <h1 className='mb-5 text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
         Frequently asked questions
       </h1>
       <p className='f3 text-white text-lg'>
@@ -157,7 +118,8 @@ const Header = () => (
 );
 
 const Tabs = ({ currentCategory, onCategoryChange }) => (
-  <div className='container max-w-full z-20'>
+  <div className='container max-w-full'>
+    {/* <div className='container max-w-full z-20'> */}
     <div className='flex overflow-auto'>
       {data.map((category, i) => {
         if (category.name === currentCategory) {

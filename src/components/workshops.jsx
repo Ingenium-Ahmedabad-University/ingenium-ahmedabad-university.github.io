@@ -39,7 +39,7 @@ const Workshop = ({
         <Icons />
       </div>
       <div className='mb-6'>
-        <h1 className='text-4xl sm:text-6xl py-3 font-bold bg-gradient-to-br from-red-500 to-indigo-400 social-bg'>
+        <h1 className='text-4xl sm:text-6xl py-3 font-bold bg-gradient-to-br from-secondary to-secondary-dark social-bg'>
           {eventTitle}
         </h1>
         <p className='text-gray-400 text-lg py-3'>{desc}</p>

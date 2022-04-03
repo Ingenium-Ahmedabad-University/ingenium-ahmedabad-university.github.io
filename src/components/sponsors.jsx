@@ -1,180 +1,71 @@
 import React from 'react';
 
-import inkedstories from '../images/sponsor_logos/inked-stories.png';
 import trendinginahmedabad from '../images/sponsor_logos/trendinginahmedabad.png';
-import youthera from '../images/sponsor_logos/youth_era.png';
+import la_milano from '../images/sponsor_logos/la_milano.png';
+import radiscan from '../images/sponsor_logos/radiscan.png';
+import perpetual from '../images/sponsor_logos/perpetual.png';
+import renaissance from '../images/sponsor_logos/renaissance.png';
 
 const data = [
   {
-    name: 'Gold Sponsors',
+    name: 'Associated with',
     list: [
       {
-        redirectUrl: 'https://www.meditab.com/',
+        redirectUrl: 'https://royaltechnosoft.com/',
         logoUrl:
-          'https://lirp.cdn-website.com/b9c8e2cb/dms3rep/multi/opt/Transparent_Meditab%2BLogo%2B%2B%2BIMS%2BLogo%2B%281%29-720w-720w.png',
-        name: 'Meditab',
-        description: 'Search Engine',
+          'https://royaltechnosoft.com/wp-content/uploads/2018/11/logo_white-1.png',
+        name: 'Royal Technosoft',
+        description: 'Royal Technosoft',
       },
       {
-        redirectUrl: 'https://www.silvertouch.com/',
-        logoUrl:
-          'https://www.silvertouch.com/wp-content/themes/silvertouch/assets/images-new/logo-white.png',
-        name: 'Silver Touch',
-        description: 'Search Engine',
+        redirectUrl: 'http://mfwfoods.com/',
+        logoUrl: la_milano,
+        name: 'La Milano',
+        description: 'La Milano',
       },
       {
         redirectUrl: 'https://therenaissance.co.in/',
-        logoUrl:
-          'https://therenaissance.co.in/wp-content/uploads/2018/06/Renaissance-logo.png',
+        logoUrl: renaissance,
         name: 'Renaissance',
         description: 'Renaissance',
       },
       {
-        redirectUrl: 'https://www.instagram.com/youthera.clothing/',
-        logoUrl: youthera,
-        name: 'Youth Era',
-        description: 'Renaissance',
+        redirectUrl: 'https://www.facebook.com/RadiscanDiagnostics/',
+        logoUrl: radiscan,
+        name: 'Radiscan Diagnostics',
+        description: 'Radiscan Diagnostics',
       },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/SonarSource%20-%20blanc.svg',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Codame_Badge_Logo_08_white.png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Datree_Logo_1_color%20(1).png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
+      {
+        redirectUrl:
+          'https://www.facebook.com/people/Perpetual-Pharmaceuticals/100064076289768/',
+        logoUrl: perpetual,
+        name: 'Perpetual Pharmaceuticals',
+        description: 'Perpetual Pharmaceuticals',
+      },
     ],
   },
   {
     name: 'Media Partners',
     list: [
       {
-        redirectUrl: 'https://inkedstories.in/',
-        logoUrl: inkedstories,
-        name: 'Inked Stories',
-        description: '',
-      },
-      {
         redirectUrl: 'https://www.instagram.com/trendinginahmedabad/?hl=en',
         logoUrl: trendinginahmedabad,
         name: 'Trending in Ahmedabad',
-        description: '',
+        description: 'Trending in Ahmedabad',
       },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
-      //   {
-      //     redirectUrl:
-      //       'https://www.google.com/search?client=firefox-b-d&q=google',
-      //     logoUrl:
-      //       'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-      //     name: 'Google',
-      //     description: 'Search Engine',
-      //   },
     ],
   },
-  //   {
-  //     name: 'Media Partners',
-  //     list: [
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Sauce-Labs_Vert_White_RGB.svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Contrast_Security%20Logo%20(white).svg',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //       {
-  //         redirectUrl:
-  //           'https://www.google.com/search?client=firefox-b-d&q=google',
-  //         logoUrl:
-  //           'https://githubuniverse.com/assets/img/sponsors/Snyk-white%20(1).png',
-  //         name: 'Google',
-  //         description: 'Search Engine',
-  //       },
-  //     ],
-  //   },
 ];
 
 const Card = ({ redirectUrl, logoUrl, name, description }) => (
-  <div class='w-full max-w-sm mx-auto border border-base-light hover:border-primary sponsors-cards'>
+  <div class='w-full max-w-sm mx-auto border border-gray-800 rounded-xl hover:border-primary sponsors-cards'>
     <a href={redirectUrl}>
-      <div className='flex justify-center items-center bg-base-light w-full h-32 max-h-32'>
+      <div className='flex justify-center rounded-t-xl items-center bg-blur-light w-full h-32 max-h-32'>
         <img className='sponsors-logo' src={logoUrl} alt={name} />
       </div>
       <div className='flex text-primary sponsors-content-box h-32 max-h-32 justify-center items-center'>
         <div className='align-middle text-center px-5'>
           <h3 className='font-sans font-bold text-xl my-2'>{name}</h3>
-          {/* <p className='text-lg'>{description}</p> */}
         </div>
       </div>
     </a>
@@ -183,11 +74,11 @@ const Card = ({ redirectUrl, logoUrl, name, description }) => (
 
 const Sponsors = () => (
   <section id='sponsors'>
-    <div className='pt-28'>
+    <div className='pt-28 w-4/5 m-auto'>
       {data.map((category, i) => {
         return (
           <div key={i} className='mb-24'>
-            <h1 className='bg-gradient-to-br from-red-500 to-indigo-400 social-bg text-3xl font-bold sm:text-4xl'>
+            <h1 className='bg-gradient-to-br from-secondary to-secondary-dark social-bg text-3xl font-bold sm:text-4xl'>
               {category.name}
             </h1>
 
