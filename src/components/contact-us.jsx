@@ -19,8 +19,8 @@ import picture17 from '../images/Vinay_Kakkad.jpg';
 import picture18 from '../images/Prof_Akhand_Rai.jpeg';
 import picture19 from '../images/Prof_Jayendra_Bhalodiya.jpeg';
 import picture20 from '../images/Tirth_Patel.jpeg';
-import picture21 from '../images/Poojan_Gandhi.jpeg';
-import picture22 from '../images/Nipun_Patel.jpeg';
+import picture21 from '../images/Nipun_Patel.jpeg';
+import picture22 from '../images/Poojan_Gandhi.jpeg';
 import picture23 from '../images/Jinesh_Salot_updated.jpeg';
 import picture24 from '../images/Henil_Shah.jpg';
 
@@ -423,9 +423,9 @@ const Contact_Us = () => {
             </div>
           </div>
 
-          <div class='tech-team'>
+          <div class='developers'>
             <div class='font-bold bg-gradient-to-br from-primary to-primary-dark social-bg py-14 text-3xl'>
-              Tech Team
+              Developers
             </div>
             <div class='grid grid-cols-1 justify-center items-center py-8 gap-x-16 gap-y-32 sm:grid-cols-3 lg:grid-cols-4'>
               {tech_team_details.map((e) => {
