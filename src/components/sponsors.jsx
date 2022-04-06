@@ -5,11 +5,44 @@ import la_milano from '../images/sponsor_logos/la_milano.png';
 import radiscan from '../images/sponsor_logos/radiscan.png';
 import perpetual from '../images/sponsor_logos/perpetual.png';
 import renaissance from '../images/sponsor_logos/renaissance.png';
+import et from '../images/sponsor_logos/et.png';
+import publicity_parlour from '../images/sponsor_logos/publicity_parlour.png';
+import uplers from '../images/sponsor_logos/uplers.png';
+import souls from '../images/sponsor_logos/souls.png';
 
 const data = [
   {
+    name: 'Co Powered by',
+    list: [
+      {
+        redirectUrl: 'https://www.uplers.com/',
+        logoUrl: uplers,
+        name: 'Uplers',
+        description: 'Uplers',
+      },
+    ],
+  },
+  {
     name: 'Associated with',
     list: [
+      {
+        redirectUrl: 'https://www.instagram.com/thesouls.in/',
+        logoUrl: souls,
+        name: 'Souls',
+        description: 'Souls',
+      },
+      {
+        redirectUrl: 'https://www.erhardt-leimer.in/',
+        logoUrl: et,
+        name: 'Erhardt+Leimer',
+        description: 'Erhardt+Leimer',
+      },
+      {
+        redirectUrl: 'http://www.publicityparlour.com/',
+        logoUrl: publicity_parlour,
+        name: 'Publicity Parlour',
+        description: 'Publicity Parlour',
+      },
       {
         redirectUrl: 'https://royaltechnosoft.com/',
         logoUrl:
