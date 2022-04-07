@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  purge: ['./src/*/.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
       sans: ['Raleway'],
@@ -44,6 +44,9 @@ module.exports = {
         '3/5': '60%',
         '4/5': '80%',
         '7/10': '70%',
+        screen: '100vw',
+      },
+      minWidth: {
         screen: '100vw',
       },
       minWidth: {

@@ -119,7 +119,7 @@ const MatterMagic = () => {
     const cw = document.body.clientWidth;
     const ch = document.body.clientHeight;
 
-    console.log(cw, ch);
+    // console.log(cw, ch);
 
     // add bodies
     var stack = Composites.stack(
@@ -184,31 +184,32 @@ const MatterMagic = () => {
 
     Engine.run(engine);
     Render.run(render);
+    if (cw >= 600) {
+      var mouse = Mouse.create(render.canvas);
 
-    var mouse = Mouse.create(render.canvas);
-
-    var mouseConstraint = MouseConstraint.create(engine, {
-      mouse: mouse,
-      constraint: {
-        stiffness: 0.2,
-        render: {
-          visible: false,
+      var mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+          stiffness: 0.2,
+          render: {
+            visible: false,
+          },
         },
-      },
-    });
+      });
 
-    mouseConstraint.mouse.element.removeEventListener(
-      'mousewheel',
-      mouseConstraint.mouse.mousewheel
-    );
-    mouseConstraint.mouse.element.removeEventListener(
-      'DOMMouseScroll',
-      mouseConstraint.mouse.mousewheel
-    );
+      mouseConstraint.mouse.element.removeEventListener(
+        'mousewheel',
+        mouseConstraint.mouse.mousewheel
+      );
+      mouseConstraint.mouse.element.removeEventListener(
+        'DOMMouseScroll',
+        mouseConstraint.mouse.mousewheel
+      );
 
-    Composite.add(engine.world, mouseConstraint);
-    Matter.World.add(engine.world, mouseConstraint);
-    render.mouse = mouse;
+      Composite.add(engine.world, mouseConstraint);
+      Matter.World.add(engine.world, mouseConstraint);
+      render.mouse = mouse;
+    }
 
     window.addEventListener('resize', handleResize);
 
